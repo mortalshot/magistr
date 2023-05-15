@@ -1,0 +1,41 @@
+.admin-sidebar {
+   background-color: $White;
+   border-top: rem(1) solid $Line;
+   padding-top: rem(24);
+
+   // .admin-sidebar__container
+   &__container {
+   }
+
+   // .admin-sidebar__menu
+   &__menu {
+      ul {
+         display: grid;
+         row-gap: rem(16);
+      }
+
+      li {
+         display: flex;
+         justify-content: center;
+         text-align: center;
+         font-size: rem(22);
+
+         &._active {
+            a {
+               color: $mainColor;
+            }
+         }
+      }
+
+      a {
+         color: $Grey;
+
+         @media (any-hover: hover) {
+            transition: $transition ease opacity 0s;
+            &:hover {
+               color: $mainColor;
+            }
+         }
+      }
+   }
+}

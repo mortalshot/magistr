@@ -1,0 +1,97 @@
+.tabs {
+	// .tabs_vertical
+	&_vertical {
+		.tabs__navigation {
+			display: flex;
+			@include adaptiveValue("column-gap", 40, 20);
+			overflow-x: auto;
+			overflow-y: hidden;
+			scrollbar-width: thin;
+
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+		}
+
+		.tabs__title {
+			padding: rem(8) 0;
+			margin: rem(-8) 0;
+			font-weight: 600;
+			@include adaptiveValue("font-size", 14, 12);
+			color: $Grey;
+			text-transform: uppercase;
+			letter-spacing: em(0.56, 14);
+			position: relative;
+
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: rem(1);
+				position: absolute;
+				background-color: $Orange;
+				bottom: rem(-8);
+				pointer-events: none;
+				opacity: 0;
+				transition: $transition ease opacity 0s;
+			}
+
+			&._tab-active {
+				color: $Orange;
+
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	// .tabs_horizontal
+	&_horizontal {
+		display: grid;
+		align-content: flex-start;
+		grid-template-columns: rem(244) 1fr;
+
+		.tabs__navigation {
+			display: grid;
+			align-content: flex-start;
+			row-gap: rem(8);
+		}
+
+		.tabs__title {
+			text-align: left;
+			padding: rem(16);
+			@include adaptiveValue("padding-top", 16, 10, 992, 320, 1);
+			@include adaptiveValue("padding-bottom", 16, 10, 992, 320, 1);
+			@include adaptiveValue("padding-right", 28, 16);
+			border-radius: rem(10) 0 0 rem(10);
+		}
+
+		.tabs__content { 
+			@include adaptiveValue("padding-top", 56, 10);
+			@include adaptiveValue("padding-bottom", 56, 10);
+			@include adaptiveValue("padding-left", 56, 16);
+			@include adaptiveValue("padding-right", 56, 16);
+		}
+	}
+
+	// .tabs__navigation
+	&__navigation {
+	}
+
+	// .tabs__title
+	&__title {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue("column-gap", 16, 8);
+	}
+
+	// .tabs__content
+	&__content {
+	}
+
+	// .tabs__body
+	&__body {
+	}
+}

@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Услуги"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <main class="page">
+         <div class="site-breadcrumbs">
+            <div class="site-breadcrumbs__container">
+               <span class="site-breadcrumbs__link">
+                  <a href=""> <span>Главная</span> </a>
+               </span>
+               <span class="site-breadcrumbs__separator _icon-chevron-right"></span>
+               <span class="site-breadcrumbs__title">Прайс-лист</span>
+            </div>
+         </div>
+
+         <section class="template3">
+            <div class="template3__container">
+               <div class="template3__heading _content _heading">
+                  <h1>Калькулятор стоимости:</h1>
+               </div>
+
+               <form class="template3__wrapper _wrapper">
+                  <div class="template3__form form">
+                     <div class="form__row">
+                        <div class="form__item col-12 col-md-9">
+                           <div class="form__label">
+                              <span>Тип работы</span>
+
+                              <div class="info">
+                                 <button type="button" class="info__button _icon-info"></button>
+
+                                 <div class="info__wrapper _content" style="display: none;">
+                                    <p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="form__select">
+                              <div class="basic-single">
+                                 <div class="select__control">
+                                    <div class="select__value-container select__value-container--has-value">
+                                       <div class="select__single-value">Тип работы</div>
+                                       <div class="select__input-container" data-value="">
+                                          <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;">
+                                       </div>
+                                    </div>
+                                    <div class="select__indicators">
+                                       <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                          <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                             <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form__item col-6 col-sm-4 col-md-3">
+                           <div class="form__label">
+                              <span>Объём страниц</span>
+                              <div class="info">
+                                 <button type="button" class="info__button _icon-info"></button>
+
+                                 <div class="info__wrapper _content" style="display: none;">
+                                    <p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="form__input-number input-number">
+                              <input type="number" name="form[]" placeholder="0" class="form__input input-number__input">
+                              <span class="input-number__descr">стр.</span>
+                           </div>
+                        </div>
+
+                        <div class="form__item col-12">
+                           <div class="form__label">
+                              <span>Система проверки на антиплагиат</span>
+
+                              <div class="info">
+                                 <button type="button" class="info__button _icon-info"></button>
+
+                                 <div class="info__wrapper _content" style="display: none;">
+                                    <p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="lg-none">
+                              <div class="form__options options">
+                                 <div class="options__item">
+                                    <input hidden id="o_1-1" class="options__input" type="radio" value="Без проверки" name="antiplagiat">
+                                    <label for="o_1-1" class="options__label"><span class="options__text">Без проверки</span></label>
+                                 </div>
+                                 <div class="options__item">
+                                    <input hidden id="o_1-2" class="options__input" checked type="radio" value="АП.ВУЗ" name="antiplagiat">
+                                    <label for="o_1-2" class="options__label"><span class="options__text">АП.ВУЗ</span></label>
+                                 </div>
+                                 <div class="options__item">
+                                    <input hidden id="o_1-3" class="options__input" type="radio" value="АП.РУ" name="antiplagiat">
+                                    <label for="o_1-3" class="options__label"><span class="options__text">АП.РУ</span></label>
+                                 </div>
+                                 <div class="options__item">
+                                    <input hidden id="o_1-4" class="options__input" type="radio" value="ETXT" name="antiplagiat">
+                                    <label for="o_1-4" class="options__label"><span class="options__text">ETXT</span></label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="d-none lg-block">
+                              <div class="form__select">
+                                 <div class="basic-single">
+                                    <div class="select__control">
+                                       <div class="select__value-container select__value-container--has-value">
+                                          <div class="select__single-value">Без проверки</div>
+                                          <div class="select__input-container" data-value="">
+                                             <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;">
+                                          </div>
+                                       </div>
+                                       <div class="select__indicators">
+                                          <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                             <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form__item col-12">
+                           <div class="form__label">
+                              <span>Процент оригинальности</span>
+
+                              <div class="info">
+                                 <button type="button" class="info__button _icon-info"></button>
+
+                                 <div class="info__wrapper _content" style="display: none;">
+                                    <p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="form__range range">
+                              <input type="range" value="100" min="0" max="100" id="range" class="range__input" />
+
+                              <div class="range__grid">
+                                 <div class="range__value range__value_start">0%</div>
+                                 <div class="range__value range__value_end">100 %</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form__item col-12">
+                           <div class="form__label">
+                              <span>Процент оригинальности</span>
+
+                              <div class="info">
+                                 <button type="button" class="info__button _icon-info"></button>
+
+                                 <div class="info__wrapper _content" style="display: none;">
+                                    <p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="lg-none">
+                              <div class="form__options options options_full options_marks">
+                                 <div class="options__item">
+                                    <input hidden id="o_2-1" class="options__input" type="radio" value="Удовлетворительно" name="mark">
+                                    <label for="o_2-1" class="options__label"><span class="options__text _icon-mark-satisfactory">Удовлетворительно</span></label>
+                                 </div>
+                                 <div class="options__item">
+                                    <input hidden id="o_2-2" class="options__input" type="radio" value="Хорошо" name="mark">
+                                    <label for="o_2-2" class="options__label"><span class="options__text _icon-mark-good">Хорошо <span style="color: #3E5BF1;">х1.3</span></span></label>
+                                 </div>
+                                 <div class="options__item">
+                                    <input hidden id="o_2-3" class="options__input" checked type="radio" value="Отлично" name="mark">
+                                    <label for="o_2-3" class="options__label"><span class="options__text _icon-mark-excellent">Отлично <span style="color: #3E5BF1;">х1.5</span></span></label>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="d-none lg-block">
+                              <div class="form__select">
+                                 <div class="basic-single">
+                                    <div class="select__control">
+                                       <div class="select__value-container select__value-container--has-value">
+                                          <div class="select__single-value">
+                                             <i class="_icon-mark-satisfactory"></i>
+                                             <span>Удовлетворительно</span>
+                                          </div>
+                                          <div class="select__input-container" data-value="">
+                                             <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;">
+                                          </div>
+                                       </div>
+                                       <div class="select__indicators">
+                                          <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                             <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="form__item col-6 col-sm-4">
+                           <div class="form__label">
+                              <span>Срок</span>
+
+                              <div class="info">
+                                 <button type="button" class="info__button _icon-info"></button>
+
+                                 <div class="info__wrapper _content" style="display: none;">
+                                    <p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="form__datepicker datepicker">
+                              <div class="datepicker__wrapper _icon-calendar">
+                                 <input type="text" class="datepicker__input form__input" value="19.08.2022">
+                              </div>
+
+                              <div class="datepicker__picker"></div>
+                              <!-- datepicker content -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="template3__total template3-total">
+                     <div class="template3-total__text _content">
+                        <img src="@img/template3-2-image.svg" alt="" loading="lazy">
+                        <p>Укажите данные о вашей работе и мы посчитаем её стоимость прямо сейчас!</p>
+                     </div>
+
+                     <div class="template3-total__actions">
+                        <div class="template3-total__button"><a href="" class="btn btn_bg-orange">Рассчитать стоимость</a></div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+
+         <section class="template13">
+            <div class="template13__container">
+               <div class="template13__heading _heading _content">
+                  <h2>Прайс-лист</h2>
+               </div>
+
+               <div data-tabs class="template13__tabs tabs tabs_vertical">
+                  <nav data-tabs-titles class="tabs__navigation _wrapper">
+                     <button type="submit" class="tabs__title _tab-active">Дипломные работы</button>
+                     <button type="submit" class="tabs__title">Курсовые работы и отчеты&nbsp;по&nbsp;практике</button>
+                     <button type="submit" class="tabs__title">Диссертационные исследования</button>
+                     <button type="submit" class="tabs__title">Контрольные, задачи,&nbsp;рефераты</button>
+                  </nav>
+                  <div data-tabs-body class="tabs__content">
+                     <div class="tabs__body">
+                        <div class="template13__wrapper _wrapper">
+                           <div class="template13__table">
+                              <div class="template13__top">
+                                 <div class="template13__caption">Дипломные работы</div>
+
+                                 <div class="template13__details template13-details">
+                                    <div class="template13-details__item">
+                                       <div class="template13-details__caption">Срок изготовления:</div>
+                                       <div class="template13-details__text"><strong>10 - 20 рабочих дней</strong></div>
+                                    </div>
+                                    <div class="template13-details__item">
+                                       <div class="template13-details__caption">Коэффициенты срочности:</div>
+                                       <div class="template13-details__rates rates">
+                                          <div class="rates__item">
+                                             <div class="rates__wrapper">
+                                                <div class="rates__val">х1.3</div>
+                                                <div class="rates__text">6-9 дней</div>
+                                             </div>
+                                          </div>
+                                          <div class="rates__item">
+                                             <div class="rates__wrapper">
+                                                <div class="rates__val">х1.5</div>
+                                                <div class="rates__text">3-5 дней</div>
+                                             </div>
+                                          </div>
+                                          <div class="rates__item">
+                                             <div class="rates__wrapper">
+                                                <div class="rates__val">х2</div>
+                                                <div class="rates__text">1-2 дня</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="md-none">
+                                 <figure>
+                                    <table>
+                                       <thead>
+                                          <tr>
+                                             <th style="width: 66%;">Тип работы</th>
+                                             <th>Объём страниц</th>
+                                             <th>Стоимость*</th>
+                                          </tr>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td rowspan="4" style="text-align: left;">
+                                                <div class="_content">
+                                                   <p><strong>Диплом, ВКР</strong></p>
+                                                   <p>(1 глава – теория, 2 глава – практика или анализ, 3 глава – предложения по оптимизации, до 3 методик, анализ до 3-х лет, до 5 приложений)</p>
+                                                </div>
+                                             </td>
+                                             <td>до 70 страниц</td>
+                                             <td>8 100 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>до 80 страниц</td>
+                                             <td>9 720 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>до 90 страниц</td>
+                                             <td>11 340 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>> 90 страниц</td>
+                                             <td>1 стр. – 120 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+
+                                          <tr>
+                                             <td rowspan="4" style="text-align: left;">
+                                                <div class="_content">
+                                                   <p><strong>Дипломная работа с анализом в первой главе</strong></p>
+                                                   <p>(1 глава - теория+макроанализ, 2 глава - практика или анализ по предмету исследования, 3 глава - предложения по оптимизации, до 3 методик, анализ до 3-х лет, до 5 приложений) </p>
+                                                </div>
+                                             </td>
+                                             <td>до 70 страниц</td>
+                                             <td>12 150 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>до 80 страниц</td>
+                                             <td>14 580 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>до 90 страниц</td>
+                                             <td>17 010 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>> 90 страниц</td>
+                                             <td>1 стр. – 175 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+
+                                          <tr>
+                                             <td rowspan="2" style="text-align: left;">
+                                                <div class="_content">
+                                                   <p><strong>Дипломная работа больше 3 глав</strong></p>
+                                                </div>
+                                             </td>
+                                             <td>до 100 страниц</td>
+                                             <td>14 400 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>> 100 страниц</td>
+                                             <td>1 стр. – 145 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+
+                                          <tr>
+                                             <td rowspan="2" style="text-align: left;">
+                                                <div class="_content">
+                                                   <p><strong>Магистерская работа, МВА</strong></p>
+                                                </div>
+                                             </td>
+                                             <td>до 100 страниц</td>
+                                             <td>24 300 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td>> 100 страниц</td>
+                                             <td>1 стр. – 240 ₽</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <figcaption class="_content"><span style="color: #F1493E;">*</span> По согласованию с заказчиком исполнитель вправе изменять стоимость работ в зависимости от сложности.</figcaption>
+                                 </figure>
+                              </div>
+
+                              <div class="d-none md-block">
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       <span>Диплом, ВКР</span>
+
+                                       <div class="info">
+                                          <button type="button" class="info__button _icon-info"></button>
+
+                                          <div class="info__wrapper _content" style="display: none;">
+                                             <p>(1 глава – теория, 2 глава – практика или анализ, 3 глава – предложения по оптимизации, до 3 методик, анализ до 3-х лет, до 5 приложений) </p>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Объём страниц</th>
+                                          <th>Стоимость*</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>до 70 страниц</td>
+                                             <td>8 100 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>до 80 страниц</td>
+                                             <td>9 720 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>до 90 страниц</td>
+                                             <td>11 340 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>> 90 страниц</td>
+                                             <td>1 стр. – 120 ₽</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       <span>Дипломная работа с анализом в первой главе</span>
+
+                                       <div class="info">
+                                          <button type="button" class="info__button _icon-info"></button>
+
+                                          <div class="info__wrapper _content" style="display: none;">
+                                             <p>(1 глава - теория+макроанализ, 2 глава - практика или анализ по предмету исследования, 3 глава - предложения по оптимизации, до 3 методик, анализ до 3-х лет, до 5 приложений) </p>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Объём страниц</th>
+                                          <th>Стоимость*</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>до 70 страниц</td>
+                                             <td>12 150 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>до 80 страниц</td>
+                                             <td>14 580 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>до 90 страниц</td>
+                                             <td>17 010 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>> 90 страниц</td>
+                                             <td>1 стр. – 175 ₽</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       <span>Дипломная работа больше 3 глав</span>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Объём страниц</th>
+                                          <th>Стоимость*</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>до 100 страниц</td>
+                                             <td>14 400 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>> 100 страниц</td>
+                                             <td>1 стр. – 145 ₽</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       <span>Магистерская работа, МВА</span>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Объём страниц</th>
+                                          <th>Стоимость*</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>до 100 страниц</td>
+                                             <td>24 300 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td>> 100 страниц</td>
+                                             <td>1 стр. – 240 ₽</td>
+                                          </tr>
+
+                                          <tr>
+                                             <td class="spacing" colspan="2"></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <figcaption class="_content"><span style="color: #F1493E;">*</span> По согласованию с заказчиком исполнитель вправе изменять стоимость работ в зависимости от сложности.</figcaption>
+                                 </figure>
+                              </div>
+                           </div>
+
+                           <div class="template13__features template13-features">
+                              <div class="template13__caption">Срок принятия работ на доработку: <br>
+                                 (с даты выполнения заказа)</div>
+
+                              <div class="template13-features__items _row">
+                                 <div class="template13-features__item col-6 col-md-3">
+                                    <div class="template13-features__wrapper">
+                                       <div class="template13-features__caption">6 мес</div>
+                                       <div class="template13-features__text">Дипломы</div>
+                                    </div>
+                                 </div>
+                                 <div class="template13-features__item col-6 col-md-3">
+                                    <div class="template13-features__wrapper">
+                                       <div class="template13-features__caption">2 мес</div>
+                                       <div class="template13-features__text">Курсовые</div>
+                                    </div>
+                                 </div>
+                                 <div class="template13-features__item col-6 col-md-3">
+                                    <div class="template13-features__wrapper">
+                                       <div class="template13-features__caption">1 мес</div>
+                                       <div class="template13-features__text">Контрольные</div>
+                                    </div>
+                                 </div>
+                                 <div class="template13-features__item template13-features__item_template2 col-6 col-md-3">
+                                    <div class="template13-features__wrapper">
+                                       <div class="template13-features__bg">
+                                          <picture>
+                                             <source srcset="@img/single-services/template13-features-item-1-1.svg" media="(min-width: 767.98px)">
+                                             <img src="@img/single-services/template13-features-item-1-1-2.svg" alt="" loading="lazy">
+                                          </picture>
+                                       </div>
+                                       <div class="template13-features__caption">3 -5 дней</div>
+                                       <div class="template13-features__text">Срок выполнения <br> доработок</div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="template13-features__button"><a href="" class="btn btn_bg-orange">Оформить заказ</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="template13">
+            <div class="template13__container">
+               <div class="template13__heading _heading _content">
+                  <h2>Прайс-лист по системам <br> проверки на плагиат:</h2>
+               </div>
+
+               <div data-tabs class="template13__tabs tabs tabs_vertical">
+                  <nav data-tabs-titles class="tabs__navigation _wrapper">
+                     <button type="submit" class="tabs__title _tab-active">Система Антиплагиат.Вуз</button>
+                     <button type="submit" class="tabs__title">Система Antiplagiat.ru</button>
+                  </nav>
+                  <div data-tabs-body class="tabs__content">
+                     <div class="tabs__body">
+                        <div class="template13__wrapper _wrapper">
+                           <div class="template13__table">
+                              <div class="md-none">
+                                 <figure>
+                                    <table>
+                                       <thead>
+                                          <tr>
+                                             <th style="width: 66%;">Тип работы</th>
+                                             <th>Проценты</th>
+                                             <th>Коэф. сложности</th>
+                                          </tr>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Контрольная работа, реферат (теория)</p>
+                                             </td>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Контрольная работа, реферат (практика)</p>
+                                             </td>
+                                             <td>51% - 55%</td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Доклад</p>
+                                             </td>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td rowspan="2" style="text-align: left;">
+                                                <p>Эссе</p>
+                                             </td>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>66% - 70%</td>
+                                             <td><strong>х1.7</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Курсовая теория </p>
+                                             </td>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Курсовая практика</p>
+                                             </td>
+                                             <td>51% - 55%</td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Курсовой проект</p>
+                                             </td>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Теоретическая часть курсовой работы</p>
+                                             </td>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Практическая часть курсовой работы</p>
+                                             </td>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Теоретическая часть дипломной работы (1 глава)</p>
+                                             </td>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Отчет по практике</p>
+                                             </td>
+                                             <td>66% - 70%</td>
+                                             <td><strong>х1.7</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Доработка клиентской работы</p>
+                                             </td>
+                                             <td>66% - 70%</td>
+                                             <td><strong>х2</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Диплом</p>
+                                             </td>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Магистерская МВА</p>
+                                             </td>
+                                             <td>51% - 55%</td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td rowspan="2" style="text-align: left;">
+                                                <p>Практическая часть дипломной работы (1 глава)</p>
+                                             </td>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Контрольная работа, реферат (теория)</p>
+                                             </td>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Контрольная работа, реферат (практика)</p>
+                                             </td>
+                                             <td>51% - 55%</td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">
+                                                <p>Доклад</p>
+                                             </td>
+                                             <td rowspan="2" style="vertical-align: middle;">56% - 60%</td>
+                                             <td rowspan="2" style="vertical-align: middle;"><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td style="text-align: left;">Эссе</td>
+                                          </tr>
+                                          <tr>
+                                             <td class="spacing" colspan="3"></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+
+                                    <figcaption class="_content">
+                                       <p><strong>Примечание</strong> <i class="_icon-alert"></i></p>
+                                       <ol>
+                                          <li>Работы проверяются со следующими подключенными модулями: Сводная коллекция ЭБС, Коллекция РГБ, Цитирование, Модуль поиска Интернет, Модуль поиска перефразирований Интернет, Модуль поиска общеупотребительных выражений, Кольцо вузов</li>
+                                          <li>Если Вы знаете точный список подключенных баз вашего ВУЗа, рекомендуем их сообщить менеджеру</li>
+                                          <li>Типы работ не включенные в таблицу, на плагиат не проверяются. Например: задачи.</li>
+                                       </ol>
+                                    </figcaption>
+                                 </figure>
+                              </div>
+
+                              <div class="d-none md-block">
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       Контрольная работа, реферат (теория) <br>
+                                       Контрольная работа, реферат (практика) <br>
+                                       Доклад <br>
+                                       Эссе
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Проценты</th>
+                                          <th>Коэф. сложности</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>51% - 55% </td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>66% - 70%</td>
+                                             <td><strong>х1.7</strong></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       Курсовая теория <br>
+                                       Курсовая практика <br>
+                                       Курсовой проект <br>
+                                       Теоретическая часть курсовой работы <br>
+                                       Практическая часть курсовой работы <br>
+                                       Теоретическая часть дипломной работы (1 глава) <br>
+                                       Отчет по практике <br>
+                                       Доработка клиентской работы <br>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Проценты</th>
+                                          <th>Коэф. сложности</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>0% - 50%</td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>51% - 55%</td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>66% - 70%</td>
+                                             <td><strong>х1.7</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>66% - 70%</td>
+                                             <td><strong>х2</strong></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       Диплом <br>
+                                       Магистерская МВА <br>
+                                       Практическая часть дипломной работы (1 глава) <br>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Проценты</th>
+                                          <th>Коэф. сложности</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>51% - 55% </td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>61% - 65%</td>
+                                             <td><strong>х1.6</strong></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+                                 <figure>
+                                    <div class="template13__table-caption">
+                                       Контрольная работа, реферат (теория) <br>
+                                       Контрольная работа, реферат (практика) <br>
+                                       Доклад <br>
+                                       Эссе <br>
+                                    </div>
+
+                                    <table>
+                                       <thead>
+                                          <th>Проценты</th>
+                                          <th>Коэф. сложности</th>
+                                       </thead>
+
+                                       <tbody>
+                                          <tr>
+                                             <td>0% - 50% </td>
+                                             <td><strong>х1.3</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>51% - 55%</td>
+                                             <td><strong>х1.4</strong></td>
+                                          </tr>
+                                          <tr>
+                                             <td>56% - 60%</td>
+                                             <td><strong>х1.5</strong></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </figure>
+
+                                 <figcaption class="_content">
+                                    <p><strong>Примечание</strong> <i class="_icon-alert"></i></p>
+                                    <ol>
+                                       <li>Работы проверяются со следующими подключенными модулями: Сводная коллекция ЭБС, Коллекция РГБ, Цитирование, Модуль поиска Интернет, Модуль поиска перефразирований Интернет, Модуль поиска общеупотребительных выражений, Кольцо вузов</li>
+                                       <li>Если Вы знаете точный список подключенных баз вашего ВУЗа, рекомендуем их сообщить менеджеру</li>
+                                       <li>Типы работ не включенные в таблицу, на плагиат не проверяются. Например: задачи.</li>
+                                    </ol>
+                                 </figcaption>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="template13">
+            <div class="template13__container">
+               <div class="template13__heading _heading _content">
+                  <h2>Прайс-лист соотношение <br> цены и качества</h2>
+               </div>
+
+               <div class="template13__wrapper _wrapper">
+                  <div class="template13__table">
+                     <!-- <div class="md-none"> -->
+                     <figure>
+                        <table style="max-width: 750px;">
+                           <thead>
+                              <tr>
+                                 <th>Желаемая оценка</th>
+                                 <th>Коэффициент сложности</th>
+                              </tr>
+                           </thead>
+
+                           <tbody>
+                              <tr>
+                                 <td style="text-align: left;">
+                                    <p>Удовлетворительно (Главное чтобы работу приняли, оценка не так важна)</p>
+                                 </td>
+                                 <td><strong>х1</strong></td>
+                              </tr>
+                              <tr>
+                                 <td style="text-align: left;">
+                                    <p>Хорошо</p>
+                                 </td>
+                                 <td><strong>х1.2</strong></td>
+                              </tr>
+                              <tr>
+                                 <td style="text-align: left;">
+                                    <p>Отлично</p>
+                                 </td>
+                                 <td><strong>х1.5</strong></td>
+                              </tr>
+                           </tbody>
+                        </table>
+
+                        <figcaption class="_content">
+                           <p><strong>Примечание</strong> <i class="_icon-alert"></i></p>
+
+                           <p>Выбор параметра "Соотношение цены и качества" не гарантирует желаемую оценку, так как есть факторы не связанные с качеством работы, такие как степень подготовленности студента, предвзятое отношение со стороны преподавателя и другие. Как правильно сделать выбор?</p>
+
+                           <ul>
+                              <li>Если для Вас не имеет значение оценка. Вы учитесь на заочном или дистанционном обучении. Преподаватель не строгий и формально относится к проверке работ. Рекомендуемый пункт: Главное чтобы работу приняли, оценка не так важна (самые низкие цены). Работа будет выполнена способом Copy/Paste, то есть будет скомпонована из блоков текста взятых из различных Интернет источников. </li>
+                              <li>Вы учитесь очно. Ваш средний бал до 4.3. Преподаватель не очень строгий. Рекомендуемый пункт: Мне нужна хорошая оценка (средние цены).</li>
+                              <li>Вы учитесь очно. Ваш средний бал выше 4.3. Преподаватель тщательно проверяет работы. ВУЗ в котором Вы учитесь имеет высокий рейтинг. Рекомендуемый пункт: Мне нужна отличная оценка (высокие цены).</li>
+                              <li>На основе выбранного пункта за работой закрепляется автор имеющий соответствующий опыт и квалификацию. На работу с запросом хорошей оценки выделяется на 50% больше времени работы автора, а на отличную оценку на 100%.</li>
+                           </ul>
+                        </figcaption>
+                     </figure>
+                     <!-- </div> -->
+
+                     <!-- <div class="d-none md-block">
+                        <figure>
+                           <div class="template13__table-caption">
+                              Контрольная работа, реферат (теория) <br>
+                              Контрольная работа, реферат (практика) <br>
+                              Доклад <br>
+                              Эссе
+                           </div>
+
+                           <table>
+                              <thead>
+                                 <th>Проценты</th>
+                                 <th>Коэф. сложности</th>
+                              </thead>
+
+                              <tbody>
+                                 <tr>
+                                    <td>0% - 50% </td>
+                                    <td><strong>х1.3</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>51% - 55% </td>
+                                    <td><strong>х1.4</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>56% - 60%</td>
+                                    <td><strong>х1.5</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>61% - 65%</td>
+                                    <td><strong>х1.6</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>66% - 70%</td>
+                                    <td><strong>х1.7</strong></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </figure>
+                        <figure>
+                           <div class="template13__table-caption">
+                              Курсовая теория <br>
+                              Курсовая практика <br>
+                              Курсовой проект <br>
+                              Теоретическая часть курсовой работы <br>
+                              Практическая часть курсовой работы <br>
+                              Теоретическая часть дипломной работы (1 глава) <br>
+                              Отчет по практике <br>
+                              Доработка клиентской работы <br>
+                           </div>
+
+                           <table>
+                              <thead>
+                                 <th>Проценты</th>
+                                 <th>Коэф. сложности</th>
+                              </thead>
+
+                              <tbody>
+                                 <tr>
+                                    <td>0% - 50%</td>
+                                    <td><strong>х1.3</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>51% - 55%</td>
+                                    <td><strong>х1.4</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>56% - 60%</td>
+                                    <td><strong>х1.5</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>56% - 60%</td>
+                                    <td><strong>х1.5</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>61% - 65%</td>
+                                    <td><strong>х1.6</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>61% - 65%</td>
+                                    <td><strong>х1.6</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>66% - 70%</td>
+                                    <td><strong>х1.7</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>66% - 70%</td>
+                                    <td><strong>х2</strong></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </figure>
+                        <figure>
+                           <div class="template13__table-caption">
+                              Диплом <br>
+                              Магистерская МВА <br>
+                              Практическая часть дипломной работы (1 глава) <br>
+                           </div>
+
+                           <table>
+                              <thead>
+                                 <th>Проценты</th>
+                                 <th>Коэф. сложности</th>
+                              </thead>
+
+                              <tbody>
+                                 <tr>
+                                    <td>0% - 50% </td>
+                                    <td><strong>х1.3</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>51% - 55% </td>
+                                    <td><strong>х1.4</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>56% - 60%</td>
+                                    <td><strong>х1.5</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>61% - 65%</td>
+                                    <td><strong>х1.6</strong></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </figure>
+                        <figure>
+                           <div class="template13__table-caption">
+                              Контрольная работа, реферат (теория) <br>
+                              Контрольная работа, реферат (практика) <br>
+                              Доклад <br>
+                              Эссе <br>
+                           </div>
+
+                           <table>
+                              <thead>
+                                 <th>Проценты</th>
+                                 <th>Коэф. сложности</th>
+                              </thead>
+
+                              <tbody>
+                                 <tr>
+                                    <td>0% - 50% </td>
+                                    <td><strong>х1.3</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>51% - 55%</td>
+                                    <td><strong>х1.4</strong></td>
+                                 </tr>
+                                 <tr>
+                                    <td>56% - 60%</td>
+                                    <td><strong>х1.5</strong></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </figure>
+
+                        <figcaption class="_content">
+                           <p><strong>Примечание</strong> <i class="_icon-alert"></i></p>
+                           <ol>
+                              <li>Работы проверяются со следующими подключенными модулями: Сводная коллекция ЭБС, Коллекция РГБ, Цитирование, Модуль поиска Интернет, Модуль поиска перефразирований Интернет, Модуль поиска общеупотребительных выражений, Кольцо вузов</li>
+                              <li>Если Вы знаете точный список подключенных баз вашего ВУЗа, рекомендуем их сообщить менеджеру</li>
+                              <li>Типы работ не включенные в таблицу, на плагиат не проверяются. Например: задачи.</li>
+                           </ol>
+                        </figcaption>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="template11">
+            <div class="template11__container">
+               <div class="template11__blocks">
+                  <div class="template11__seo _content">
+                     <h3>Реферат, курсовая, диплом, магистерская диссертация: цена самая низкая в регионе</h3>
+
+                     <p>На этой странице вы сможете ознакомиться с подробным прайс-листом на наши услуги: например, если вас интересует дипломная работа на заказ, стоимость указана в таблице. Используйте ссылки для быстрого перехода, чтобы узнать больше информации о выполнении нужной вам письменной работы. Мы стараемся поддерживать оптимальную стоимость при высоком качестве. Если вам нужна кандидатская или магистерская диссертация, цена на нее окажется весьма выгодной. Воспользуйтесь онлайн-калькулятором, чтобы рассчитать итоговую сумму. У нас можно заказать доклад, контрольную реферат – цена всегда будет выгодной для вас.</p>
+                  </div>
+
+                  <div class="template11__seo _content">
+                     <h3>Дипломная работа на заказ: стоимость вариативна</h3>
+
+                     <p>Наши преподаватели напишут для вас качественный дипломный проект, соответствующий всем требованиям вуза. У вас приближается дедлайн? Не волнуйтесь, мы предусмотрели такие случаи. Вы очень быстро, через неделю или даже пару дней, получите диплом на заказ: стоимость при этом будет выше, и качество останется на таком же высоком уровне. При подаче заявки укажите, какая оценка вам нужна и насколько строги требования преподавателя: это позволит скорректировать заявку так, чтобы вы могли успешно сдать работу и при этом не переплатить.</p>
+                  </div>
+
+                  <div class="template11__seo _content">
+                     <h3>Магистерская диссертация: цена и качество вас обрадуют</h3>
+
+                     <p>Написанием работ сложного уровня занимаются опытные авторы – преподаватели и аспиранты. Вы получите готовую работу в необходимый срок. Наши цены в ниже, чем в других компаниях: например, за магистерскую диссертацию стандартного объема предстоит заплатить примерно 24 300 рублей.</p>
+                  </div>
+
+                  <div class="template11__seo _content">
+                     <h3>Какова стоимость курсовой в компании «Магистр»</h3>
+
+                     <p>Штатные авторы напишут для вас курсовой проект любой сложности по цене от 1100 рублей. Предусмотрены доплаты за срочность выполнения и за особую тщательность. Обязательно указывайте в заявке, на какую оценку претендует работа.</p>
+                  </div>
+
+                  <div class="template11__seo _content">
+                     <h3>Если нужен реферат, цена у нас самая низкая</h3>
+
+                     <p>Мы подготовим для вас реферат на любую тематику и какого угодно объема. Также вы можете купить готовую работу (не только реферат, но и доклад, курсовую и т.д.) из нашей уникальной базы. Это особенно актуально для тех студентов, которые ограничены в бюджете и во времени.</p>
+                     <p>Наши цены доступны! Нужен диплом на заказ? Стоимость уникальная, всего от 8 100 рублей. При необходимости мы выполним работу в кратчайший срок. Стоимость курсовой также зависит от срочности и сложности. Возникли вопросы или затруднения? Не стесняйтесь писать в чат поддержки или звонить нашим специалистам по телефону. Мы работаем для вас и всегда готовы помочь.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

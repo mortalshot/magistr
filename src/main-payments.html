@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Способы оплаты"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <main class="page">
+         <div class="sublist">
+            <div class="sublist__container">
+               <nav class="sublist__menu">
+                  <ul class="sublist__list">
+                     <li class="sublist__item sublist__item_active"><a href="main-payments.html">Способы оплаты</a></li>
+                     <li class="sublist__item"><a href="main-place-order.html">Как заказать</a></li>
+                     <li class="sublist__item"><a href="main-work-conditions.html">Условия работы</a></li>
+                     <li class="sublist__item"><a href="main-faq.html">Вопрос ответ</a></li>
+                     <li class="sublist__item"><a href="main-list-subjects.html">Список выполняемых работ</a></li>
+                     <li class="sublist__item"><a href="main-university-modules.html">Модули АП ВУЗ</a></li>
+                     <li class="sublist__item"><a href="main-originality-check.html">Проверка оригинальности</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+
+         <div class="site-breadcrumbs">
+            <div class="site-breadcrumbs__container">
+               <span class="site-breadcrumbs__link">
+                  <a href=""> <span>Главная</span> </a>
+               </span>
+               <span class="site-breadcrumbs__separator _icon-chevron-right"></span>
+               <span class="site-breadcrumbs__title">Способы оплаты</span>
+            </div>
+         </div>
+
+         <section class="template22">
+            <div class="template22__container">
+               <div class="template22__heading _heading _content">
+                  <h2>Способы оплаты</h2>
+               </div>
+
+               <div class="template22__items">
+                  <div class="template22__item template22-item">
+                     <div class="template22-item__wrapper">
+                        <div class="template22-item__image"><img src="@img/main/template22-1-1.svg" alt=""></div>
+                        <div class="template22-item__text _content">
+                           <p>Пластиковые карты: МИР, VISA, <br> Mastercard (комиссия 0%)</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="template22__item template22-item">
+                     <div class="template22-item__wrapper">
+                        <div class="template22-item__image"><img src="@img/main/template22-1-2.svg" alt=""></div>
+                        <div class="template22-item__text _content">
+                           <p>Системы мобильных платежей: ApplePay, <br> GooglePay, SamsungPay, Юmoney </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="template22__note _content">
+                  <p>Оплата услуг осуществляется через платежные системы Сбербанка и Tinkoff. <br>
+                     Оплатить свои заказы Вы можете в разделе текущие личного кабинета, нажав кнопку с изображением корзины.</p>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

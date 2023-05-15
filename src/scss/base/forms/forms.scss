@@ -1,0 +1,80 @@
+//<FORM>
+// Снипет (HTML):
+.form {
+	// .form__row
+	&__row {
+	}
+
+	// .form__item
+	&__item {
+		@include adaptiveValue("margin-bottom", 32, 24);
+	}
+
+	// .form__label
+	&__label {
+		display: flex;
+		align-items: center;
+		gap: rem(4);
+		margin-bottom: rem(4);
+
+		span {
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+		}
+	}
+}
+//</FORM>
+
+// <BUTTONS>
+// Снипет (HTML): btn
+@import "button";
+
+// <INPUTS>
+// Снипет (HTML): inp
+@import "input";
+
+// <CHECK>
+// Снипет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+@import "radio";
+
+// <Number>
+// Снипет (HTML):
+@import "number";
+
+// <SELECT>
+// Снипет (HTML): sel
+@import "select";
+
+// <RATING>
+// Снипет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+// @import "quantity";
+
+// <CALENDAR>
+// Снипет (HTML):
+@import "datepicker";
+
+// <col>
+// Снипет (HTML):
+@import "col";
+
+// <info>
+// Снипет (HTML):
+@import "info";
+
+// <range>
+// Снипет (HTML):
+@import "range";
+
+// <search>
+// Снипет (HTML):
+@import "search";

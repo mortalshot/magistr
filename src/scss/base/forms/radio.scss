@@ -1,0 +1,83 @@
+.options {
+	display: inline-flex;
+	gap: rem(3);
+	background-color: #f0f2f5;
+	padding: rem(4);
+	border-radius: rem(30);
+
+	// .options__item
+	&__item {
+		position: relative;
+		cursor: pointer;
+	}
+
+	// .options__input
+	&__input {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		position: absolute;
+
+		&:checked + .options__label {
+			color: $mainColor;
+			background-color: $White;
+			box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.14);
+		}
+	}
+
+	// .options__label
+	&__label {
+		cursor: pointer;
+		display: block;
+		padding: rem(8) rem(24);
+		font-weight: 600;
+		line-height: math.div(17, 14);
+		color: $Grey;
+		border-radius: rem(30);
+		background-color: transparent;
+		transition: $transition ease color, $transition background-color 0s;
+	}
+
+	// .options__text
+	&__text {
+	}
+
+	// .options_full
+	&_full {
+		display: flex;
+
+		.options__item {
+			flex: 1;
+			text-align: center;
+		}
+	}
+
+	// .options_marks
+	&_marks {
+		.options__text {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: rem(8);
+		}
+	}
+}
+
+._icon-mark-satisfactory {
+	&::before {
+		color: #ec9023;
+		font-size: rem(18);
+	}
+}
+._icon-mark-good {
+	&::before {
+		color: #fccb4d;
+		font-size: rem(18);
+	}
+}
+._icon-mark-excellent {
+	&::before {
+		color: #4caf50;
+		font-size: rem(18);
+	}
+}

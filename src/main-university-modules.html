@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Модули АП ВУЗ"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <main class="page">
+         <div class="sublist">
+            <div class="sublist__container">
+               <nav class="sublist__menu">
+                  <ul class="sublist__list">
+                     <li class="sublist__item"><a href="main-payments.html">Способы оплаты</a></li>
+                     <li class="sublist__item"><a href="main-place-order.html">Как заказать</a></li>
+                     <li class="sublist__item"><a href="main-work-conditions.html">Условия работы</a></li>
+                     <li class="sublist__item"><a href="main-faq.html">Вопрос ответ</a></li>
+                     <li class="sublist__item"><a href="main-list-subjects.html">Список выполняемых работ</a></li>
+                     <li class="sublist__item sublist__item_active"><a href="main-university-modules.html">Модули АП ВУЗ</a></li>
+                     <li class="sublist__item"><a href="main-originality-check.html">Проверка оригинальности</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+
+         <div class="site-breadcrumbs">
+            <div class="site-breadcrumbs__container">
+               <span class="site-breadcrumbs__link">
+                  <a href=""> <span>Главная</span> </a>
+               </span>
+               <span class="site-breadcrumbs__separator _icon-chevron-right"></span>
+               <span class="site-breadcrumbs__title">Модули АП ВУЗ</span>
+            </div>
+         </div>
+
+         <section class="template26">
+            <div class="template26__container">
+               <div class="template26__heading _heading _content">
+                  <h1>Модули АП ВУЗ</h1>
+                  <p>Список подключенных модулей по которым мы проверяем оригинальность в системе АП ВУЗ:</p>
+               </div>
+
+               <div class="template26__row _row">
+                  <div class="template26__column col-12 col-sm-6">
+                     <ul class="template26__list">
+                        <li class="template26__item">Модуль поиска ИПС "Адилет"</li>
+                        <li class="template26__item">Модуль выделения библиографических записей</li>
+                        <li class="template26__item">Сводная коллекция ЭБС</li>
+                        <li class="template26__item">Коллекция РГБ</li>
+                        <li class="template26__item">Цитирование</li>
+                        <li class="template26__item">Модуль поиска переводных заимствований</li>
+                        <li class="template26__item">Коллекция eLIBRARY.RU</li>
+                        <li class="template26__item">Коллекция ГАРАНТ</li>
+                        <li class="template26__item">Модуль поиска Интернет</li>
+                     </ul>
+                  </div>
+                  <div class="template26__column col-12 col-sm-6">
+                     <ul class="template26__list">
+                        <li class="template26__item">Коллекция Медицина</li>
+                        <li class="template26__item">Модуль поиска</li>
+                        <li class="template26__item">Модуль поиска перефразирований eLIBRARY.RU</li>
+                        <li class="template26__item">Диссертации и авторефераты НББ</li>
+                        <li class="template26__item">Модуль поиска перефразирований Интернет</li>
+                        <li class="template26__item">Коллекция LEXPRO</li>
+                        <li class="template26__item">Коллекция Патенты</li>
+                        <li class="template26__item">Модуль поиска общеупотребительных выражений</li>
+                        <li class="template26__item">Кольцо вузов</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

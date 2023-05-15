@@ -1,0 +1,118 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML):
+
+// .btn
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: rem(14);
+	padding: rem(15) rem(24);
+	@include adaptiveValue("padding-top", 15, 12);
+	@include adaptiveValue("padding-bottom", 15, 12);
+	font-weight: 700;
+	@include adaptiveValue("font-size", 18, 16);
+	line-height: math.div(20, 16);
+	text-align: center;
+	border: rem(1) solid;
+
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+
+	// .btn_bg-orange
+	&_bg-orange {
+		background-color: $Orange;
+		color: $White;
+		border-color: $Orange;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				background-color: #d68322;
+				border-color: #d68322;
+			}
+		}
+	}
+
+	// .btn_bg-gray
+	&_bg-gray {
+		background-color: #f1f3f6;
+		color: $DGBlue;
+		border-color: $Line;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				background-color: #e3e7ed;
+				border-color: #e3e7ed;
+				color: $mainColor;
+			}
+		}
+	}
+
+	// .btn_bg-transparent
+	&_bg-transparent {
+		background-color: transparent;
+		color: $DGBlue;
+		border-color: transparent;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				background-color: #f0f2f5;
+				border-color: #f0f2f5;
+			}
+		}
+	}
+
+	// .btn_text-orange
+	&_text-orange {
+		background-color: $White;
+		color: $Orange;
+		border-color: $Grey;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				background-color: #e3e7ed;
+			}
+		}
+	}
+}
+
+// .text-link
+.text-link {
+	font-weight: 600;
+	font-size: rem(14);
+	line-height: math.div(17, 14);
+	padding: 0;
+	border: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: rem(4);
+
+	span {
+		text-decoration: underline transparent from-font;
+		text-underline-offset: 3px;
+		transition: $transition ease text-decoration 0s;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				text-decoration: underline from-font;
+			}
+		}
+	}
+
+	// .text-link_orange
+	&_orange {
+		color: $Orange;
+	}
+}
