@@ -423,6 +423,68 @@
         }
     }
     modules_flsModules.mousePrlx = new MousePRLX({});
+    function formRating() {
+        const ratings = document.querySelectorAll(".rating");
+        if (ratings.length > 0) initRatings();
+        function initRatings() {
+            let ratingActive, ratingValue;
+            for (let index = 0; index < ratings.length; index++) {
+                const rating = ratings[index];
+                initRating(rating);
+            }
+            function initRating(rating) {
+                initRatingVars(rating);
+                setRatingActiveWidth();
+                if (rating.classList.contains("rating_set")) setRating(rating);
+            }
+            function initRatingVars(rating) {
+                ratingActive = rating.querySelector(".rating__active");
+                ratingValue = rating.querySelector(".rating__value");
+            }
+            function setRatingActiveWidth(index = ratingValue.innerHTML) {
+                const ratingActiveWidth = index / .05;
+                ratingActive.style.width = `${ratingActiveWidth}%`;
+            }
+            function setRating(rating) {
+                const ratingItems = rating.querySelectorAll(".rating__item");
+                for (let index = 0; index < ratingItems.length; index++) {
+                    const ratingItem = ratingItems[index];
+                    ratingItem.addEventListener("mouseenter", (function(e) {
+                        initRatingVars(rating);
+                        setRatingActiveWidth(ratingItem.value);
+                    }));
+                    ratingItem.addEventListener("mouseleave", (function(e) {
+                        setRatingActiveWidth();
+                    }));
+                    ratingItem.addEventListener("click", (function(e) {
+                        initRatingVars(rating);
+                        if (rating.dataset.ajax) setRatingValue(ratingItem.value, rating); else {
+                            ratingValue.innerHTML = index + 1;
+                            setRatingActiveWidth();
+                        }
+                    }));
+                }
+            }
+            async function setRatingValue(value, rating) {
+                if (!rating.classList.contains("rating_sending")) {
+                    rating.classList.add("rating_sending");
+                    let response = await fetch("rating.json", {
+                        method: "GET"
+                    });
+                    if (response.ok) {
+                        const result = await response.json();
+                        const newRating = result.newRating;
+                        ratingValue.innerHTML = newRating;
+                        setRatingActiveWidth();
+                        rating.classList.remove("rating_sending");
+                    } else {
+                        alert("Ошибка");
+                        rating.classList.remove("rating_sending");
+                    }
+                }
+            }
+        }
+    }
     function ssr_window_esm_isObject(obj) {
         return null !== obj && "object" === typeof obj && "constructor" in obj && obj.constructor === Object;
     }
@@ -3936,6 +3998,7 @@
             spaceBetween: 20,
             autoHeight: false,
             speed: 800,
+            watchOverflow: true,
             pagination: {
                 el: ".template7 .swiper-pagination",
                 clickable: true
@@ -3968,12 +4031,35 @@
             spaceBetween: 16,
             autoHeight: false,
             speed: 800,
+            watchOverflow: true,
             breakpoints: {},
             on: {
                 574.98: {
                     spaceBetween: 21
                 }
             }
+        });
+        if (document.querySelector(".template39__slider")) new core(".template39__slider", {
+            modules: [],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1.1,
+            spaceBetween: 20,
+            autoHeight: false,
+            speed: 800,
+            watchOverflow: true,
+            breakpoints: {
+                574.98: {
+                    slidesPerView: 2
+                },
+                767.98: {
+                    slidesPerView: 3
+                },
+                991.98: {
+                    slidesPerView: 4
+                }
+            },
+            on: {}
         });
     }
     window.addEventListener("load", (function(e) {
@@ -5776,4 +5862,5 @@ PERFORMANCE OF THIS SOFTWARE.
     menuInit();
     spollers();
     tabs();
+    formRating();
 })();

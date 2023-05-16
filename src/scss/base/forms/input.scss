@@ -9,7 +9,7 @@ textarea {
 	appearance: none;
 }
 
-input {
+input, textarea {
 	display: block;
 	width: 100%;
 	font-weight: 400;
@@ -26,6 +26,7 @@ input {
 }
 
 .form__input {
+	width: 100%;
 	@include adaptiveValue("height", 48, 38);
 	padding: rem(14) rem(16);
 	@include adaptiveValue("padding-top", 14, 10);
@@ -45,7 +46,7 @@ input {
 	}
 }
 
-textarea.input {
+textarea.form__input {
+	height: initial;
 	resize: none;
-	padding: 0px 0px;
 }

@@ -35,7 +35,7 @@
    &__input {
       background: #f2f4f7;
       border: rem(1) solid #d8d9e1;
-      padding: rem(10) rem(10) rem(10) rem(36);
+      padding: rem(10) rem(43) rem(10) rem(36);
       height: rem(40);
       border-radius: rem(10);
       font-size: rem(14);
@@ -44,11 +44,45 @@
       @media (min-width: $mobile) {
          height: rem(44);
          border-radius: 14px;
-         padding: rem(12) rem(15) rem(12) rem(43);
+         padding: rem(12) rem(43) rem(12) rem(43);
       }
 
       &::placeholder {
          color: #82879e;
+      }
+
+      &:focus {
+         border-color: $Orange;
+         box-shadow: 0px 2px 8px rgba(233, 98, 22, 0.2);
+
+         &::placeholder {
+            opacity: 0;
+         }
+      }
+   }
+
+   // .main-search__reset
+   &__reset {
+      display: block;
+      width: rem(30);
+      height: rem(30);
+      flex: 0 0 rem(30);
+      border-radius: rem(8);
+      background: $White url(../img/icons/close2.svg) no-repeat center/10px;
+      position: absolute;
+      right: rem(7);
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      /* opacity: 0;
+      visibility: hidden;
+      pointer-events: none; */
+      transition: $transition ease all 0s;
+
+      @media (any-hover: hover) {
+         &:hover {
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+         }
       }
    }
 

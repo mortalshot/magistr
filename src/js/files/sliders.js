@@ -57,6 +57,7 @@ function initSliders() {
 			spaceBetween: 20,
 			autoHeight: false,
 			speed: 800,
+			watchOverflow: true,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
@@ -129,6 +130,7 @@ function initSliders() {
 			spaceBetween: 16,
 			autoHeight: false,
 			speed: 800,
+			watchOverflow: true,
 
 			//touchRatio: 0,
 			//simulateTouch: false,
@@ -163,6 +165,61 @@ function initSliders() {
 				574.98: {
 					spaceBetween: 21,
 				},
+			}
+		});
+	}
+
+	if (document.querySelector('.template39__slider')) {
+		new Swiper('.template39__slider', {
+			modules: [],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1.1,
+			spaceBetween: 20,
+			autoHeight: false,
+			speed: 800,
+			watchOverflow: true,
+
+			//touchRatio: 0,
+			//simulateTouch: false,
+			// loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+			// Брейкпоинты
+
+			breakpoints: {
+				574.98: {
+					slidesPerView: 2,
+				},
+				767.98: {
+					slidesPerView: 3,
+				},
+				991.98: {
+					slidesPerView: 4,
+				},
+			},
+
+			// События
+			on: {
+
 			}
 		});
 	}

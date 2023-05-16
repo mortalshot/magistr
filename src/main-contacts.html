@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <main class="page">
+         <div class="site-breadcrumbs">
+            <div class="site-breadcrumbs__container">
+               <span class="site-breadcrumbs__link">
+                  <a href=""> <span>Главная</span> </a>
+               </span>
+               <span class="site-breadcrumbs__separator _icon-chevron-right"></span>
+               <span class="site-breadcrumbs__title">Контакты</span>
+            </div>
+         </div>
+
+         <section class="template40">
+            <div class="template40__container">
+               <div class="template40__heading _content">
+                  <h1>Контакты <br> для интернет-заказов</h1>
+               </div>
+
+               <div class="template40__items template29__row _row">
+                  <div class="template29__item col-12 col-md-4">
+                     <div class="template29__wrapper _wrapper">
+                        <div class="template29__main">
+                           <div class="template29__heading">
+                              <div class="template29__person">
+                                 <div class="template29__position">Менеджер</div>
+                                 <div class="template29__name">Абдуллин <br> Ренат</div>
+                              </div>
+                           </div>
+
+                           <div class="template29__body">
+                              <div class="template29__contacts template29-contacts">
+                                 <a class="template29-contacts__item" href="mailto:zakaz@magistr.ru">
+                                    <img src="img/icons/email.svg" alt="" loading="lazy">
+                                    <span>zakaz@magistr.ru</span>
+                                 </a>
+                                 <a class="template29-contacts__item" href="tel:88005055601">
+                                    <img src="img/icons/phone.svg" alt="" loading="lazy">
+                                    <span>8 (800) 505-56-01</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="template29__item col-12 col-md-4">
+                     <div class="template29__wrapper _wrapper">
+                        <div class="template29__main">
+                           <div class="template29__heading">
+                              <div class="template29__person">
+                                 <div class="template29__position">Менеджер</div>
+                                 <div class="template29__name">Туркунова <br> Алсу</div>
+                              </div>
+                           </div>
+
+                           <div class="template29__body">
+                              <div class="template29__contacts template29-contacts">
+                                 <a class="template29-contacts__item" href="mailto:zakaz2@magistr.ru">
+                                    <img src="img/icons/email.svg" alt="" loading="lazy">
+                                    <span>zakaz2@magistr.ru</span>
+                                 </a>
+                                 <a class="template29-contacts__item" href="tel:88005055601">
+                                    <img src="img/icons/phone.svg" alt="" loading="lazy">
+                                    <span>8 (800) 505-56-01</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="template29__item col-12 col-md-4">
+                     <div class="template29__wrapper _wrapper">
+                        <div class="template29__main">
+                           <div class="template29__heading">
+                              <div class="template29__person">
+                                 <div class="template29__position">Менеджер</div>
+                                 <div class="template29__name">Стародубцева <br> Екатерина</div>
+                              </div>
+                           </div>
+
+                           <div class="template29__body">
+                              <div class="template29__contacts template29-contacts">
+                                 <a class="template29-contacts__item" href="mailto:moscow@magistr.ru">
+                                    <img src="img/icons/email.svg" alt="" loading="lazy">
+                                    <span>moscow@magistr.ru</span>
+                                 </a>
+                                 <a class="template29-contacts__item" href="tel:88005055601">
+                                    <img src="img/icons/phone.svg" alt="" loading="lazy">
+                                    <span>8 (800) 505-56-01</span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="template40-form">
+                  <div class="template40-form__wrapper _wrapper">
+                     <div class="template40-form__aside">
+                        <h2 class="template40-form__title">Заполните форму</h2>
+                        <div class="template40-form__image"><img src="@img/main/template40-1-form-image.png" alt="" loading="lazy"></div>
+                        <div class="template40-form__text">Наш менеджер свяжется с вами в ближайшее время</div>
+                     </div>
+                     <div class="template40-form__main">
+                        <div class="form__row">
+                           <div class="form__item col-12 col-sm-6">
+                              <label for="order-name" class="form__label">Ваше имя</label>
+                              <input id="order-name" type="text" name="order-name" placeholder="Введите ваше имя" class="form__input" required>
+                           </div>
+
+                           <div class="form__item col-12 col-sm-6">
+                              <label for="order-phone" class="form__label">Телефон</label>
+                              <input id="order-phone" type="text" name="order-phone" placeholder="+7 999 999 99 99" class="form__input form__input_phone" required>
+                           </div>
+
+                           <div class="form__item col-12 col-sm-6">
+                              <label for="order-email" class="form__label">Ваша почта</label>
+                              <input id="order-email" type="email" name="order-email" placeholder="Введите вашу почту" class="form__input" required>
+                           </div>
+
+                           <div class="form__item col-12 col-sm-6">
+                              <label for="order-theme" class="form__label">Тема вопроса</label>
+                              <input id="order-theme" type="text" name="order-theme" placeholder="Например: как оплатить?" class="form__input" required>
+                           </div>
+
+                           <div class="form__item col-12">
+                              <div class="form__label">Текст сообщения</div>
+                              <textarea name="review-text" placeholder="" class="form__input" rows="7"></textarea>
+                           </div>
+                        </div>
+
+                        <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Отправить сообщение</button></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="template20">
+				<div class="template20__container">
+					<div class="template20__top">
+						<h2 class="template20__caption">Наши офисы в городах</h2>
+						<div class="template20__text _content">
+							<p>Начиная с марта 2006 года в компании введена многоуровневая система контроля качества. Каждая выполненная работа проверяется на соответствие стандартам оформления и соблюдение требований заказчика. Введена трехступенчатая проверка работ: автором, менеджером отдела контроля качества, персональным менеджером заказчика.</p>
+							<p>Общий штат компании более 250 человек, поэтому Вы можете быть уверены, что мы выполним взятые на себя обязательства. Наша команда авторов имеет большой опыт написания работ различного уровня сложности, и знает уровень требований всех российских ВУЗов. Написанием диссертаций на заказ, дипломов на заказ, курсовых, рефератов мы занимаемся профессионально.</p>
+						</div>
+					</div>
+
+					<div class="template20__map">
+						<iframe src="https://yandex.ru/map-widget/v1/?ll=45.604160%2C57.989603&mode=whatshere&whatshere%5Bpoint%5D=37.594567%2C55.771879&whatshere%5Bzoom%5D=17&z=5.31" frameborder="0" allowfullscreen="false" loading="lazy"></iframe>
+					</div>
+				</div>
+			</section>
+      </main>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -83,7 +83,7 @@ flsForms.formFieldsInit({
 // flsForms.formQuantity();
 
 /* Модуль звездного рейтинга */
-// flsForms.formRating();
+flsForms.formRating();
 
 /* Модуль работы с календарем */
 // import './files/forms/datepicker.js'
