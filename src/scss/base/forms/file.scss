@@ -1,0 +1,226 @@
+.file {
+   display: grid;
+   align-content: flex-start;
+   row-gap: rem(16);
+
+   // .file__label
+   &__label {
+      gap: rem(8);
+
+      i {
+         flex: 0 0 rem(18);
+         font-size: rem(18);
+      }
+   }
+
+   // .file__list
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      @include adaptiveValue("margin", -8, -4);
+   }
+
+   // .file__item
+   &__item {
+      flex: 0 0 100%;
+      @include adaptiveValue("padding", 8, 4);
+
+      @media (min-width: $mobileM) {
+         flex: 0 0 rem(136);
+         @include adaptiveValue("flex-basis", 136, 116, 768, 575, 1);
+      }
+   }
+
+   // .file__note
+   &__note {
+      font-size: rem(12);
+      line-height: 130%;
+      color: $DGBlue;
+
+      & > * {
+         margin-top: rem(4);
+         margin-bottom: rem(4);
+      }
+   }
+}
+
+.file-item {
+   // .file-item__wrapper
+   &__wrapper {
+      height: 100%;
+      padding: rem(10);
+      background: #f0f2f5;
+      border-radius: rem(10);
+      position: relative;
+      font-size: rem(10);
+      line-height: math.div(13, 10);
+   }
+
+   // .file-item__extension
+   &__extension {
+      display: flex;
+      align-items: center;
+      @include adaptiveValue("gap", 16, 8);
+      @include adaptiveValue("font-size", 14, 10);
+
+      &:not(:last-child) {
+         margin-bottom: rem(32);
+         @include adaptiveValue("margin-bottom", 32, 8, 767, 575, 1);
+
+         @media (max-width: $mobileM) {
+            margin-bottom: rem(8);
+         }
+      }
+   }
+
+   // .file-item__body
+   &__body {
+      display: grid;
+      align-content: flex-start;
+      row-gap: rem(2);
+   }
+
+   // .file-item__name
+   &__name {
+   }
+
+   // .file-item__size
+   &__size {
+      color: $Grey;
+   }
+
+   // .file-item__delete
+   &__delete {
+      flex: 0 0 rem(16);
+      width: rem(16);
+      height: rem(16);
+      border-radius: 50%;
+      background: url(../img/icons/delete.svg) no-repeat center/contain;
+      position: absolute;
+      top: rem(10);
+      right: rem(10);
+
+      @media (any-hover: hover) {
+         transition: $transition ease transform 0s;
+         &:hover {
+            transform: rotate(-90deg);
+         }
+      }
+   }
+
+   // .file-item__error-title
+   &__error-title {
+      font-weight: 600;
+      @include adaptiveValue("font-size", 14, 12);
+   }
+
+   // .file-item__error-text
+   &__error-text {
+   }
+
+   // .file-item__progress
+   &__progress {
+      flex: 1;
+      display: grid;
+      align-content: space-between;
+      gap: rem(16);
+
+      @media (max-width:$mobileM){
+          gap: rem(8); 
+      }
+   }
+
+   // .file-item__progress-count
+   &__progress-count {
+      font-weight: 600;
+      @include adaptiveValue("font-size", 14, 10);
+      line-height: math.div(18, 14);
+      color: $BBLue;
+   }
+
+   // .file-item__progress-line
+   &__progress-line {
+      display: block;
+      height: rem(4);
+      border-radius: rem(22);
+      background: #c9ced6;
+      position: relative;
+
+      span {
+         display: block;
+         height: rem(4);
+         background: $BBLue;
+         border-radius: 10px;
+         position: absolute;
+         z-index: 1;
+      }
+   }
+
+   // .file-item__upload
+   &__upload {
+      position: absolute;
+      display: block;
+      opacity: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: rem(0);
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+      background-color: transparent;
+   }
+
+   // .file-item_uploaded
+   &_uploaded {
+      .file-item__extension {
+         padding-right: rem(20);
+      }
+   }
+
+   // .file-item_error
+   &_error {
+      color: #cc4b2f;
+
+      @media (min-width: $mobileM) {
+         text-align: center;
+      }
+
+      .file-item__wrapper {
+         display: grid;
+         align-content: flex-end;
+         gap: rem(16);
+
+         @media (max-width: $mobileM) {
+            gap: rem(8);
+         }
+      }
+   }
+
+   // .file-item_progress
+   &_progress {
+      @media (min-width: $mobileM) {
+         text-align: center;
+      }
+
+      .file-item__wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: rem(16);
+
+         @media (max-width:$mobileM){
+             gap: rem(8); 
+         }
+      }
+   }
+
+   // .file-item_upload
+   &_upload {
+      .file-item__wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+}

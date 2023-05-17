@@ -1,0 +1,79 @@
+.promocode {
+   display: grid;
+   align-content: flex-start;
+   justify-items: flex-start;
+   row-gap: rem(8);
+
+   // .promocode__label
+   &__label {
+   }
+   label.promocode__label {
+      cursor: pointer;
+   }
+
+   // .promocode__row
+   &__row {
+      display: flex;
+      align-items: center;
+      gap: rem(24);
+   }
+
+   // .promocode__wrapper
+   &__wrapper {
+      position: relative;
+   }
+
+   // .promocode__input
+   &__input {
+      padding-right: rem(56);
+   }
+
+   // .promocode__icon
+   &__icon {
+      display: block;
+      width: rem(24);
+      height: rem(24);
+      flex: 0 0 rem(24);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: rem(16);
+
+      &::before {
+         content: "\e922";
+         @extend %ic;
+         font-size: rem(24);
+         color: $Orange;
+
+         .promocode_active & {
+            content: "\e91a";
+            color: #4caf50;
+            pointer-events: none;
+         }
+      }
+   }
+
+   // .promocode__discount
+   &__discount {
+      font-weight: 600;
+      font-size: rem(14);
+      line-height: math.div(17, 14);
+      color: #4caf50;
+   }
+
+   // .promocode__reset
+   &__reset {
+      font-size: rem(12);
+      line-height: math.div(15, 12);
+      color: #cc4b2f;
+      text-decoration: underline from-font;
+      text-underline-offset: 2px;
+      transition: $transition ease text-decoration 0s;
+
+      @media (any-hover: hover) {
+         &:hover {
+            text-decoration: underline transparent from-font;
+         }
+      }
+   }
+}
