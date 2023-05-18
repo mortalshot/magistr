@@ -105,6 +105,10 @@
 
    // .main-footer__socials
    &__socials {
+      i {
+         @include adaptiveValue("font-size", 20, 16);
+      }
+
       span {
          opacity: 0.7;
       }
@@ -200,7 +204,7 @@
       ul {
          display: grid;
          align-content: flex-start;
-         row-gap: rem(16);
+         @include adaptiveValue("row-gap", 16, 12);
          column-gap: rem(8);
 
          @media (max-width: $mobile) {
@@ -219,11 +223,11 @@
          li {
             &:first-child {
                font-weight: 600;
-               font-size: rem(12);
+               @include adaptiveValue("font-size", 12, 10);
                line-height: 1.1;
                letter-spacing: em(0.6, 12);
                text-transform: uppercase;
-               margin-bottom: rem(8);
+               @include adaptiveValue("margin-bottom", 8, 0);
 
                a {
                   opacity: 0.5;
@@ -259,6 +263,8 @@
 
    // .main-footer__feedback
    &__feedback {
+      font-size: rem(14);
+
       &:not(:last-child) {
          padding-bottom: rem(16);
          margin-bottom: rem(16);
@@ -301,6 +307,8 @@
 
    // .main-footer__schedule
    &__schedule {
+      font-size: rem(14);
+
       .schedule__caption {
          opacity: 0.5;
       }
@@ -357,6 +365,10 @@
    &__payments {
       @media (max-width: $mobile) {
          order: 2;
+      }
+
+      .payments__item img {
+         @include adaptiveValue("max-width", 63, 39);
       }
    }
 }

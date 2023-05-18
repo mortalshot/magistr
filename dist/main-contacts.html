@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230517181715">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230518160514">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +54,7 @@
 							</div>
 						</div>
 
-						<a href="" class="main-header__account account-button">
+						<a href="main-authorization.html" class="main-header__account account-button">
 							<i class="_icon-user-lk"></i>
 							<span>Личный кабинет</span>
 						</a>
@@ -629,6 +629,13 @@
 							</ul>
 						</nav>
 
+						<div class="error-message error-message_red _active">
+							<div class="error-message__wrapper">
+								<img src="img/icons/alert.svg" alt="" loading="lazy">
+								<span>Не все обязательные поля заполнены</span>
+							</div>
+						</div>
+
 						<div id="ordering-step-1" class="ordering__step">
 							<div class="ordering__body">
 								<div class="ordering__caption">1 шаг. Информация о заказе</div>
@@ -681,7 +688,7 @@
 										</div>
 
 										<div class="form__input-number input-number">
-											<input type="number" name="form[]" placeholder="0" class="form__input input-number__input">
+											<input type="number" name="form[]" placeholder="0" class="form__input form__input_invalid input-number__input">
 											<span class="input-number__descr">стр.</span>
 										</div>
 									</div>
@@ -1235,7 +1242,6 @@
 					<div class="_content">
 						<h3>Пользовательское соглашение</h3>
 						<p></p>
-						<p></p>
 
 						<h5>Пользовательское соглашение</h5>
 						<p>Работы, выполняются сотрудниками необходимой квалификации, проходят проверку в отделе контроля качества и в системе Антиплагиат (www.antiplagiat.ru).</p>
@@ -1290,7 +1296,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230517181715"></script>
+	<script src="js/app.min.js?_v=20230518160514"></script>
 </body>
 
 </html>

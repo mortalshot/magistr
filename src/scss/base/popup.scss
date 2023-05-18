@@ -65,6 +65,7 @@ body::after {
 		width: 100%;
 		max-width: 900px;
 		border-radius: 20px;
+
 		.lock & {
 			visibility: visible;
 		}
@@ -217,7 +218,7 @@ body::after {
 		}
 
 		.popup__content {
-			@include adaptiveValue("padding-top", 50, 20);
+			@include adaptiveValue("padding-top", 50, 32);
 			@include adaptiveValue("padding-bottom", 50, 20);
 		}
 	}
@@ -766,5 +767,19 @@ body::after {
 			align-items: center;
 			gap: rem(16);
 		}
+	}
+}
+
+.privacy-actions {
+	display: grid;
+	gap: rem(16);
+
+	@media (min-width: $mobileSmall) {
+		display: flex;
+		align-items: center;
+	}
+
+	&:not(:first-child) {
+		@include adaptiveValue("margin-top", 32, 24);
 	}
 }

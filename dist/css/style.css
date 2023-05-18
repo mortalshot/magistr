@@ -112,6 +112,10 @@
   display: block;
 }
 
+._icon-filter:before {
+  content: "\e93d";
+}
+
 ._icon-arrow-left:before {
   content: "\e93c";
 }
@@ -549,6 +553,10 @@ h6 {
   overflow: hidden;
 }
 
+label.form__label {
+  cursor: pointer;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -772,6 +780,39 @@ textarea::placeholder {
 
 .form__input:focus::placeholder {
   opacity: 0;
+}
+
+.form__input_invalid {
+  color: #cc4b2f;
+  border-color: #cc4b2f;
+}
+
+.form__input_invalid::-webkit-input-placeholder {
+  color: #cc4b2f;
+}
+
+.form__input_invalid::-moz-placeholder {
+  color: #cc4b2f;
+}
+
+.form__input_invalid:-ms-input-placeholder {
+  color: #cc4b2f;
+}
+
+.form__input_invalid::-ms-input-placeholder {
+  color: #cc4b2f;
+}
+
+.form__input_invalid::placeholder {
+  color: #cc4b2f;
+}
+
+.form__error {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  margin-top: 0.5rem;
+  color: #cc4b2f;
 }
 
 textarea.form__input {
@@ -1095,8 +1136,16 @@ label.input-number:focus input::placeholder {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 130%;
+  font-size: clamp( 0.875rem , 0.8295454545rem  +  0.2272727273vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 55);
+  	} */
+  line-height: 1.25;
 }
 
 .select__input-container {
@@ -2071,7 +2120,15 @@ input[type=range]::-webkit-slider-runnable-track {
 .password__toggler::before {
   content: "\e913";
   color: #595c68;
-  font-size: 1.25rem;
+  font-size: clamp( 1.125rem , 1.0795454545rem  +  0.2272727273vw , 1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .password__recover {
@@ -2456,14 +2513,14 @@ body::after {
 }
 
 .popup_privacy .popup__content {
-  padding-top: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem );
+  padding-top: clamp( 2rem , 1.5909090909rem  +  2.0454545455vw , 3.125rem );
   /* 	// Если поддерживается clamp();
   	@supports (padding-top: $propertyValue) {
   		padding-top: $propertyValue;
   	}
   	// Если не поддерживается clamp();
   	@supports not (padding-top: $propertyValue) {
-  		padding-top: calc(1.25rem + 1.875 * (100vw - 20rem) / 55);
+  		padding-top: calc(2rem + 1.125 * (100vw - 20rem) / 55);
   	} */
   padding-bottom: clamp( 1.25rem , 0.5681818182rem  +  3.4090909091vw , 3.125rem );
   /* 	// Если поддерживается clamp();
@@ -3084,6 +3141,24 @@ body::after {
   padding-top: 0;
 }
 
+.privacy-actions {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+.privacy-actions:not(:first-child) {
+  margin-top: clamp( 1.5rem , 1.3181818182rem  +  0.9090909091vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-top: $propertyValue) {
+  		margin-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-top: $propertyValue) {
+  		margin-top: calc(1.5rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
 .spollers__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3458,23 +3533,35 @@ video {
 }
 
 section {
-  padding-top: clamp( 2.5rem , 1.7045454545rem  +  3.9772727273vw , 4.6875rem );
+  padding-top: clamp( 2.1875rem , 1.3920454545rem  +  3.9772727273vw , 4.375rem );
   /* 	// Если поддерживается clamp();
   	@supports (padding-top: $propertyValue) {
   		padding-top: $propertyValue;
   	}
   	// Если не поддерживается clamp();
   	@supports not (padding-top: $propertyValue) {
-  		padding-top: calc(2.5rem + 2.1875 * (100vw - 20rem) / 55);
+  		padding-top: calc(2.1875rem + 2.1875 * (100vw - 20rem) / 55);
   	} */
-  padding-bottom: clamp( 2.5rem , 1.7045454545rem  +  3.9772727273vw , 4.6875rem );
+  padding-bottom: clamp( 2.1875rem , 1.3920454545rem  +  3.9772727273vw , 4.375rem );
   /* 	// Если поддерживается clamp();
   	@supports (padding-bottom: $propertyValue) {
   		padding-bottom: $propertyValue;
   	}
   	// Если не поддерживается clamp();
   	@supports not (padding-bottom: $propertyValue) {
-  		padding-bottom: calc(2.5rem + 2.1875 * (100vw - 20rem) / 55);
+  		padding-bottom: calc(2.1875rem + 2.1875 * (100vw - 20rem) / 55);
+  	} */
+}
+
+section:last-child {
+  padding-bottom: clamp( 4.375rem , 2.7840909091rem  +  7.9545454545vw , 8.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(4.375rem + 4.375 * (100vw - 20rem) / 55);
   	} */
 }
 
@@ -3744,6 +3831,117 @@ section {
   	} */
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.error-message {
+  position: fixed;
+  left: 50%;
+  top: 1.875rem;
+  z-index: 50;
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  width: 100%;
+  max-width: 31.25rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: 0.5s ease all 0s;
+  -o-transition: 0.5s ease all 0s;
+  transition: 0.5s ease all 0s;
+}
+
+.error-message._active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.error-message_red {
+  color: #fff;
+}
+
+.error-message_red .error-message__wrapper {
+  background-color: #cc4b2f;
+}
+
+.error-message__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp( 0.625rem , 0.5340909091rem  +  0.4545454545vw , 0.875rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (gap: $propertyValue) {
+  		gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (gap: $propertyValue) {
+  		gap: calc(0.625rem + 0.25 * (100vw - 20rem) / 55);
+  	} */
+  border-radius: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (border-radius: $propertyValue) {
+  		border-radius: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (border-radius: $propertyValue) {
+  		border-radius: calc(0.875rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
+  overflow: hidden;
+  font-weight: 600;
+  font-size: clamp( 0.8125rem , 0.7443181818rem  +  0.3409090909vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.8125rem + 0.1875 * (100vw - 20rem) / 55);
+  	} */
+  padding-top: clamp( 0.625rem , 0.4886363636rem  +  0.6818181818vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(0.625rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
+  padding-bottom: clamp( 0.625rem , 0.4886363636rem  +  0.6818181818vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(0.625rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
+  padding-left: clamp( 0.75rem , 0.4772727273rem  +  1.3636363636vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(0.75rem + 0.75 * (100vw - 20rem) / 55);
+  	} */
+  padding-right: clamp( 0.75rem , 0.4772727273rem  +  1.3636363636vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(0.75rem + 0.75 * (100vw - 20rem) / 55);
+  	} */
 }
 
 @-webkit-keyframes wobble-hor-bottom {
@@ -4525,6 +4723,18 @@ section {
   border-radius: 50%;
 }
 
+.main-footer__socials i {
+  font-size: clamp( 1rem , 0.9090909091rem  +  0.4545454545vw , 1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(1rem + 0.25 * (100vw - 20rem) / 55);
+  	} */
+}
+
 .main-footer__socials span {
   opacity: 0.7;
 }
@@ -4590,7 +4800,15 @@ section {
   display: grid;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  row-gap: 1rem;
+  row-gap: clamp( 0.75rem , 0.6590909091rem  +  0.4545454545vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (row-gap: $propertyValue) {
+  		row-gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (row-gap: $propertyValue) {
+  		row-gap: calc(0.75rem + 0.25 * (100vw - 20rem) / 55);
+  	} */
   -webkit-column-gap: 0.5rem;
      -moz-column-gap: 0.5rem;
           column-gap: 0.5rem;
@@ -4598,11 +4816,27 @@ section {
 
 .main-footer__menu ul li:first-child {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: clamp( 0.625rem , 0.5795454545rem  +  0.2272727273vw , 0.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.625rem + 0.125 * (100vw - 20rem) / 55);
+  	} */
   line-height: 1.1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: clamp( 0.0000000625rem , -0.1818180966rem  +  0.9090907955vw , 0.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(0.0000000625rem + 0.4999999375 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .main-footer__menu ul li:first-child a {
@@ -4616,6 +4850,10 @@ section {
   -webkit-transition: 0.3s ease text-decoration 0s;
   -o-transition: 0.3s ease text-decoration 0s;
   transition: 0.3s ease text-decoration 0s;
+}
+
+.main-footer__feedback {
+  font-size: 0.875rem;
 }
 
 .main-footer__feedback:not(:last-child) {
@@ -4637,6 +4875,10 @@ section {
 
 .main-footer__contacts .contacts__item::before {
   color: #fff;
+}
+
+.main-footer__schedule {
+  font-size: 0.875rem;
 }
 
 .main-footer__schedule .schedule__caption {
@@ -4685,6 +4927,18 @@ section {
           flex: 1;
   font-size: 0.75rem;
   opacity: 0.7;
+}
+
+.main-footer__payments .payments__item img {
+  max-width: clamp( 2.4375rem , 1.8920454545rem  +  2.7272727273vw , 3.9375rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (max-width: $propertyValue) {
+  		max-width: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (max-width: $propertyValue) {
+  		max-width: calc(2.4375rem + 1.5 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .contacts {
@@ -4812,6 +5066,11 @@ section {
   color: #595c68;
 }
 
+.template1__text > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .template1__text h1 {
   font-size: clamp( 1.4375rem , 0.5965909091rem  +  4.2045454545vw , 3.75rem );
   /* 	// Если поддерживается clamp();
@@ -4822,6 +5081,7 @@ section {
   	@supports not (font-size: $propertyValue) {
   		font-size: calc(1.4375rem + 2.3125 * (100vw - 20rem) / 55);
   	} */
+  color: #1e1f23;
 }
 
 .template1__text h2 {
@@ -4835,6 +5095,7 @@ section {
   		font-size: calc(1.125rem + 0.75 * (100vw - 20rem) / 55);
   	} */
   line-height: 1.1;
+  color: #1e1f23;
 }
 
 .template1__text p {
@@ -4902,6 +5163,31 @@ section {
 
 ._icon-star_active {
   color: #fccb4d;
+}
+
+.template2__heading {
+  font-size: 0.875rem;
+}
+
+.template2__heading > * {
+  margin-top: clamp( 0.5rem , 0.1363636364rem  +  1.8181818182vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-top: $propertyValue) {
+  		margin-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-top: $propertyValue) {
+  		margin-top: calc(0.5rem + 1 * (100vw - 20rem) / 55);
+  	} */
+  margin-bottom: clamp( 0.5rem , 0.1363636364rem  +  1.8181818182vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(0.5rem + 1 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .template2-orders {
@@ -5051,6 +5337,10 @@ section {
   	} */
 }
 
+.template3__form .form__label {
+  margin-bottom: 0.5rem;
+}
+
 .template3__total {
   background: #f8f9fb;
   border: 1px solid #e3e7ed;
@@ -5194,6 +5484,27 @@ section {
   	// Если не поддерживается clamp();
   	@supports not (row-gap: $propertyValue) {
   		row-gap: calc(1rem + 1.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.template4__heading > * {
+  margin-top: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-top: $propertyValue) {
+  		margin-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-top: $propertyValue) {
+  		margin-top: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+  margin-bottom: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 55);
   	} */
 }
 
@@ -5662,6 +5973,23 @@ section {
   margin-right: auto;
 }
 
+.template5-items__text > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.template5-items__text h3 {
+  font-size: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
 .template5-items__text p {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -5669,10 +5997,40 @@ section {
 .template6 {
   background-color: #f4f6fa;
   color: #82879e;
+  padding-top: clamp( 2.5rem , 1.1363636364rem  +  6.8181818182vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(2.5rem + 3.75 * (100vw - 20rem) / 55);
+  	} */
+  padding-bottom: clamp( 2.5rem , 1.1363636364rem  +  6.8181818182vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(2.5rem + 3.75 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .template6__heading {
   color: #1e1f23;
+}
+
+.template6__heading:not(:last-child) {
+  margin-bottom: clamp( 2rem , 1.1363636364rem  +  4.3181818182vw , 4.375rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(2rem + 2.375 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .template6 + .template11 .template11__container {
@@ -5778,11 +6136,15 @@ section {
 }
 
 .template6-items__text {
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
   max-width: 16.25rem;
 }
 
 .template7 {
   background-color: #fff;
+  border-top: 0.0625rem solid #82879e;
+  border-bottom: 0.0625rem solid #82879e;
 }
 
 .template7__heading {
@@ -6123,6 +6485,27 @@ section {
   line-height: 1.375;
 }
 
+.template9-main__text > * {
+  margin-top: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-top: $propertyValue) {
+  		margin-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-top: $propertyValue) {
+  		margin-top: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+  margin-bottom: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
 .template9-main__button .btn {
   -webkit-column-gap: 0.625rem;
      -moz-column-gap: 0.625rem;
@@ -6264,8 +6647,17 @@ section {
   line-height: 1.3125;
 }
 
-.template9-faq ._content p {
-  margin: 0.5rem 0;
+.template9-faq ._content > * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.template9-faq ._content :first-child {
+  margin-top: 0;
+}
+
+.template9-faq ._content :last-child {
+  margin-bottom: 0;
 }
 
 .template9-faq ._content strong {
@@ -6409,10 +6801,30 @@ section {
   font-weight: 600;
 }
 
+.template10 .schedule {
+  font-size: clamp( 0.875rem , 0.8295454545rem  +  0.2272727273vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.template10 .schedule .schedule__caption {
+  margin-bottom: 0.75rem;
+}
+
 .template10__button .btn_bg-gray {
   gap: 0.5rem;
   color: #1e1f23;
   background-color: #e3e7ed;
+}
+
+.template10 + .template11 {
+  padding-top: 0;
 }
 
 .template10 + .template11 .template11__container {
@@ -6547,6 +6959,15 @@ section {
 }
 
 .template11-item__body {
+  font-size: clamp( 0.8125rem , 0.7897727273rem  +  0.1136363636vw , 0.875rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.8125rem + 0.0625 * (100vw - 20rem) / 55);
+  	} */
   color: #595c68;
 }
 
@@ -6935,6 +7356,8 @@ section {
 }
 
 .template13__tabs .tabs__title::after {
+  height: 0.1875rem;
+  border-radius: 0.625rem 0.625rem 0 0;
   bottom: clamp( -1.125rem , 0.5795454545rem  +  -2.2727272727vw , 0.125rem );
   /* 	// Если поддерживается clamp();
   	@supports (bottom: $propertyValue) {
@@ -7096,6 +7519,12 @@ section {
   color: #3e5bf1;
 }
 
+.template13__table i {
+  display: inline-block;
+  position: relative;
+  top: 0.125rem;
+}
+
 .template13__table-caption {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7135,6 +7564,18 @@ section {
 
 .template13 figcaption._content ul li {
   list-style-type: disc;
+}
+
+.template13 ._icon-alert {
+  font-size: clamp( 0.9375rem , 0.8693181818rem  +  0.3409090909vw , 1.125rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.9375rem + 0.1875 * (100vw - 20rem) / 55);
+  	} */
 }
 
 .template13 + .template14 {
@@ -7628,6 +8069,7 @@ section {
       align-content: flex-start;
   row-gap: 0.25rem;
   position: relative;
+  font-size: 0.875rem;
 }
 
 .template14__spollers::before,
@@ -7731,6 +8173,10 @@ section {
   	@supports not (row-gap: $propertyValue) {
   		row-gap: calc(1rem + 0.5 * (100vw - 20rem) / 55);
   	} */
+}
+
+.template15__spollers .spollers__title {
+  font-weight: 700;
 }
 
 .template15__spollers .spollers__body {
@@ -8622,6 +9068,18 @@ section {
   border-bottom: 0.0625rem solid #e3e7ed;
 }
 
+.template18-total__heading .template18-total__caption {
+  font-size: clamp( 1rem , 0.9090909091rem  +  0.4545454545vw , 1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(1rem + 0.25 * (100vw - 20rem) / 55);
+  	} */
+}
+
 .template18-total__heading .template18-total__value {
   font-size: 1.625rem;
 }
@@ -8706,8 +9164,27 @@ section {
 }
 
 .template18-note .btn {
+  font-size: 1rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  padding-left: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(1.125rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
+  padding-right: clamp( 1.125rem , 0.9886363636rem  +  0.6818181818vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(1.125rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
   width: 100%;
 }
 
@@ -9133,6 +9610,18 @@ section {
           align-items: center;
 }
 
+.template22-item__text {
+  font-size: clamp( 0.8125rem , 0.7443181818rem  +  0.3409090909vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.8125rem + 0.1875 * (100vw - 20rem) / 55);
+  	} */
+}
+
 .template23__container {
   display: -ms-grid;
   display: grid;
@@ -9277,6 +9766,10 @@ section {
   	} */
 }
 
+.template24__spollers {
+  max-width: 52.5rem;
+}
+
 .template24__spollers .spollers__body {
   padding-top: clamp( 0.5rem , 0.1363636364rem  +  1.8181818182vw , 1.5rem );
   /* 	// Если поддерживается clamp();
@@ -9295,6 +9788,18 @@ section {
   	// Если не поддерживается clamp();
   	@supports not (padding-bottom: $propertyValue) {
   		padding-bottom: calc(0.0000000625rem + 0.9999999375 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.template24 ._content {
+  font-size: clamp( 0.8125rem , 0.7443181818rem  +  0.3409090909vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.8125rem + 0.1875 * (100vw - 20rem) / 55);
   	} */
 }
 
@@ -9583,6 +10088,10 @@ section {
   	@supports not (font-size: $propertyValue) {
   		font-size: calc(0.8125rem + 0.0625 * (100vw - 20rem) / 55);
   	} */
+}
+
+.template27__text ._row {
+  row-gap: 1.5rem;
 }
 
 .template28__container {
@@ -11560,23 +12069,6 @@ section {
   	} */
 }
 
-.template40__items .template29__person {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 0.625rem;
-}
-
 .template40__items .template29__name {
   font-size: clamp( 1rem , 0.6818181818rem  +  1.5909090909vw , 1.875rem );
   /* 	// Если поддерживается clamp();
@@ -11737,6 +12229,291 @@ section {
   		padding-right: calc(0.5rem + 0.25 * (100vw - 48rem) / 14);
   	} */
   margin-bottom: 1.5rem;
+}
+
+.authorization-header {
+  padding-top: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 2.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(1.25rem + 1.25 * (100vw - 20rem) / 55);
+  	} */
+  padding-bottom: clamp( 1.25rem , 0.7954545455rem  +  2.2727272727vw , 2.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(1.25rem + 1.25 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-header__logo {
+  max-width: clamp( 4.625rem , 2.7053571429rem  +  9.5982142857vw , 7.3125rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (max-width: $propertyValue) {
+  		max-width: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (max-width: $propertyValue) {
+  		max-width: calc(4.625rem + 2.6875 * (100vw - 20rem) / 28);
+  	} */
+}
+
+.authorization-main__container {
+  max-width: 30rem;
+}
+
+.authorization-main__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 2.5rem;
+}
+
+.authorization-main .tabs__navigation {
+  background-color: #fff;
+  border: 1px solid #e3e7ed;
+  border-radius: clamp( 0.875rem , 0.7386363636rem  +  0.6818181818vw , 1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (border-radius: $propertyValue) {
+  		border-radius: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (border-radius: $propertyValue) {
+  		border-radius: calc(0.875rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
+  padding-left: clamp( 1rem , 0.6363636364rem  +  1.8181818182vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(1rem + 1 * (100vw - 20rem) / 55);
+  	} */
+  padding-right: clamp( 1rem , 0.6363636364rem  +  1.8181818182vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(1rem + 1 * (100vw - 20rem) / 55);
+  	} */
+  margin-bottom: 0.5rem;
+}
+
+.authorization-main .tabs__title {
+  padding-top: clamp( 0.75rem , 0.4772727273rem  +  1.3636363636vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(0.75rem + 0.75 * (100vw - 20rem) / 55);
+  	} */
+  padding-bottom: clamp( 0.75rem , 0.4772727273rem  +  1.3636363636vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(0.75rem + 0.75 * (100vw - 20rem) / 55);
+  	} */
+  font-size: clamp( 0.75rem , 0.6136363636rem  +  0.6818181818vw , 1.125rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.75rem + 0.375 * (100vw - 20rem) / 55);
+  	} */
+  line-height: 1.2222222222;
+  margin: 0;
+}
+
+.authorization-main .tabs__title::after {
+  height: 0.1875rem;
+  bottom: 0;
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.authorization-main .form__item {
+  margin-bottom: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-main__wrapper {
+  padding: clamp( 1.5rem , 1.3181818182rem  +  0.9090909091vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding: $propertyValue) {
+  		padding: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding: $propertyValue) {
+  		padding: calc(1.5rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-main__caption {
+  font-weight: 700;
+  font-size: clamp( 1.25rem , 0.9772727273rem  +  1.3636363636vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(1.25rem + 0.75 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-main__caption:not(:last-child) {
+  margin-bottom: clamp( 1.5rem , 1.3181818182rem  +  0.9090909091vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(1.5rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-main .authorization__actions {
+  margin-top: 0.5rem;
+}
+
+.authorization-main .ordering__footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.authorization-main__close {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: clamp( 0.875rem , 0.8295454545rem  +  0.2272727273vw , 1rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 55);
+  	} */
+  line-height: 1;
+}
+
+.authorization-main__close i {
+  font-size: clamp( 1rem , 0.9090909091rem  +  0.4545454545vw , 1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(1rem + 0.25 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-main__close:not(:last-child) {
+  margin-bottom: clamp( 1.5rem , 1.3181818182rem  +  0.9090909091vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(1.5rem + 0.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-main__text {
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+  color: #595c68;
+}
+
+.authorization-main__text h1,
+.authorization-main__text h2,
+.authorization-main__text h3,
+.authorization-main__text h4,
+.authorization-main__text h5,
+.authorization-main__text h6 {
+  font-weight: 400;
+  color: #1e1f23;
+}
+
+.authorization-main__text > * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.authorization-main__text:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.authorization-footer {
+  padding-top: clamp( 1.5rem , 0.9545454545rem  +  2.7272727273vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(1.5rem + 1.5 * (100vw - 20rem) / 55);
+  	} */
+  padding-bottom: clamp( 1.5rem , 0.9545454545rem  +  2.7272727273vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(1.5rem + 1.5 * (100vw - 20rem) / 55);
+  	} */
+}
+
+.authorization-footer__container {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.authorization-footer__privacy {
+  font-size: 0.75rem;
+  line-height: 110%;
+  color: #82879e;
+}
+
+.authorization-footer__socials {
+  color: #82879e;
 }
 
 .admin-header {
@@ -12955,6 +13732,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .privacy-actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   ._content .columns-4 {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
@@ -13208,12 +13994,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .template28-banner__features {
     max-width: 33rem;
-    margin-left: auto;
   }
 
   .template28-banner-features {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .authorization-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .template18__heading {
@@ -13986,6 +14783,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 100%;
   }
 
+  .template10__body {
+    max-width: 31.875rem;
+  }
+
   .template12__footer {
     -ms-grid-columns: 1fr 20rem;
     grid-template-columns: 1fr 20rem;
@@ -14390,8 +15191,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (min-width: 61.99875em) {
   .template8__container {
-    -ms-grid-columns: 1fr 43.7288135593%;
-    grid-template-columns: 1fr 43.7288135593%;
+    -ms-grid-columns: 1fr 48%;
+    grid-template-columns: 1fr 48%;
   }
 
   .template8__tabs .tabs__navigation {
@@ -14459,6 +15260,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .template28-banner__features {
+    margin-left: auto;
   }
 }
 
@@ -15033,7 +15838,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .item-template2__caption {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1;
   }
 
@@ -15137,6 +15942,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .template13-features__button .btn {
     width: 100%;
+    padding-left: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (padding-left: $propertyValue) {
+    		padding-left: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (padding-left: $propertyValue) {
+    		padding-left: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+    	} */
+    padding-right: clamp( 1rem , 0.8181818182rem  +  0.9090909091vw , 1.5rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (padding-right: $propertyValue) {
+    		padding-right: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (padding-right: $propertyValue) {
+    		padding-right: calc(1rem + 0.5 * (100vw - 20rem) / 55);
+    	} */
   }
 
   .template15__image {
@@ -15356,6 +16179,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     border-bottom: 1px solid #c1c3d1;
   }
 
+  .template40__items .template29__person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0.625rem;
+  }
+
   .template40__items .template29__name br {
     display: none;
   }
@@ -15546,6 +16386,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: none;
   }
 
+  .template5-items__text h3 br {
+    display: none;
+  }
+
   .template8__image {
     position: relative;
     padding-bottom: 21.4375rem;
@@ -15566,6 +16410,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .template8__body {
     padding-top: 3.125rem;
     padding-bottom: 3.75rem;
+  }
+
+  .template8__heading br {
+    display: none;
+  }
+
+  .template9-main__text p {
+    min-height: 0px;
   }
 
   .template9-main__image {
@@ -15619,6 +16471,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     	@supports not (padding-bottom: $propertyValue) {
     		padding-bottom: calc(11.25rem + 13.75 * (100vw - 20rem) / 15.9375);
     	} */
+  }
+
+  .authorization-footer__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

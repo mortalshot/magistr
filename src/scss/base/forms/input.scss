@@ -9,7 +9,8 @@ textarea {
 	appearance: none;
 }
 
-input, textarea {
+input,
+textarea {
 	display: block;
 	width: 100%;
 	font-weight: 400;
@@ -44,6 +45,24 @@ input, textarea {
 			opacity: 0;
 		}
 	}
+
+	// .form__input_invalid
+	&_invalid {
+		color: $Red;
+		border-color: $Red;
+
+		&::placeholder {
+			color: $Red;
+		}
+	}
+}
+
+.form__error {
+	font-weight: 400;
+	font-size: rem(12);
+	line-height: math.div(15, 12);
+	margin-top: rem(8);
+	color: $Red;
 }
 
 textarea.form__input {
