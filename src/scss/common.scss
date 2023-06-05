@@ -10,6 +10,12 @@ h,
       font-weight: 700;
       @include adaptiveValue("font-size", 40, 20);
       line-height: 1;
+
+      .admin-page & {
+         font-weight: 600;
+         @include adaptiveValue("font-size", 24, 18);
+         line-height: math.div(26, 24);
+      }
    }
    &3 {
       font-weight: 700;
@@ -46,12 +52,36 @@ section {
    &:last-child {
       @include adaptiveValue("padding-bottom", 140, 70);
    }
+
+   .admin-page & {
+      @include adaptiveValue("padding-top", 30, 24);
+      @include adaptiveValue("padding-bottom", 30, 24);
+
+      &::last-child {
+         @include adaptiveValue("padding-bottom", 60, 48);
+      }
+   }
+}
+
+._phone {
+   white-space: nowrap;
+}
+._nowrap {
+   white-space: nowrap;
+}
+._w100 {
+   width: 100%;
 }
 
 ._content {
    & > * {
       margin-top: rem(24);
       margin-bottom: rem(24);
+
+      .admin-wrapper & {
+         margin-top: rem(8);
+         margin-bottom: rem(8);
+      }
    }
 
    a {
@@ -263,12 +293,25 @@ section {
 .color-green {
    color: #4caf50;
 }
+.border-0 {
+   border: 0 !important;
+}
+.excerpt-1 {
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
 
 ._heading {
    max-width: rem(580);
 
    &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 40, 24);
+
+      .admin-page & {
+         @include adaptiveValue("margin-bottom", 30, 16);
+      }
    }
 }
 
@@ -284,6 +327,11 @@ section {
    @media (min-width: $mobile) {
       @include adaptiveValue("padding-left", 56, 24, 1440, 992, 1);
       @include adaptiveValue("padding-right", 56, 24, 1440, 992, 1);
+   }
+
+   .admin-page & {
+      padding: rem(20);
+      border-radius: rem(10);
    }
 }
 

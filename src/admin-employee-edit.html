@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Страница филиала"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template6">
+            <div class="admin-template6__container">
+               <div class="admin-template6__wrapper _wrapper">
+                  <div class="admin-template6__top">
+                     <div class="admin-template6__left">
+                        <div>
+                           <a href="" class="back-button">
+                              <i class="_icon-chevron-left"></i>
+                              <span>Страница сотрудника</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="admin-template6__right">
+                        <div class="admin-template6__buttons">
+                           <div class="admin-template6__button"><button type="submit" class="btn btn_bg-orange">Сохранить изменения</button></div>
+                           <div class="admin-template6__button"><button type="reset" class="btn btn_bg-gray">Отменить</button></div>
+                           <div class="admin-template6__button"><button type="button" class="btn btn_bg-gray">Удалить сотрудника</button></div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="admin-template6__employee">
+                     <div class="admin-template6__employee-info">
+                        <div class="admin-template5-card__table-caption">информация о сотруднике</div>
+
+                        <div class="form__row">
+                           <div class="form__item col-6">
+                              <label for="employee-email" class="form__label">Email</label>
+                              <input id="employee-email" type="email" name="employee-email" value="test@gmail.com" placeholder="Email" class="form__input" />
+                           </div>
+                           <div class="form__item col-6">
+                              <label for="employee-position" class="form__label">Должность</label>
+                              <input id="employee-position" type="text" name="employee-position" value="Менеджер" placeholder="Должность" class="form__input" />
+                           </div>
+                           <div class="form__item col-6">
+                              <label for="employee-name" class="form__label">Имя</label>
+                              <input id="employee-name" type="text" name="employee-name" value="Сергей" placeholder="Имя" class="form__input" />
+                           </div>
+                           <div class="form__item col-6">
+                              <label for="employee-surname" class="form__label">Фамилия</label>
+                              <input id="employee-surname" type="text" name="employee-surname" value="Кушвара" placeholder="Фамилия" class="form__input" />
+                           </div>
+                           <div class="form__item col-6">
+                              <label for="employee-phone" class="form__label">Фамилия</label>
+                              <input id="employee-phone" type="text" name="employee-phone" placeholder="+7 900 900 99 99" class="form__input form__input_phone" />
+                           </div>
+                           <div class="form__item col-6">
+                              <label for="employee-status" class="form__label">Статус</label>
+
+                              <div class="form__select">
+                                 <div class="basic-single">
+                                    <div class="select__control">
+                                       <div class="select__value-container select__value-container--has-value">
+                                          <div class="select__single-value">Работает</div>
+                                          <div class="select__input-container" data-value="">
+                                             <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+                                          </div>
+                                       </div>
+                                       <div class="select__indicators">
+                                          <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                             <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                             </svg>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="admin-template5-card__table-caption">смена пароля</div>
+
+                        <div class="form__row">
+                           <div class="form__item col-6">
+                              <div class="form__label"> Пароль </div>
+
+                              <div class="password password_text">
+                                 <div class="password__wrapper">
+                                    <input id="employee-password1" type="password" name="employee-password1" placeholder="Введите пароль" class="password__input form__input" required="" />
+                                    <button type="button" class="password__toggler"></button>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="form__item col-6">
+                              <div class="form__label"> Повторите пароль </div>
+
+                              <div class="password password_text">
+                                 <div class="password__wrapper">
+                                    <input id="employee-password" type="password" name="employee-password" placeholder="Введите пароль" class="password__input form__input" required="" />
+                                    <button type="button" class="password__toggler"></button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="admin-template5-card__table-caption">Филиалы</div>
+
+                        <div class="admin-template6__branches">
+                           <div class="admin-template6__branch-item">
+                              <div class="admin-template6__branch-wrapper">
+                                 <div class="admin-template6__branch-caption">Филиал г. Казань Новый</div>
+                                 <div class="admin-template6__branch-info">
+                                    <span>г. Казань</span>
+                                    <span>|</span>
+                                    <span><a href="https://kazan.magistr.ru" target="_blank">kazan.magistr.ru</a></span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="admin-template6__branch-item">
+                              <div class="admin-template6__branch-wrapper">
+                                 <div class="admin-template6__branch-caption">Филиал г. Нижний новгород </div>
+                                 <div class="admin-template6__branch-info">
+                                    <span>г. Нижний Новгород</span>
+                                    <span>|</span>
+                                    <span><a href="https://nijniy-novgorod.magistr.ru" target="_blank">nijniy-novgorod.magistr.ru</a></span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="admin-template6__branch-item">
+                              <div class="admin-template6__branch-wrapper">
+                                 <div class="admin-template6__branch-caption">Филиал г. Ростов-на-Дону </div>
+                                 <div class="admin-template6__branch-info">
+                                    <span>г. Ростов-на-Дону</span>
+                                    <span>|</span>
+                                    <span><a href="https://rostov-na-donu.magistr.ru" target="_blank">rostov-na-donu.magistr.ru</a></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="admin-template6__employee-schedule employee-schedule">
+                        <div class="employee-schedule__heading">
+                           <div class="admin-template5-card__table-caption">График работы</div>
+
+                           <div class="employee-schedule__navigation">
+                              <button type="button" class="employee-schedule__left _icon-chevron-left"></button>
+                              <div class="employee-schedule__mounth">Октябрь, 2022</div>
+                              <button type="button" class="employee-schedule__right _icon-chevron-right"></button>
+                           </div>
+                        </div>
+
+                        <div class="employee-schedule__row">
+                           <div class="employee-schedule__column">
+                              <div class="employee-schedule__list">
+                                 <div class="employee-schedule__item">
+                                    <span>1 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>2 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>3 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>4 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>5 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>6 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>7 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>8 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>9 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>10 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>11 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>12 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>13 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>14 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>15 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="employee-schedule__column">
+                              <div class="employee-schedule__list">
+                                 <div class="employee-schedule__item">
+                                    <span>16 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>17 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>18 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>19 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>20 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>21 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>22 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>23 окт</span>
+                                    <span>9:00 — 16:00</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>24 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>25 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>26 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>27 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>28 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>29 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                                 <div class="employee-schedule__item">
+                                    <span>30 окт</span>
+                                    <span>Выходной</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

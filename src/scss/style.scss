@@ -18,7 +18,7 @@
 // ============================================================================================================================================================================================================================================================================================================================================================================================
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "ProximaNova";
+$fontFamily: "ProximaNova", "Arial";
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
@@ -102,6 +102,15 @@ body {
 	grid-template-columns: rem(82) 1fr;
 	grid-template-rows: rem(84) 1fr;
 	background-color: $LGBlue;
+	transition: 0.5s ease all 0s;
+
+	&._open-menu {
+		grid-template-columns: rem(280) 1fr;
+
+		& > .admin-sidebar {
+			width: rem(280);
+		}
+	}
 
 	& > .admin-header {
 		grid-area: header;
@@ -117,6 +126,7 @@ body {
 		width: rem(82);
 		top: rem(84);
 		bottom: 0;
+		transition: 0.5s ease width 0s;
 	}
 
 	& > .admin-page {
@@ -136,6 +146,12 @@ body {
 	box-sizing: content-box;
 	margin: 0 auto;
 	padding: 0 rem(math.div($containerPadding, 2));
+
+	.admin-page & {
+		max-width: 100%;
+		@include adaptiveValue("padding-left", 30, 10);
+		@include adaptiveValue("padding-right", 30, 10);
+	}
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
@@ -153,3 +169,4 @@ body {
 // Подключение стилей ЛК Суперпользователя
 @import "admin/admin-header";
 @import "admin/admin-sidebar";
+@import "admin/admin-styles";

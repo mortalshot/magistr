@@ -222,6 +222,102 @@ body::after {
 			@include adaptiveValue("padding-bottom", 50, 20);
 		}
 	}
+
+	// popup_adding-payment
+	&_adding-payment {
+		.popup__content {
+			max-width: rem(460);
+			background-color: $White;
+			padding: rem(30);
+			@include adaptiveValue("padding-left", 30, 20);
+			@include adaptiveValue("padding-right", 30, 20);
+		}
+
+		.popup__close {
+			position: absolute;
+			top: rem(20);
+			right: rem(20);
+			font-size: rem(20);
+			color: $Grey;
+		}
+
+		.popup__title {
+			margin-bottom: rem(24);
+			padding-right: rem(20);
+		}
+
+		.form__item {
+			margin-bottom: rem(16);
+		}
+
+		.form__label {
+			color: $Grey;
+			margin-bottom: rem(8);
+		}
+
+		.form__input {
+			height: rem(38);
+			padding: rem(9) rem(16);
+		}
+
+		textarea.form__input {
+			height: initial;
+		}
+
+		.select__control {
+			height: rem(38);
+		}
+
+		.form__submit {
+			margin-top: rem(8);
+
+			.btn {
+				padding-top: rem(11);
+				padding-bottom: rem(11);
+				width: 100%;
+			}
+		}
+	}
+
+	// .popup_price-edit
+	&_price-edit {
+		.popup__content {
+			max-width: rem(730);
+			background-color: $White;
+			padding: rem(30);
+			@include adaptiveValue("padding-left", 30, 20);
+			@include adaptiveValue("padding-right", 30, 20);
+		}
+
+		.popup__close {
+			position: absolute;
+			top: rem(20);
+			right: rem(20);
+			font-size: rem(20);
+			color: $Grey;
+		}
+
+		.popup__title {
+			margin-bottom: rem(24);
+			padding-right: rem(20);
+			display: grid;
+			align-content: flex-start;
+			row-gap: rem(8);
+		}
+
+		.select__control {
+			height: rem(38);
+		}
+
+		.form__input {
+			padding: rem(9) rem(16);
+			height: rem(38);
+		}
+
+		.input-number__descr {
+			color: $Grey;
+		}
+	}
 }
 
 .city-celection {

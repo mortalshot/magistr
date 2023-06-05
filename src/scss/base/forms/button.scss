@@ -6,6 +6,7 @@
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	gap: rem(8);
 	border-radius: rem(14);
 	padding: rem(15) rem(24);
 	@include adaptiveValue("padding-top", 15, 12);
@@ -69,6 +70,20 @@
 		}
 	}
 
+	// .btn_border-blue
+	&_border-blue {
+		color: $BBLue;
+		border-color: $BBLue;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				box-shadow: 0px 4px 17px rgba($BBLue, 0.2);
+			}
+		}
+	}
+
 	// .btn_text-orange
 	&_text-orange {
 		background-color: $White;
@@ -114,5 +129,10 @@
 	// .text-link_orange
 	&_orange {
 		color: $Orange;
+	}
+
+	// .text-link_blue
+	&_blue {
+		color: $BBLue;
 	}
 }

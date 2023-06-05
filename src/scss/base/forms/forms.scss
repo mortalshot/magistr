@@ -24,6 +24,13 @@
 			overflow: hidden;
 		}
 	}
+
+	// .form__buttons
+	&__buttons {
+		display: grid;
+		align-content: flex-start;
+		row-gap: rem(8);
+	}
 }
 
 label.form__label {
@@ -94,3 +101,11 @@ label.form__label {
 // <password>
 // Снипет (HTML):
 @import "password";
+
+// <toggle>
+// Снипет (HTML):
+@import "toggle";
+
+// <photo-upload>
+// Снипет (HTML):
+@import "photo-upload";

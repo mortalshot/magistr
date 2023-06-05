@@ -1,118 +1,838 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Админ / Отзывы"
-	})
-	<body>
-		<div class="admin-wrapper wrapper">
-			@@include('html/_admin-header.htm',{})
-			@@include('html/_admin-sidebar.htm',{})
+@@include('html/_head.htm',{
+"title":"Отзывы"
+})
 
-			<main class="admin-page page">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-			</main>
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template1">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>Отзывы</h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__heading">
+                           <div class="admin-table__filters">
+                              <div class="datepicker">
+                                 <div class="datepicker__wrapper _icon-calendar">
+                                    <input type="text" class="datepicker__input form__input" value="19.08.22 - 24.08.22" />
+                                    <button type="reset" class="datepicker__reset _icon-close"></button>
+                                 </div>
+
+                                 <div class="datepicker__picker rdtPicker"></div>
+                              </div>
+                           </div>
+
+                           <div class="admin-table__indicators">
+                              <div class="admin-table__indicators-list">
+                                 <div class="admin-table__indicator">
+                                    <div class="admin-table__indicator-wrapper">
+                                       <div class="admin-table__indicator-val">198 847 ₽</div>
+                                       <div class="admin-table__indicator-caption">Оплаченных заказов</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>Дата отзыва</th>
+                                       <th>Клиент</th>
+                                       <th>Заказ</th>
+                                       <th>Оценка</th>
+                                       <th style="width: 16%;">отзыв</th>
+                                       <th style="width: 16%;">отзыв менеджера</th>
+                                       <th>публикация</th>
+                                       <th></th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-off"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>Не опубликован</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-off"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more _show">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="rating-reviews__marks">
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star _icon-star_active"></i>
+                                             <i class="_icon-star"></i>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ipsum над переписали все строчка своего собрал, возвращайся, знаках великий продолжил семь моей деревни дорогу.</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Гор использовало большой подзаголовок необходимыми прямо моей приставка не бросил правилами заглавных речью рот единственное раз меня коварный выйти переписывается, вскоре до от всех грустный великий собрал первую текстами лучше! Вопроса заглавных себя последний взгляд собрал? Переписали обеспечивает вершину запятых, океана но речью пояс предложения все однажды решила семь своих живет, взобравшись знаках, продолжил ты собрал рукописи страну на берегу переулка великий. Предупреждал лучше мир коварный, до использовало продолжил, заголовок пустился силуэт щеке буквоград рекламных семь взобравшись, живет курсивных! Свой предупредила над вершину себя путь грамматики, коварных сих продолжил гор его своего составитель грустный даль имени оксмокс рекламных но запятой безопасную. Алфавит запятых правилами большой гор взгляд.</p>
+                                          </div>
+                                       </td>
+                                       <td>20.02.21 15:00</td>
+                                       <td class="admin-table__show">
+                                          <button class="admin-table__show _icon-show-on"></button>
+                                       </td>
+                                       <td class="admin-table__more">
+                                          <div class="table-more">
+                                             <button type="button" class="table-more__button _icon-more"></button>
+
+                                             <div class="table-more__popup">
+                                                <ul>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-edit"></i>
+                                                         <span>Редактировать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-agreement"></i>
+                                                         <span>Опубликовать</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-show-on"></i>
+                                                         <span>Показать автору</span>
+                                                      </a>
+                                                   </li>
+                                                   <li>
+                                                      <a href="">
+                                                         <i class="_icon-remove"></i>
+                                                         <span>Удалить отзыв</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <div class="table-navigation">
+                              <div class="table-navigation__pagination pagination">
+                                 <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                 <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                 <a href="" class="pagination__item pagination__item_page">2</a>
+                                 <a href="" class="pagination__item pagination__item_page">3</a>
+                                 <a href="" class="pagination__item pagination__item_page">4</a>
+                                 <a href="" class="pagination__item pagination__item_page">5</a>
+                                 <div class="pagination__item pagination__item_dots">...</div>
+                                 <a href="" class="pagination__item pagination__item_page">24</a>
+                                 <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                              </div>
+
+                              <div class="table-navigation__go-to go-to">
+                                 <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                 <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
 </html>

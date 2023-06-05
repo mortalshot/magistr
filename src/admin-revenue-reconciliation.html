@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Сверка выручки"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template3">
+            <div class="admin-template3__container">
+               <div class="admin-template3__heading _heading _content">
+                  <h1>Сверка выручки</h1>
+               </div>
+
+               <div class="admin-template3__table admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__heading">
+                           <div class="admin-table__filters">
+                              <div class="datepicker">
+                                 <div class="datepicker__wrapper _icon-calendar">
+                                    <input type="text" class="datepicker__input form__input" value="19.08.22 - 24.08.22" />
+                                    <button type="reset" class="datepicker__reset _icon-close"></button>
+                                 </div>
+
+                                 <div class="datepicker__picker rdtPicker"></div>
+                              </div>
+
+                              <div class="basic-single">
+                                 <div class="select__control">
+                                    <div class="select__value-container select__value-container--has-value">
+                                       <div class="select__single-value">Филиалы</div>
+                                       <div class="select__input-container" data-value="">
+                                          <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+                                       </div>
+                                    </div>
+                                    <div class="select__indicators">
+                                       <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                          <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                             <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="basic-single">
+                                 <div class="select__control">
+                                    <div class="select__value-container select__value-container--has-value">
+                                       <div class="select__single-value">Система оплаты</div>
+                                       <div class="select__input-container" data-value="">
+                                          <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+                                       </div>
+                                    </div>
+                                    <div class="select__indicators">
+                                       <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                          <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                             <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="admin-table__button"><a href="" class="btn btn_bg-orange">Вывести</a></div>
+                           </div>
+                        </div>
+
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th class="admin-table__border-right">
+                                          <!-- классы sort-by_up и sort-by_down -->
+                                          <a href="" class="sort-by sort-by_up">Дата</a>
+                                       </th>
+                                       <th>Оплата сайт</th>
+                                       <th>Оплата в бд</th>
+                                       <th class="admin-table__border-right">Оплата офис</th>
+                                       <th>Возвраты сайт</th>
+                                       <th>Возвраты в бд</th>
+                                       <th class="admin-table__border-right">Возвраты офис</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td class="admin-table__border-right">20.02.21</td>
+                                       <td class="admin-table__td-selected">
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__td-selected">
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__border-right admin-table__td-selected">
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="">
+                                          <div class="_content"><a href="">8 900 ₽</a></div>
+                                       </td>
+                                       <td class="">
+                                          <div class="_content"><a href="">8 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__border-right ">
+                                          <div class="_content"><a href="">8 000 ₽</a></div>
+                                       </td>
+                                       <td>
+                                          <div class="_content"><a href=""><strong>Сверить</strong></a></div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="admin-table__border-right">20.02.21</td>
+                                       <td>
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td>
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__border-right">
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="">
+                                          <div class="_content"><a href="">8 900 ₽</a></div>
+                                       </td>
+                                       <td class="">
+                                          <div class="_content"><a href="">8 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__border-right ">
+                                          <div class="_content"><a href="">8 000 ₽</a></div>
+                                       </td>
+                                       <td>
+                                          <div class="_content"><a href=""><strong>Сверить</strong></a></div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="admin-table__border-right">20.02.21</td>
+                                       <td>
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td>
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__border-right">
+                                          <div class="_content"><a href="">268 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__td-selected">
+                                          <div class="_content"><a href="">8 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__td-selected">
+                                          <div class="_content"><a href="">8 900 ₽</a></div>
+                                       </td>
+                                       <td class="admin-table__border-right admin-table__td-selected">
+                                          <div class="_content"><a href="">8 000 ₽</a></div>
+                                       </td>
+                                       <td>
+                                          <div class="_content"><a href=""><strong>Сверить</strong></a></div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <div class="table-navigation">
+                              <div class="table-navigation__pagination pagination">
+                                 <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                 <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                 <a href="" class="pagination__item pagination__item_page">2</a>
+                                 <a href="" class="pagination__item pagination__item_page">3</a>
+                                 <a href="" class="pagination__item pagination__item_page">4</a>
+                                 <a href="" class="pagination__item pagination__item_page">5</a>
+                                 <div class="pagination__item pagination__item_dots">...</div>
+                                 <a href="" class="pagination__item pagination__item_page">24</a>
+                                 <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                              </div>
+
+                              <div class="table-navigation__go-to go-to">
+                                 <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                 <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

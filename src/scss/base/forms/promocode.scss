@@ -66,14 +66,26 @@
       font-size: rem(12);
       line-height: math.div(15, 12);
       color: #cc4b2f;
-      text-decoration: underline from-font;
-      text-underline-offset: 2px;
-      transition: $transition ease text-decoration 0s;
 
-      @media (any-hover: hover) {
-         &:hover {
-            text-decoration: underline transparent from-font;
+      &:not(._icon-remove) {
+         text-decoration: underline from-font;
+         text-underline-offset: 2px;
+         transition: $transition ease text-decoration 0s;
+
+         @media (any-hover: hover) {
+            &:hover {
+               text-decoration: underline transparent from-font;
+            }
          }
+      }
+
+      &._icon-remove {
+         flex: 0 0 rem(38);
+         width: rem(38);
+         height: rem(38);
+         font-size: rem(20);
+         border: rem(1) solid $LGrey;
+         border-radius: rem(8);
       }
    }
 }

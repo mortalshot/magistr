@@ -85,6 +85,7 @@
 		display: flex;
 		align-items: center;
 		@include adaptiveValue("column-gap", 16, 8);
+		outline: 0;
 	}
 
 	// .tabs__content

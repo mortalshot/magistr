@@ -24,6 +24,11 @@ textarea {
 		color: #82879e;
 		transition: $transition ease opacity 0s;
 	}
+
+	.admin-wrapper & {
+		height: rem(38);
+		font-size: rem(14);
+	}
 }
 
 .form__input {
@@ -44,6 +49,10 @@ textarea {
 		&::placeholder {
 			opacity: 0;
 		}
+	}
+
+	.admin-wrapper & {
+		padding: rem(10) rem(16);
 	}
 
 	// .form__input_invalid

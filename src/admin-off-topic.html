@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заполнение офф. топика"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template10">
+            <div class="admin-template10__container">
+               <div class="admin-template10__heading _heading _content">
+                  <h1>Заполнение офф. топика</h1>
+               </div>
+
+               <div class="admin-template10__wrapper _wrapper">
+                  <form action="" class="admin-template10__form">
+                     <div class="form__row">
+                        <div class="form__item col-12">
+                           <label for="off-topic-html" class="form__label">HTML код</label>
+
+                           <textarea id="off-topic-html" name="off-topic-html" placeholder="HTML код" class="form__input" rows="15"></textarea>
+                        </div>
+                     </div>
+
+                     <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

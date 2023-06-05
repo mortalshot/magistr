@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Жалобы"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template1">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>Жалобы</h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>Дата жалобы</th>
+                                       <th>Заказ</th>
+                                       <th>Клиент</th>
+                                       <th>Почта</th>
+                                       <th>Телефон</th>
+                                       <th style="width: 35%;">Текст жалобы</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>20.02.21 15:00</td>
+                                       <td>
+                                          <div class="_content">
+                                             <a href="">874728</a>
+                                          </div>
+                                       </td>
+                                       <td>Головенко Вячеслав</td>
+                                       <td>vgolovenko@gmail.com</td>
+                                       <td><a href="tel:+79892424263" class="_nowrap">+7 989 242 42 63</a></td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Журчит даль решила жизни агентство сбить текст, речью за силуэт жаренные сих пор ручеек вскоре скатился назад до рыбными курсивных пустился, текстами вопрос залетают правилами! Бросил запятой, пор океана если рукопись, возвращайся продолжил встретил путь предупреждал о силуэт родного речью!</p>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <div class="table-navigation">
+                              <div class="table-navigation__pagination pagination">
+                                 <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                 <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                 <a href="" class="pagination__item pagination__item_page">2</a>
+                                 <a href="" class="pagination__item pagination__item_page">3</a>
+                                 <a href="" class="pagination__item pagination__item_page">4</a>
+                                 <a href="" class="pagination__item pagination__item_page">5</a>
+                                 <div class="pagination__item pagination__item_dots">...</div>
+                                 <a href="" class="pagination__item pagination__item_page">24</a>
+                                 <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                              </div>
+
+                              <div class="table-navigation__go-to go-to">
+                                 <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                 <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

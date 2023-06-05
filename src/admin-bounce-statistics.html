@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Статистика отказов"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template1">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>Статистика отказов</h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__heading">
+                           <div class="admin-table__filters">
+                              <div class="datepicker">
+                                 <div class="datepicker__wrapper _icon-calendar">
+                                    <input type="text" class="datepicker__input form__input" value="19.08.22 - 24.08.22" />
+                                    <button type="reset" class="datepicker__reset _icon-close"></button>
+                                 </div>
+
+                                 <div class="datepicker__picker rdtPicker"></div>
+                              </div>
+                           </div>
+
+                           <div class="admin-table__indicators">
+                              <div class="admin-table__indicators-list">
+                                 <div class="admin-table__indicator">
+                                    <div class="admin-table__indicator-wrapper">
+                                       <div class="admin-table__indicator-val">1 827</div>
+                                       <div class="admin-table__indicator-caption">Отказов</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>Дата и номер</th>
+                                       <th>Пользователь</th>
+                                       <th>Тип работы</th>
+                                       <th style="width: 32%;">комментарий менеджера</th>
+                                       <th>Причина отказа</th>
+                                       <th style="text-align: right;">Сумма</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="admin-nonpayment-callpage.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. От всех она, пустился океана встретил грамматики большого строчка над, скатился свой буквоград пунктуация семь напоивший?</p>
+                                          </div>
+                                       </td>
+                                       <td>Слишком дорошо</td>
+                                       <td style="text-align: right;">11&nbsp;000&nbsp;₽</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="admin-nonpayment-callpage.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. От всех она, пустился океана встретил грамматики большого строчка над, скатился свой буквоград пунктуация семь напоивший?</p>
+                                          </div>
+                                       </td>
+                                       <td>Слишком дорошо</td>
+                                       <td style="text-align: right;">11&nbsp;000&nbsp;₽</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="admin-nonpayment-callpage.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. От всех она, пустился океана встретил грамматики большого строчка над, скатился свой буквоград пунктуация семь напоивший?</p>
+                                          </div>
+                                       </td>
+                                       <td>Слишком дорошо</td>
+                                       <td style="text-align: right;">11&nbsp;000&nbsp;₽</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="admin-nonpayment-callpage.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. От всех она, пустился океана встретил грамматики большого строчка над, скатился свой буквоград пунктуация семь напоивший?</p>
+                                          </div>
+                                       </td>
+                                       <td>Слишком дорошо</td>
+                                       <td style="text-align: right;">11&nbsp;000&nbsp;₽</td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="admin-nonpayment-callpage.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. От всех она, пустился океана встретил грамматики большого строчка над, скатился свой буквоград пунктуация семь напоивший?</p>
+                                          </div>
+                                       </td>
+                                       <td>Слишком дорошо</td>
+                                       <td style="text-align: right;">11&nbsp;000&nbsp;₽</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                           <div class="table-navigation">
+                              <div class="table-navigation__pagination pagination">
+                                 <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                 <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                 <a href="" class="pagination__item pagination__item_page">2</a>
+                                 <a href="" class="pagination__item pagination__item_page">3</a>
+                                 <a href="" class="pagination__item pagination__item_page">4</a>
+                                 <a href="" class="pagination__item pagination__item_page">5</a>
+                                 <div class="pagination__item pagination__item_dots">...</div>
+                                 <a href="" class="pagination__item pagination__item_page">24</a>
+                                 <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                              </div>
+
+                              <div class="table-navigation__go-to go-to">
+                                 <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                 <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -904,6 +904,9 @@
       h3 {
          @include adaptiveValue("font-size", 24, 16);
 
+         @media (min-width: $mobileM) {
+            @include adaptiveValue("max-width", 240, 200, 1440, 992, 1);
+         }
          @media (max-width: $mobileM) {
             br {
                display: none;
@@ -4244,7 +4247,7 @@
    // .template24__spollers
    &__spollers {
       max-width: rem(840);
-      
+
       .spollers {
          // .spollers__body
          &__body {
@@ -4255,7 +4258,6 @@
    }
 
    ._content {
-
       @include adaptiveValue("font-size", 16, 13);
    }
 

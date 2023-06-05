@@ -1,4 +1,5 @@
-<header class="admin-header">
+<!-- data-lp - атрибут, которому добавляется левый паддинг, когда открывается модальное окно, чтобы не было скачка элемента с position: fixed; -->
+<header class="admin-header" data-lp>
 	<div class="admin-header__row">
 		<div class="admin-header__logo logo">
 			<a href="" class="logo__link"><img src="@img/logo.png" alt=""></a>
@@ -7,7 +8,7 @@
 		<div class="admin-header__left">
 			<form action="" method="get" class="admin-header__search search-form">
 				<!-- <button type="reset" class="search-form__reset _icon-close2"></button> -->
-				<input type="text" class="search-form__input form__input" name="s" placeholder="Поиск по номеру заказа, фамилии клиента, почте или номеру телефона" value="">
+				<input type="text" class="search-form__input form__input" name="s" placeholder="Поиск по номеру заказа, фамилии клиента, почте или номеру телефона" value="" />
 				<button type="submit" class="search-form__submit _icon-search" value=""></button>
 			</form>
 		</div>

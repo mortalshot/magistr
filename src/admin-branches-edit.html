@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Страница филиала"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template6">
+            <div class="admin-template6__container">
+               <div class="admin-template6__wrapper _wrapper">
+                  <div class="admin-template6__top">
+                     <div class="admin-template6__left">
+                        <div>
+                           <a href="" class="back-button">
+                              <i class="_icon-chevron-left"></i>
+                              <span>Страница филиала</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="admin-template6__right">
+                        <div class="admin-template6__buttons">
+                           <div class="admin-template6__button"><button type="submit" class="btn btn_bg-orange">Сохранить изменения</button></div>
+                           <div class="admin-template6__button"><button type="reset" class="btn btn_bg-gray">Отменить</button></div>
+                           <div class="admin-template6__button"><button type="button" class="btn btn_bg-gray">Удалить филиал</button></div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="admin-template6__branch">
+                     <div class="admin-template6__branch-details">
+                        <div class="admin-template5-card__table-caption">информация о филиале</div>
+
+                        <div class="form__row">
+                           <div class="form__item col-12 col-lg-6">
+                              <label for="adding-branch-name" class="form__label">Название филиала</label>
+                              <input id="adding-branch-name" type="text" name="adding-branch-name" value="Название филиала" class="form__input" />
+                           </div>
+                           <div class="form__item col-12 col-lg-6">
+                              <label for="adding-branch-address" class="form__label">Адрес</label>
+                              <input id="adding-branch-address" type="text" name="adding-branch-address" placeholder="ул. Чехова" class="form__input" />
+                           </div>
+                           <div class="form__item col-12 col-lg-6">
+                              <label for="adding-branch-name" class="form__label">Город</label>
+                              <input id="adding-branch-name" type="text" name="adding-branch-name" value="г. Нижний Новгород" class="form__input" />
+                           </div>
+                           <div class="form__item col-12 col-lg-6">
+                              <label for="adding-branch-phone" class="form__label">Телефон</label>
+                              <input id="adding-branch-phone" type="text" name="adding-branch-phone" value="+7 999 999 99 99" class="form__input form__input_phone" />
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="admin-template6__branch-schedule branch-schedule">
+                        <div class="branch-schedule__top">
+                           <div>График работы</div>
+                           <div>октябрь</div>
+                        </div>
+
+                        <div data-tabs class="tabs tabs_vertical">
+                           <nav data-tabs-titles class="tabs__navigation">
+                              <button type="submit" class="tabs__title _tab-active">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">14</div>
+                                    <div class="branch-schedule__week">ср</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_green"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                              <button type="submit" class="tabs__title">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">15</div>
+                                    <div class="branch-schedule__week">чт</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_violet"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                              <button type="submit" class="tabs__title">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">16</div>
+                                    <div class="branch-schedule__week">пт</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_violet"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                              <button type="submit" class="tabs__title">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">17</div>
+                                    <div class="branch-schedule__week">сб</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_violet"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                              <button type="submit" class="tabs__title">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">18</div>
+                                    <div class="branch-schedule__week">вс</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_violet"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                              <button type="submit" class="tabs__title">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">19</div>
+                                    <div class="branch-schedule__week">пн</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_violet"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                              <button type="submit" class="tabs__title">
+                                 <div class="branch-schedule__day">
+                                    <div class="branch-schedule__number">20</div>
+                                    <div class="branch-schedule__week">вт</div>
+                                    <div class="branch-schedule__employees">
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_violet"></span>
+                                       <span class="admin-template5-row__mark admin-template5-row__mark_blue"></span>
+                                    </div>
+                                 </div>
+                              </button>
+                           </nav>
+                           <div data-tabs-body class="tabs__content">
+                              <div class="tabs__body">
+                                 <div class="branch-schedule__list">
+                                    <div class="branch-schedule__row">
+                                       <div class="branch-schedule__mark admin-template5-row__mark admin-template5-row__mark_blue"></div>
+                                       <div class="branch-schedule__name">Головенко Вячеслав</div>
+                                       <div class="branch-schedule__hours">9:00 — 16:00</div>
+                                    </div>
+                                    <div class="branch-schedule__row">
+                                       <div class="branch-schedule__mark admin-template5-row__mark admin-template5-row__mark_green"></div>
+                                       <div class="branch-schedule__name">Гурина Дарья</div>
+                                       <div class="branch-schedule__hours">14:00 — 21:00</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-tabs-body class="tabs__content">
+                              <div class="tabs__body">
+                                 <div class="branch-schedule__list">
+                                    <div class="branch-schedule__row">
+                                       <div class="branch-schedule__mark admin-template5-row__mark admin-template5-row__mark_violet"></div>
+                                       <div class="branch-schedule__name">Гурина Дарья</div>
+                                       <div class="branch-schedule__hours">9:00 — 16:00</div>
+                                    </div>
+                                    <div class="branch-schedule__row">
+                                       <div class="branch-schedule__mark admin-template5-row__mark admin-template5-row__mark_blue"></div>
+                                       <div class="branch-schedule__name">Головенко Вячеслав</div>
+                                       <div class="branch-schedule__hours">14:00 — 21:00</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="admin-template5-card__table">
+                     <div class="admin-template5-card__table-caption">Сотрудники</div>
+
+                     <div class="admin-template5-card__rows">
+                        <div class="admin-template5-card__row admin-template5-row">
+                           <div class="admin-template5-row__mark admin-template5-row__mark_violet"></div>
+                           <div class="admin-template5-row__name">Головенко Вячеслав</div>
+                           <div class="admin-template5-row__phone"><a href="tel:+79009992312">+7 900 999 23 12</a></div>
+                           <div class="admin-template5-row__email"><a href="mailto:mynamejonhy@gmail.ru">mynamejonhy@gmail.ru</a></div>
+                           <div class="admin-template5-row__position">Менеджер</div>
+                           <div class="admin-template5-row__shedule">9:00 - 17:00</div>
+                           <div class="admin-template5-row__status">
+                              <div class="status status_green">
+                                 <span>Работает</span>
+                              </div>
+                           </div>
+                           <div class="admin-template5-row__action">
+                              <a href="" class="_icon-remove"></a>
+                           </div>
+                           <div class="admin-template5-row__link">
+                              <a href="admin-employee-edit.html" class="_icon-chevron-right"></a>
+                           </div>
+                        </div>
+                        <div class="admin-template5-card__row admin-template5-row">
+                           <div class="admin-template5-row__mark admin-template5-row__mark_blue"></div>
+                           <div class="admin-template5-row__name">Головенко Вячеслав</div>
+                           <div class="admin-template5-row__phone"><a href="tel:+79009992312">+7 900 999 23 12</a></div>
+                           <div class="admin-template5-row__email"><a href="mailto:mynamejonhy@gmail.ru">mynamejonhy@gmail.ru</a></div>
+                           <div class="admin-template5-row__position">Менеджер</div>
+                           <div class="admin-template5-row__shedule">9:00 - 17:00</div>
+                           <div class="admin-template5-row__status">
+                              <div class="status status_red">
+                                 <span>Выходной</span>
+                              </div>
+                           </div>
+                           <div class="admin-template5-row__action">
+                              <a href="" class="_icon-remove"></a>
+                           </div>
+                           <div class="admin-template5-row__link">
+                              <a href="admin-employee-edit.html" class="_icon-chevron-right"></a>
+                           </div>
+                        </div>
+                        <div class="admin-template5-card__row admin-template5-row">
+                           <div class="admin-template5-row__mark admin-template5-row__mark_green"></div>
+                           <div class="admin-template5-row__name">Головенко Вячеслав</div>
+                           <div class="admin-template5-row__phone"><a href="tel:+79009992312">+7 900 999 23 12</a></div>
+                           <div class="admin-template5-row__email"><a href="mailto:mynamejonhy@gmail.ru">mynamejonhy@gmail.ru</a></div>
+                           <div class="admin-template5-row__position">Менеджер</div>
+                           <div class="admin-template5-row__shedule">9:00 - 17:00</div>
+                           <div class="admin-template5-row__status">
+                              <div class="status status_green">
+                                 <span>Работает</span>
+                              </div>
+                           </div>
+                           <div class="admin-template5-row__action">
+                              <a href="" class="_icon-remove"></a>
+                           </div>
+                           <div class="admin-template5-row__link">
+                              <a href="admin-employee-edit.html" class="_icon-chevron-right"></a>
+                           </div>
+                        </div>
+                        <div class="admin-template5-card__row admin-template5-row">
+                           <div class="admin-template5-row__mark admin-template5-row__mark_red"></div>
+                           <div class="admin-template5-row__name">Головенко Вячеслав</div>
+                           <div class="admin-template5-row__phone"><a href="tel:+79009992312">+7 900 999 23 12</a></div>
+                           <div class="admin-template5-row__email"><a href="mailto:mynamejonhy@gmail.ru">mynamejonhy@gmail.ru</a></div>
+                           <div class="admin-template5-row__position">Менеджер</div>
+                           <div class="admin-template5-row__shedule">9:00 - 17:00</div>
+                           <div class="admin-template5-row__status">
+                              <div class="status status_green">
+                                 <span>Работает</span>
+                              </div>
+                           </div>
+                           <div class="admin-template5-row__action">
+                              <a href="" class="_icon-remove"></a>
+                           </div>
+                           <div class="admin-template5-row__link">
+                              <a href="admin-employee-edit.html" class="_icon-chevron-right"></a>
+                           </div>
+                        </div>
+                        <div class="admin-template5-card__row admin-template5-row">
+                           <div class="admin-template5-row__mark admin-template5-row__mark_violet2"></div>
+                           <div class="admin-template5-row__name">Головенко Вячеслав</div>
+                           <div class="admin-template5-row__phone"><a href="tel:+79009992312">+7 900 999 23 12</a></div>
+                           <div class="admin-template5-row__email"><a href="mailto:mynamejonhy@gmail.ru">mynamejonhy@gmail.ru</a></div>
+                           <div class="admin-template5-row__position">Менеджер</div>
+                           <div class="admin-template5-row__shedule">9:00 - 17:00</div>
+                           <div class="admin-template5-row__status">
+                              <div class="status status_green">
+                                 <span>Работает</span>
+                              </div>
+                           </div>
+                           <div class="admin-template5-row__action">
+                              <a href="" class="_icon-remove"></a>
+                           </div>
+                           <div class="admin-template5-row__link">
+                              <a href="admin-employee-edit.html" class="_icon-chevron-right"></a>
+                           </div>
+                        </div>
+                        <div class="admin-template5-card__row admin-template5-row">
+                           <button class="btn btn_border-blue" data-popup="#add-employee">
+                              <i class="_icon-user-add"></i>
+                              <span>Добавить сотрудника</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

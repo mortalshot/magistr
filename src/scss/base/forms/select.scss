@@ -5,6 +5,7 @@
 .select {
 	// .select__control
 	&__control {
+		min-width: rem(168);
 		@include adaptiveValue("height", 48, 38);
 		background-color: $White;
 		border-radius: rem(10);
@@ -17,6 +18,10 @@
 		justify-content: space-between;
 		position: relative;
 		transition: $transition ease border-color 0s;
+
+		.admin-wrapper & {
+			height: rem(34);
+		}
 
 		// .select__control--menu-is-open
 		&--menu-is-open {
@@ -38,6 +43,11 @@
 		overflow: hidden;
 		padding-left: rem(16);
 		padding-right: rem(16);
+
+		.admin-wrapper & {
+			padding-left: rem(12);
+			padding-right: rem(6);
+		}
 	}
 
 	// .select__value-container--has-value
@@ -58,7 +68,19 @@
 		align-items: center;
 		gap: rem(8);
 		@include adaptiveValue("font-size", 16, 14);
-		line-height: math.div(20 , 16);
+		line-height: math.div(20, 16);
+
+		.admin-wrapper & {
+			font-size: rem(14);
+		}
+	}
+
+	// .select__changed
+	&__changed {
+		margin-left: rem(8);
+		font-size: rem(12);
+		line-height: math.div(15, 12);
+		color: $Grey;
 	}
 
 	// .select__input-container
@@ -73,6 +95,7 @@
 
 	// .select__input
 	&__input {
+		height: rem(1) !important;
 	}
 
 	// .select__indicators
@@ -82,6 +105,10 @@
 		align-self: stretch;
 		flex-shrink: 0;
 		padding-right: rem(16);
+
+		.admin-wrapper & {
+			padding-right: rem(6);
+		}
 	}
 
 	// .select__indicator
@@ -97,6 +124,12 @@
 	// .select__dropdown-indicator
 	&__dropdown-indicator {
 		transition: $transition ease transform 0s;
+
+		.admin-wrapper & {
+			svg {
+				fill: $Grey;
+			}
+		}
 	}
 
 	// .select__menu

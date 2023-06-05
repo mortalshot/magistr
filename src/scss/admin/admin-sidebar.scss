@@ -2,23 +2,48 @@
    background-color: $White;
    border-top: rem(1) solid $Line;
    padding-top: rem(24);
-
-   // .admin-sidebar__container
-   &__container {
-   }
+   overflow: hidden;
 
    // .admin-sidebar__menu
    &__menu {
       ul {
          display: grid;
-         row-gap: rem(16);
+         row-gap: rem(8);
+         margin-top: rem(-4);
+         margin-bottom: rem(-4);
       }
 
       li {
          display: flex;
-         justify-content: center;
-         text-align: center;
-         font-size: rem(22);
+         // justify-content: center;
+         // text-align: center;
+
+         a {
+            display: flex;
+            align-items: center;
+            gap: rem(8);
+            padding: rem(4) rem(30);
+         }
+
+         i {
+            width: rem(22);
+            min-width: rem(22);
+            flex: 0 0 rem(22);
+            font-size: rem(22);
+         }
+
+         span {
+            white-space: nowrap;
+            font-weight: 600;
+            font-size: rem(14);
+            line-height: math.div(17, 14);
+            opacity: 0;
+            transition: $transition ease opacity 0s;
+
+            ._open-menu & {
+               opacity: 1;
+            }
+         }
 
          &._active {
             a {
