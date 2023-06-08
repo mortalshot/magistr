@@ -2231,9 +2231,6 @@
    &__row {
       display: flex;
 
-      &:first-child {
-         padding-top: rem(24);
-      }
       &:not(:last-child) {
          padding-bottom: rem(24);
          margin-bottom: rem(24);
@@ -2283,6 +2280,11 @@
 
    // .price-table__body
    &__body {
+      .price-table__row {
+         &:first-child {
+            padding-top: rem(24);
+         }
+      }
    }
 
    // .price-table__text
@@ -2292,8 +2294,15 @@
    // .price-table__list
    &__list {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      align-content: flex-start;
       row-gap: rem(8);
+   }
+
+   // .price-table__tr
+   &__tr {
+      display: grid;
+      align-content: flex-start;
+      grid-template-columns: repeat(2, 1fr);
       column-gap: rem(32);
    }
 
@@ -2301,6 +2310,32 @@
    &__item {
       &:nth-child(2n) {
          text-align: right;
+      }
+   }
+
+   // .price-table__footer
+   &__footer {
+      color: $Grey;
+
+      &:not(:first-child) {
+         padding-top: rem(24);
+         margin-top: rem(24);
+         border-top: rem(1) solid $Line;
+      }
+
+      ._content {
+         max-width: rem(720);
+
+         & > * {
+            margin-top: rem(16);
+            margin-bottom: rem(16);
+         }
+         :first-child {
+            margin-top: 0;
+         }
+         :last-child {
+            margin-bottom: 0;
+         }
       }
    }
 }
