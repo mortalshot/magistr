@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper user-wrapper_home">
+         <div class="user-wrapper__container">
+            <aside class="user-sidebar">
+               <div class="user-sidebar__user user">
+                  <div class="user__avatar"><img src="@img/icons/user-avatar-icon.svg" alt="" loading="lazy"></div>
+                  <div class="user__body">
+                     <div class="user__name">Иван Иванов</div>
+                     <div class="user__email">mymailname@mail.ru</div>
+                  </div>
+               </div>
+
+               <div class="user-sidebar__discount user-discount">
+                  <a href="" class="user-discount__wrapper _wrapper">
+                     <div class="user-discount__val">5</div>
+                     <div class="user-discount__body">
+                        <div class="user-discount__percent">%</div>
+                        <div class="user-discount__caption">Ваша скидка</div>
+                     </div>
+                  </a>
+               </div>
+
+               <nav class="user-sidebar__navigation user-navigation">
+                  <ul class="user-navigation__list">
+                     <li class="user-navigation__item _active"><a href="" class="user-navigation__link">Активные заказы</a></li>
+                     <li class="user-navigation__item "><a href="" class="user-navigation__link">Выполненные заказы</a></li>
+                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Архив</a></li>
+                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Статусы заказа</a></li>
+                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Редактировать данные</a></li>
+                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Смена пароля</a></li>
+                  </ul>
+               </nav>
+
+               <div class="user-sidebar__actions">
+                  <div class="user-sidebar__logout"><a href="">Выйти</a></div>
+                  <div class="user-sidebar__button"><a href="" class="btn btn_bg-orange">Оформить заказ</a></div>
+               </div>
+            </aside>
+            <main class="user-main _wrapper">
+               <div class="user-template1">
+                  <div class="user-template1__heading">
+                     <div class="user-template1__title">
+                        <h1>Активные заказы</h1>
+                        <span>0</span>
+                     </div>
+                  </div>
+
+                  <div class="user-template1__empty user-empty">
+                     <div class="user-empty__wrapper">
+                        <div class="user-empty__image"><img src="@img/icons/user-empty.svg" alt="" loading="lazy"></div>
+                        <div class="user-empty__text _content">
+                           <p>У вас пока нет заказанных работ</p>
+                        </div>
+                        <div class="user-empty__button">
+                           <a href="" class="btn btn_bg-orange">Заказать работу</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

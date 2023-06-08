@@ -259,6 +259,9 @@
 
    // .main-footer__information
    &__information {
+      .contacts__item {
+         justify-content: flex-start;
+      }
    }
 
    // .main-footer__feedback

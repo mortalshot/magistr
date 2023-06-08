@@ -16,6 +16,10 @@ h,
          @include adaptiveValue("font-size", 24, 18);
          line-height: math.div(26, 24);
       }
+
+      .user-wrapper & {
+         @include adaptiveValue("font-size", 22, 14);
+      }
    }
    &3 {
       font-weight: 700;
@@ -30,6 +34,11 @@ h,
    &5 {
       font-weight: 700;
       @include adaptiveValue("font-size", 18, 16);
+      line-height: 1;
+   }
+   &6 {
+      font-weight: 700;
+      @include adaptiveValue("font-size", 16, 12);
       line-height: 1;
    }
 }
@@ -474,6 +483,7 @@ section {
    width: 100%;
    overflow-x: auto;
    overflow-y: hidden;
+   scrollbar-color: transparent transparent;
 
    &::-webkit-scrollbar {
       width: 0;

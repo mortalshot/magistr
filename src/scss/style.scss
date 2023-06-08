@@ -85,12 +85,16 @@ body {
 	overflow: clip;
 
 	// Прижимаем footer
-	> main {
+	> main, .user-wrapper {
 		flex: 1 1 auto;
 	}
 	// Фикс для слайдеров
 	> * {
 		min-width: 0;
+	}
+
+	.user-wrapper {
+
 	}
 }
 
@@ -165,6 +169,8 @@ body {
 @import "main/main-header";
 @import "main/main-footer";
 @import "main/main-styles";
+
+@import "user/user-styles";
 
 // Подключение стилей ЛК Суперпользователя
 @import "admin/admin-header";

@@ -714,6 +714,23 @@ body::after {
 			}
 		}
 	}
+
+	// .ordering-total__note
+	&__note {
+		display: flex;
+		align-items: flex-start;
+		@include adaptiveValue("column-gap", 16, 8);
+		font-weight: 600;
+		line-height: 130%;
+		color: #cc4b2f;
+		max-width: rem(500);
+
+		img {
+			flex: 0 0 rem(26);
+			@include adaptiveValue("flex-basis", 26, 20);
+			@include adaptiveValue("max-width", 26, 20);
+		}
+	}
 }
 
 .ordering-summary {

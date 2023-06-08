@@ -167,6 +167,48 @@
 				@include adaptiveValue("font-size", 20, 18, 1200, 768, 1);
 			}
 		}
+
+		// .main-header__account_logged
+		&_logged {
+			@media (min-width: $mobile) {
+				position: relative;
+				@include adaptiveValue("padding-right", 20, 16, 1440, 768, 1);
+
+				&::after {
+					content: "";
+					display: block;
+					width: rem(16);
+					height: rem(16);
+					flex: 0 0 rem(16);
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					background: url(../img/icons/chevron-bottom-blue.svg) no-repeat center/contain;
+				}
+			}
+		}
+	}
+
+	// .main-header__account-image
+	&__account-image {
+		flex: 0 0 rem(38);
+		width: rem(38);
+		height: rem(38);
+		@include adaptiveValue("flex-basis", 38, 22);
+		@include adaptiveValue("width", 38, 22);
+		@include adaptiveValue("height", 38, 22);
+		border: rem(1) solid $BBLue;
+		background-color: $White;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+
+		img {
+			// border-radius: 50%;
+		}
 	}
 
 	// .main-header__bottom
