@@ -1058,7 +1058,7 @@
       @include adaptiveValue("padding", 30, 16);
       background-color: #f4f6fa;
       border-radius: rem(10);
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
 
       .user-template3__caption {
          @media (min-width: $mobileM) {

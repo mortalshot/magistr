@@ -14737,8 +14737,8 @@ section:last-child {
   	} */
   background-color: #f4f6fa;
   border-radius: 0.625rem;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr !important;
+  grid-template-columns: 1fr !important;
 }
 
 .user-template3 .ordering-total__item {
