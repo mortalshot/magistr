@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Архив"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+
+            <div class="user-home">
+               <a href="user-active-orders1.html" class="user-home__link _icon-chevron-left"></a>
+
+               <div class="user-home__caption">Статусы заказа</div>
+            </div>
+
+            <main class="user-main _wrapper">
+               <div class="user-template5">
+                  <div class="user-template5__heading _content">
+                     <h1>Статусы заказа</h1>
+                  </div>
+
+                  <div class="user-template5__list">
+                     <div class="user-template5__item">
+                        <div class="user-template5__item-wrapper">
+                           <div class="user-template5__item-status">
+                              <img src="@img/icons/to-be-agreed-gray.svg" alt="" loading="lazy">
+                              <span>На согласовании</span>
+                           </div>
+
+                           <div class="user-template5__item-text">Заказ отправлен менеджеру для оценки</div>
+                        </div>
+                     </div>
+                     <div class="user-template5__item">
+                        <div class="user-template5__item-wrapper">
+                           <div class="user-template5__item-status">
+                              <img src="@img/icons/pay-before2-gray.svg" alt="" loading="lazy">
+                              <span>Ждем оплаты</span>
+                           </div>
+
+                           <div class="user-template5__item-text">Работа оценена, в поле цена указана итоговая стоимость работы</div>
+                        </div>
+                     </div>
+                     <div class="user-template5__item">
+                        <div class="user-template5__item-wrapper">
+                           <div class="user-template5__item-status">
+                              <img src="@img/icons/in-work.svg" alt="" loading="lazy">
+                              <span>В работе</span>
+                           </div>
+
+                           <div class="user-template5__item-text">Оплата получена, заказ выполняется</div>
+                        </div>
+                     </div>
+                     <div class="user-template5__item">
+                        <div class="user-template5__item-wrapper">
+                           <div class="user-template5__item-status">
+                              <img src="@img/icons/company-failure.svg" alt="" loading="lazy">
+                              <span>Отказ компании</span>
+                           </div>
+
+                           <div class="user-template5__item-text">Мы не можем выполнить заказ, вероятные причины: нет свободного специалиста, который смог бы выполнить работу.</div>
+                        </div>
+                     </div>
+                     <div class="user-template5__item">
+                        <div class="user-template5__item-wrapper">
+                           <div class="user-template5__item-status">
+                              <img src="@img/icons/check-gray.svg" alt="" loading="lazy">
+                              <span>Выполнено</span>
+                           </div>
+
+                           <div class="user-template5__item-text">Заказ выполнен, вы можете скачать его в разделе "скачать выполненные"</div>
+                        </div>
+                     </div>
+                     <div class="user-template5__item">
+                        <div class="user-template5__item-wrapper">
+                           <div class="user-template5__item-status">
+                              <img src="@img/icons/assessment.svg" alt="" loading="lazy">
+                              <span>Оценка в течении дня</span>
+                           </div>
+
+                           <div class="user-template5__item-text">Заказ направлен автору для оценки возможности выполнения. С Вами свяжутся в течении дня</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

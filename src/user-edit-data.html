@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Редактировать данные"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+
+            <div class="user-home">
+               <a href="user-active-orders1.html" class="user-home__link _icon-chevron-left"></a>
+
+               <div class="user-home__caption">Контактные данные</div>
+            </div>
+
+            <main class="user-main _wrapper">
+               <div class="user-template6">
+                  <div class="user-template6__blocks">
+                     <div class="user-template6__block">
+                        <h1 class="user-template6__title">Контактные данные</h1>
+
+                        <div class="user-template6__list">
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Имя</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">Иван</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Имя" value="Иван" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Фамилия</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">Сидоренко</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Фамилию" value="Сидоренко" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item user-template6__item_changing"> <!-- Для .user-template6__item добавляем модификатор user-template6__item_changing, на мобиле дополнительно для тега html добавляем класс popup-show -->
+                              <div class="user-template6__caption">Телефон</div>
+
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">+79******24</div>
+
+                                    <div class="user-template6__note">
+                                       <div class="user-template6__note-wrapper">
+                                          <img src="@img/icons/check-gray2.svg" alt="" loading="lazy">
+                                          <span>Включены оповещания по SMS и Push</span>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <div class="form__label">Введие номер телефона</div>
+                                          <input type="text" name="" placeholder="+7 999 999 99 99" value="+7 900 098 88 73" class="form__input form__input_phone" />
+                                       </div>
+                                       <div class="form__item col-12">
+                                          <label class="toggle">
+                                             <div class="toggle__wrapper">
+                                                <input type="checkbox" class="toggle__checkbox" checked>
+                                                <span class="toggle__slider"></span>
+                                             </div>
+
+                                             <div class="toggle__text">Оповещать по SMS и Push</div>
+                                          </label>
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Электронная почта</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">mymail************</div>
+                                    <div class="user-template6__note">
+                                       <div class="user-template6__note-wrapper">
+                                          <img src="@img/icons/check-gray2.svg" alt="" loading="lazy">
+                                          <span>Включены оповещения по Email</span>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="email" name="" placeholder="Введите Email" value="" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">WhatsApp</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">+79******24</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите WhatsApp" value="" class="form__input form__input_phone" />
+                                       </div>
+                                       <div class="form__item col-12">
+                                          <label class="toggle">
+                                             <div class="toggle__wrapper">
+                                                <input type="checkbox" class="toggle__checkbox">
+                                                <span class="toggle__slider"></span>
+                                             </div>
+
+                                             <div class="toggle__text">Включить оповещения</div>
+                                          </label>
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Telegram</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">+79******24</div>
+
+                                    <div class="user-template6__note">
+                                       <div class="user-template6__note-wrapper">
+                                          <img src="@img/icons/check-gray2.svg" alt="" loading="lazy">
+                                          <span>Включены оповещения</span>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Telegram" value="" class="form__input form__input_phone" />
+                                       </div>
+                                    </div>
+                                    <div class="form__item col-12">
+                                       <label class="toggle">
+                                          <div class="toggle__wrapper">
+                                             <input type="checkbox" class="toggle__checkbox" checked>
+                                             <span class="toggle__slider"></span>
+                                          </div>
+
+                                          <div class="toggle__text">Включить оповещения</div>
+                                       </label>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="user-template6__block">
+                        <h1 class="user-template6__title">Дополнительная информация</h1>
+
+                        <div class="user-template6__list">
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">ВУЗ</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">МГУ</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите ВУЗ" value="МГУ" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Факультет</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">Маркетинг</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Факультет" value="Маркетинг" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Курс</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">1</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Курс" value="1" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Форма обучения</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">Очная</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Форма обучения" value="Очная" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                           <div class="user-template6__item">
+                              <div class="user-template6__caption">Год завершения</div>
+                              <div class="user-template6__body">
+                                 <div class="user-template6__row">
+                                    <div class="user-template6__value">2005 год</div>
+                                 </div>
+
+                                 <form action="" class="user-template6__form form">
+                                    <div class="form__row">
+                                       <div class="form__item col-12">
+                                          <input type="text" name="" placeholder="Введите Год завершения" value="2005 год" class="form__input" />
+                                       </div>
+                                    </div>
+
+                                    <div class="form__submit"><button type="submit" class="btn btn_bg-orange">Сохранить</button></div>
+                                 </form>
+                              </div>
+                              <button type="button" class="user-template6__button text-link text-link_blue">Изменить</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

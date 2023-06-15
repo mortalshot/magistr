@@ -41,6 +41,12 @@
          margin-top: rem(4);
          margin-bottom: rem(4);
       }
+      :first-child {
+         margin-top: 0;
+      }
+      :last-child {
+         margin-bottom: 0;
+      }
    }
 }
 
@@ -54,6 +60,10 @@
       position: relative;
       font-size: rem(10);
       line-height: math.div(13, 10);
+
+      @media (min-width: $mobileM) {
+         min-height: rem(120);
+      }
    }
 
    // .file-item__extension
@@ -125,8 +135,8 @@
       align-content: space-between;
       gap: rem(16);
 
-      @media (max-width:$mobileM){
-          gap: rem(8); 
+      @media (max-width: $mobileM) {
+         gap: rem(8);
       }
    }
 
@@ -209,8 +219,8 @@
          flex-direction: column;
          gap: rem(16);
 
-         @media (max-width:$mobileM){
-             gap: rem(8); 
+         @media (max-width: $mobileM) {
+            gap: rem(8);
          }
       }
    }
@@ -221,6 +231,13 @@
          display: flex;
          align-items: center;
          justify-content: center;
+
+         @media (any-hover: hover) {
+            transition: $transition ease opacity 0s;
+            &:hover {
+               opacity: 0.8;
+            }
+         }
       }
    }
 }

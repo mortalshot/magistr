@@ -18,6 +18,17 @@
    &-10,
    &-11,
    &-12,
+   &-xs-1,
+   &-xs-2,
+   &-xs-3,
+   &-xs-4,
+   &-xs-5,
+   &-xs-6,
+   &-xs-7,
+   &-xs-9,
+   &-xs-10,
+   &-xs-11,
+   &-xs-12,
    &-sm-1,
    &-sm-2,
    &-sm-3,
@@ -129,6 +140,89 @@
       max-width: 100%;
    }
 
+   &-xs-1 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 8.333%;
+         max-width: 8.333%;
+      }
+   }
+
+   &-xs-2 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 16.666%;
+         max-width: 16.666%;
+      }
+   }
+
+   &-xs-3 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 25%;
+         max-width: 25%;
+      }
+   }
+
+   &-xs-4 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 33.333%;
+         max-width: 33.333%;
+      }
+   }
+
+   &-xs-5 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 41.666%;
+         max-width: 41.666%;
+      }
+   }
+
+   &-xs-6 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 50%;
+         max-width: 50%;
+      }
+   }
+
+   &-xs-7 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 58.333%;
+         max-width: 58.333%;
+      }
+   }
+
+   &-xs-8 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 66.666%;
+         max-width: 66.666%;
+      }
+   }
+
+   &-xs-9 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 75%;
+         max-width: 75%;
+      }
+   }
+
+   &-xs-10 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 83.333%;
+         max-width: 83.333%;
+      }
+   }
+
+   &-xs-11 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 91.666%;
+         max-width: 91.666%;
+      }
+   }
+
+   &-xs-12 {
+      @media screen and (min-width: $mobileSmall) {
+         flex: 0 0 100%;
+         max-width: 100%;
+      }
+   }
    &-sm-1 {
       @media screen and (min-width: $mobileM) {
          flex: 0 0 8.333%;

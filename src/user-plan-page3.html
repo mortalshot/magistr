@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Страницы работ с планом (Прикрепить свой план)"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+            <main class="user-main _wrapper">
+               <div class="user-template2">
+                  <div class="user-template2__heading">
+                     <div class="user-template2__heading-left">
+                        <div>
+                           <a href="" class="back-button">
+                              <i class="_icon-chevron-left"></i>
+                              <span>План по заказу №198772</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="ordering-total">
+                     <div class="ordering-total__item">
+                        <div class="ordering-total__information">
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Дата оформления:</div>
+                              <div class="ordering-total__info-text">21.06.2021</div>
+                           </div>
+                           <div class="ordering-total__row ordering-total__row_theme">
+                              <div class="ordering-total__info-caption">Тема:</div>
+                              <div class="ordering-total__info-text">Название плана</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Предмет:</div>
+                              <div class="ordering-total__info-text">Математика</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Требования:</div>
+                              <div class="ordering-total__info-text">C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Срок:</div>
+                              <div class="ordering-total__info-text">20.02.2020</div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                     <div class="ordering-total__item">
+                        <div class="file">
+                           <div class="file__label form__label">
+                              <i class="_icon-permalink"></i>
+                              <span> Прикрепить свой план</span>
+                           </div>
+
+                           <div class="file__list">
+                              <div class="file__item file-item file-item_upload">
+                                 <div class="file-item__wrapper">
+                                    <img src="@img/icons/upload.svg" alt="" loading="lazy">
+                                    <input type="file" class="file-item__upload" />
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="file__note">
+                              <p>Не более <strong>50 Мб</strong></p>
+                              <p>Не более <strong>15 файлов</strong></p>
+                              <p>Допустимые форматы: jpg, jpeg, bmp, gif, png, zip, rar, 7zip, doc, docx, xls, xlsx, txt, rtf, ppt, pptx, pdf. </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="ordering-total__item ordering-total__item_final">
+                        <div class="ordering-total__information">
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Стоимость:</div>
+                              <div class="ordering-total__info-text">
+                                 <div class="title-h1 _nowrap">0 ₽</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="user-template2__actions">
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-orange">Отправить</a></div>
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-gray">Отменить</a></div>
+                  </div>
+
+                  <div class="_content">
+                     <p>«План согласован» — доработки от 3 до 5 рабочих дней.</p>
+                     <p>«Оформить доработку» — В случае если в доработке есть изменения, не указанные при оформлении заказа, за эту работу может взиматься.</p>
+                     <p>«Прикрепить свой план» — Например, если в выполненную работу требуется добавить новую главу.</p>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

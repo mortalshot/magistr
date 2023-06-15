@@ -1194,7 +1194,8 @@
       border-radius: rem(10);
       color: $mainColor !important;
       text-decoration: none !important;
-
+   }
+   a.files__item-wrapper {
       @media (any-hover: hover) {
          transition: $transition ease border-color 0s !important;
          &:hover {

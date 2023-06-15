@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Страницы работ с планом (Необходимо ответить)"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+            <main class="user-main _wrapper">
+               <div class="user-template2">
+                  <div class="user-template2__heading">
+                     <div class="user-template2__heading-left">
+                        <div>
+                           <a href="" class="back-button">
+                              <i class="_icon-chevron-left"></i>
+                              <span>План по заказу №198772 #1</span>
+                           </a>
+                        </div>
+
+                        <div class="user-template1-card__status">
+                           <img src="@img/icons/need-to-answer.svg" alt="" loading="lazy">
+                           <span style="color: #CC4B2F;">В Необходимо ответить</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="download-plan files">
+                     <div class="files__list">
+                        <div class="files__item">
+                           <div class="files__item-wrapper">
+                              <div class="files__item-icon _icon-doc"></div>
+                              <div class="files__item-body">
+                                 <div class="files__item-name">План по диплому Кувшинов</div>
+                                 <div class="files__item-info">
+                                    <div class="files__item-extension">DOCX</div>
+                                    <span class="files__info-separator"></span>
+                                    <div class="files__item-size">48.18 Мб</div>
+                                 </div>
+                                 <div class="files__button"><a href="" class="_icon-download"><span>Скачать план</span></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="ordering-total">
+                     <div class="ordering-total__item">
+                        <div class="ordering-total__information">
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Дата оформления:</div>
+                              <div class="ordering-total__info-text">21.06.2021</div>
+                           </div>
+                           <div class="ordering-total__row ordering-total__row_theme">
+                              <div class="ordering-total__info-caption">Тема:</div>
+                              <div class="ordering-total__info-text">Название плана</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Предмет:</div>
+                              <div class="ordering-total__info-text">Математика</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Требования:</div>
+                              <div class="ordering-total__info-text">C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Срок:</div>
+                              <div class="ordering-total__info-text">20.02.2020</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="user-template2__actions">
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-orange">План согласован</a></div>
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-gray">Оформить доработку плана</a></div>
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-gray">Прикрепить свой план</a></div>
+                  </div>
+
+                  <div class="_content">
+                     <p>«План согласован» — доработки от 3 до 5 рабочих дней.</p>
+                     <p>«Оформить доработку» — В случае если в доработке есть изменения, не указанные при оформлении заказа, за эту работу может взиматься.</p>
+                     <p>«Прикрепить свой план» — Например, если в выполненную работу требуется добавить новую главу.</p>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

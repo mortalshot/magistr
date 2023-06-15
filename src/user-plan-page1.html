@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Страницы работ с планом (В работе)"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+            <main class="user-main _wrapper">
+               <div class="user-template2">
+                  <div class="user-template2__heading">
+                     <div class="user-template2__heading-left">
+                        <div>
+                           <a href="" class="back-button">
+                              <i class="_icon-chevron-left"></i>
+                              <span>План по заказу №198772 #1</span>
+                           </a>
+                        </div>
+
+                        <div class="user-template1-card__status">
+                           <img src="@img/icons/in-work.svg" alt="" loading="lazy">
+                           <span>В работе</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="download-plan files">
+                     <div class="files__list">
+                        <div class="files__item">
+                           <div class="files__item-wrapper">
+                              <div class="files__item-icon _icon-doc"></div>
+                              <div class="files__item-body">
+                                 <div class="files__item-name">План по диплому Кувшинов</div>
+                                 <div class="files__item-info">
+                                    <div class="files__item-extension">DOCX</div>
+                                    <span class="files__info-separator"></span>
+                                    <div class="files__item-size">48.18 Мб</div>
+                                 </div>
+                                 <div class="files__button"><a href="" class="_icon-download"><span>Скачать план</span></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="ordering-total">
+                     <div class="ordering-total__item">
+                        <div class="ordering-total__information">
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Дата оформления:</div>
+                              <div class="ordering-total__info-text">21.06.2021</div>
+                           </div>
+                           <div class="ordering-total__row ordering-total__row_theme">
+                              <div class="ordering-total__info-caption">Тема:</div>
+                              <div class="ordering-total__info-text">Название плана</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Предмет:</div>
+                              <div class="ordering-total__info-text">Математика</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Требования:</div>
+                              <div class="ordering-total__info-text">C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</div>
+                           </div>
+                           <div class="ordering-total__row">
+                              <div class="ordering-total__info-caption">Срок:</div>
+                              <div class="ordering-total__info-text">20.02.2020</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="user-template2__actions">
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-gray">Редактировать заказ</a></div>
+                     <div class="user-template2__button"><a href="" class="btn btn_bg-transparent">Отказаться</a></div>
+                     <div class="user-template2__button"><button type="button" data-popup="#order-information" class="btn btn_text-blue">Информация о заказе</button></div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

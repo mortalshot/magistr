@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Накопительная система"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+
+            <div class="user-home">
+               <a href="user-active-orders1.html" class="user-home__link _icon-chevron-left"></a>
+
+               <div class="user-home__caption">Накопительная система</div>
+            </div>
+
+            <main class="user-main _wrapper">
+               <div class="user-template8">
+                  <h1 class="user-template8__title">Накопительная система</h1>
+
+                  <div class="user-template8__accumulation">
+                     <div class="user-template8__heading">
+                        <div class="user-template8__discount">
+                           <div class="user-template8__discount-current">
+                              <span class="user-template8__discount-value">5%</span>
+                              <span>Ваша скидка</span>
+                           </div>
+
+                           <div class="user-template8__discount-next">
+                              <span class="user-template8__discount-value">6%</span>
+                           </div>
+                        </div>
+
+                        <div class="user-template8__graphic">
+                           <div class="user-template8__graphic-line">
+                              <div class="user-template8__graphic-fill" style="width: calc(38% - 4px)"><span></span></div>
+                              <div class="user-template8__graphic-text">1 900 ₽ из 5 000 ₽</div>
+                           </div>
+                           <div class="user-template8__graphic-caption">Необходимо еще потратить <strong class="_nowrap">3 100 ₽</strong></div>
+                        </div>
+                     </div>
+
+                     <div class="user-template8__table">
+                        <table>
+                           <thead>
+                              <tr>
+                                 <th>Сумма</th>
+                                 <th>Скидка</th>
+                              </tr>
+                           </thead>
+
+                           <tbody>
+                              <tr>
+                                 <td><div class="_nowrap">5 000 ₽</div></td>
+                                 <td><strong>5%</strong></td>
+                              </tr>
+                              <tr>
+                                 <td><div class="_nowrap">10 000 ₽</div></td>
+                                 <td><strong>6%</strong></td>
+                              </tr>
+                              <tr>
+                                 <td><div class="_nowrap">20 000 ₽</div></td>
+                                 <td><strong>7%</strong></td>
+                              </tr>
+                              <tr>
+                                 <td><div class="_nowrap">30 000 ₽</div></td>
+                                 <td><strong>8%</strong></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <div class="user-template8__button"><a href="" class="btn btn_bg-orange">Перейти к оформлению заказа</a></div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

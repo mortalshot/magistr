@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/_head.htm',{
-"title":"Главная"
+"title":"Активные заказы"
 })
 
 <body>
@@ -10,47 +10,20 @@
       <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
       <div class="user-wrapper">
          <div class="user-wrapper__container">
-            <aside class="user-sidebar">
-               <div class="user-sidebar__user user">
-                  <div class="user__avatar"><img src="@img/icons/user-avatar-icon.svg" alt="" loading="lazy"></div>
-                  <div class="user__body">
-                     <div class="user__name">Иван Иванов</div>
-                     <div class="user__email">mymailname@mail.ru</div>
-                  </div>
-               </div>
+            @@include('html/_user-sidebar.htm',{})
 
-               <div class="user-sidebar__discount user-discount">
-                  <a href="" class="user-discount__wrapper _wrapper">
-                     <div class="user-discount__val">5</div>
-                     <div class="user-discount__body">
-                        <div class="user-discount__percent">%</div>
-                        <div class="user-discount__caption">Ваша скидка</div>
-                     </div>
-                  </a>
-               </div>
+            <div class="user-home">
+               <a href="user-active-orders1.html" class="user-home__link _icon-chevron-left"></a>
 
-               <nav class="user-sidebar__navigation user-navigation">
-                  <ul class="user-navigation__list">
-                     <li class="user-navigation__item _active"><a href="" class="user-navigation__link">Активные заказы</a></li>
-                     <li class="user-navigation__item "><a href="" class="user-navigation__link">Выполненные заказы</a></li>
-                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Архив</a></li>
-                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Статусы заказа</a></li>
-                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Редактировать данные</a></li>
-                     <li class="user-navigation__item"><a href="" class="user-navigation__link">Смена пароля</a></li>
-                  </ul>
-               </nav>
+               <div class="user-home__caption">Активные заказы</div>
+            </div>
 
-               <div class="user-sidebar__actions">
-                  <div class="user-sidebar__logout"><a href="">Выйти</a></div>
-                  <div class="user-sidebar__button"><a href="" class="btn btn_bg-orange">Оформить заказ</a></div>
-               </div>
-            </aside>
             <main class="user-main _wrapper">
                <div class="user-template1">
                   <div class="user-template1__heading">
                      <div class="user-template1__title">
                         <h1>Активные заказы</h1>
-                        <span>0</span>
+                        <span>11</span>
                      </div>
 
                      <div class="user-template1__filters">
@@ -403,7 +376,19 @@
                                  <div class="user-template1-card__actions">
                                     <div class="user-template1-card__button" style="flex: 1;"><a href="" class="btn btn_bg-orange" style="width: 100%;">Скачать</a></div>
                                     <div class="user-template1-card__button"><a href="" class="btn btn_bg-gray">Подробнее</a></div>
-                                    <div class="user-template1-card__button"><a href="" class="btn btn_bg-gray _icon-more"></a></div>
+                                    <div class="user-template1-card__button">
+                                       <!-- Выпадашка появляется, когда добавляешь класс "_active" для ".user-template1-card__more"-->
+                                       <div class="user-template1-card__more">
+                                          <button type="button" class="btn btn_bg-gray _icon-more"></button>
+
+                                          <div class="user-template1-card__more-wrapper">
+                                             <ul>
+                                                <li><a href="">Перейти в заказа</a></li>
+                                                <li><a href="">Написать отзыв</a></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
                                  </div>
                               </div>
                            </div>

@@ -1964,14 +1964,6 @@
             @include adaptiveValue("font-size", 14, 10);
             line-height: math.div(17, 14);
 
-            span {
-               // display: -webkit-box;
-               // -webkit-line-clamp: 6;
-               // -webkit-box-orient: vertical;
-               // overflow: hidden;
-               // white-space: nowrap;
-            }
-
             @media (min-width: $mobile) {
                white-space: nowrap;
             }
@@ -1981,8 +1973,8 @@
 
             &::after {
                height: rem(3);
-               border-radius: rem(10) rem(10) 0 0;
-               @include adaptiveValue("bottom", -18, 0);
+               border-radius: 0 0 rem(10) rem(10);
+               @include adaptiveValue("top", -18, 0);
             }
          }
 
@@ -6291,6 +6283,16 @@
    // .authorization-main__wrapper
    &__wrapper {
       @include adaptiveValue("padding", 32, 24);
+
+      &:not(:last-child) {
+         @include adaptiveValue("margin-bottom", 36, 24);
+      }
+   }
+
+   ._content {
+      max-width: rem(369);
+      margin-left: auto;
+      margin-right: auto;
    }
 
    // .authorization-main__caption

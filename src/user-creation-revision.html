@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Создание доработки"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_main-header.htm',{})
+      <!-- модификатор user-wrapper_home нужен, чтобы на мобиле осталась только навигация -->
+      <div class="user-wrapper">
+         <div class="user-wrapper__container">
+            @@include('html/_user-sidebar.htm',{})
+            <main class="user-main _wrapper">
+               <div class="user-template3">
+                  <div class="user-template2__heading">
+                     <div class="user-template2__heading-left">
+                        <div>
+                           <a href="" class="back-button">
+                              <i class="_icon-chevron-left"></i>
+                              <span>Оформление доработки заказа №198772</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="user-template3__information ordering-total__information">
+                     <div class="user-template3__caption title-h5">Заказ №198772</div>
+                     
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Тип работы:</div>
+                        <div class="ordering-total__info-text">Курсовая</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Дата оформления:</div>
+                        <div class="ordering-total__info-text">21.06.2021</div>
+                     </div>
+                     <div class="ordering-total__row ordering-total__row_theme">
+                        <div class="ordering-total__info-caption">Тема:</div>
+                        <div class="ordering-total__info-text">Методы расчета параметров договоров смешанного страхования жизни при их переформатировании</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Предмет:</div>
+                        <div class="ordering-total__info-text">Математика</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Требования:</div>
+                        <div class="ordering-total__info-text">C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Объем:</div>
+                        <div class="ordering-total__info-text">100 страниц</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Система антиплагиат:</div>
+                        <div class="ordering-total__info-text">Antiplagiat.ru</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Процент оригинальности:</div>
+                        <div class="ordering-total__info-text">90%</div>
+                     </div>
+                     <div class="ordering-total__row">
+                        <div class="ordering-total__info-caption">Срок:</div>
+                        <div class="ordering-total__info-text">20.02.2020</div>
+                     </div>
+                  </div>
+
+                  <form action="" class="user-template3__form form">
+                     <div class="form__row">
+                        <div class="form__item col-12 col-md-10">
+                           <label for="" class="form__label">Что необходимо доработать?</label>
+                           <textarea id="" name="" placeholder="Опишите особые требования к вашей работе" class="form__input" rows="5"></textarea>
+                        </div>
+
+                        <div class="form__item col-12 mb-0">
+                           <div class="file">
+                              <div class="file__label form__label">
+                                 <i class="_icon-permalink"></i>
+                                 <span> Прикрепить файлы</span>
+                              </div>
+
+                              <div class="file__list">
+                                 <div class="file__item file-item file-item_uploaded">
+                                    <div class="file-item__wrapper">
+                                       <div class="file-item__extension">
+                                          <img src="@img/icons/doc.svg" alt="" loading="lazy">
+                                          <span>.docx</span>
+                                       </div>
+
+                                       <div class="file-item__body">
+                                          <div class="file-item__name">Нормативы для диплома</div>
+                                          <div class="file-item__size">8 Mb</div>
+                                       </div>
+
+                                       <button type="button" class="file-item__delete"></button>
+                                    </div>
+                                 </div>
+
+                                 <div class="file__item file-item file-item_error">
+                                    <div class="file-item__wrapper">
+                                       <div class="file-item__error-title">Ошибка</div>
+                                       <div class="file-item__error-text">Размер файла привышает 50 Мб</div>
+                                       <button type="button" class="file-item__delete"></button>
+                                    </div>
+                                 </div>
+
+                                 <div class="file__item file-item file-item_progress">
+                                    <div class="file-item__wrapper">
+                                       <div class="file-item__name">Нормативы для диплома</div>
+
+                                       <div class="file-item__progress">
+                                          <div class="file-item__progress-count">34%</div>
+                                          <div class="file-item__progress-line">
+                                             <span style="width: 34%;"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="file__item file-item file-item_upload">
+                                    <div class="file-item__wrapper">
+                                       <img src="@img/icons/upload.svg" alt="" loading="lazy">
+                                       <input type="file" class="file-item__upload" />
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="file__note">
+                                 <p>Не более <strong>50 Мб</strong></p>
+                                 <p>Не более <strong>15 файлов</strong></p>
+                                 <p>Допустимые форматы: jpg, jpeg, bmp, gif, png, zip, rar, 7zip, doc, docx, xls, xlsx, txt, rtf, ppt, pptx, pdf. </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+
+                  <div class="ordering-total__item ordering-total__item_final">
+                     <div class="ordering-total__information">
+                        <div class="ordering-total__row">
+                           <div class="ordering-total__info-caption">Предварительная стоимость:</div>
+                           <div class="ordering-total__info-text">
+                              <div class="title-h1 _nowrap">750 ₽</div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="user-template2__actions">
+                        <div class="user-template2__button"><a href="" class="btn btn_bg-orange">Отправить на согласование</a></div>
+                     </div>
+                  </div>
+
+                  <div class="user-template3__note _content">
+                     <p>Срок выполнения доработки от 3 до 5 рабочих дней.</p>
+                     <p>В случае если в доработке есть изменения, не указанные при оформлении заказа, за эту работу может взиматься дополнительная плата.</p>
+                     <p>Например, если в выполненную работу требуется добавить новую главу.</p>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      @@include('html/_main-footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

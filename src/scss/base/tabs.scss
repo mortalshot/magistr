@@ -7,11 +7,24 @@
 			overflow-x: auto;
 			overflow-y: hidden;
 			scrollbar-width: thin;
-			scrollbar-color: transparent transparent;
+			scrollbar-color: $DGBlue $Line;
 
 			&::-webkit-scrollbar {
-				width: 0px;
-				height: 0px;
+				height: rem(8);
+			}
+			&::-webkit-scrollbar-track {
+				background-color: $Line;
+				border-radius: 3px;
+			}
+			&::-webkit-scrollbar-thumb {
+				border-radius: 3px;
+				background-color: $DGBlue;
+			}
+			@media (max-width: $tablet) {
+				&::-webkit-scrollbar {
+					width: 0px;
+					height: 0px;
+				}
 			}
 		}
 

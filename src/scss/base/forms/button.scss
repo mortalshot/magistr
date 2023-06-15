@@ -70,6 +70,22 @@
 		}
 	}
 
+	// .btn_bg-white
+	&_bg-white {
+		background-color: $White;
+		color: $DGBlue;
+		border-color: $Line;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				border-color: $mainColor;
+				color: $mainColor;
+			}
+		}
+	}
+
 	// .btn_border-blue
 	&_border-blue {
 		color: $BBLue;
@@ -80,6 +96,20 @@
 
 			&:hover {
 				box-shadow: 0px 4px 17px rgba($BBLue, 0.2);
+			}
+		}
+	}
+
+	// .btn_border-grey
+	&_border-blue {
+		color: $DGBlue;
+		border-color: $Line;
+
+		@media (any-hover: hover) {
+			transition: $transition ease all 0s;
+
+			&:hover {
+				box-shadow: 0px 4px 17px rgba($DGBlue, 0.2);
 			}
 		}
 	}
@@ -95,6 +125,22 @@
 
 			&:hover {
 				background-color: #e3e7ed;
+			}
+		}
+	}
+
+	// .btn_text-blue
+	&_text-blue {
+		background-color: $White;
+		color: $BBLue;
+		border-color: transparent;
+		text-decoration: underline from-font;
+		text-underline-offset: 3px;
+		transition: $transition ease text-decoration 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline transparent from-font;
 			}
 		}
 	}
