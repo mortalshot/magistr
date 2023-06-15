@@ -901,6 +901,10 @@
       &:not(:first-child) {
          @include adaptiveValue("margin-top", 0, 8);
       }
+
+      & + ._content {
+         color: $Grey;
+      }
    }
 
    // .user-template2__button
@@ -1364,8 +1368,8 @@
    &__caption {
       flex: 0 0 percent(180, 920);
 
-      @media (max-width:$mobileSmall){
-          flex: 0 0 rem(75); 
+      @media (max-width: $mobileSmall) {
+         flex: 0 0 rem(75);
       }
    }
 

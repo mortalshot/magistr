@@ -329,6 +329,7 @@ body::after {
 			background-color: $White;
 			max-width: rem(980);
 			@include adaptiveValue("padding", 30, 16);
+			position: relative;
 		}
 
 		.popup__close {

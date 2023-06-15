@@ -3038,6 +3038,7 @@ body::after {
   	@supports not (padding: $propertyValue) {
   		padding: calc(1rem + 0.875 * (100vw - 20rem) / 55);
   	} */
+  position: relative;
 }
 
 .popup_order-information .popup__close {
@@ -14535,6 +14536,10 @@ section:last-child {
   	@supports not (margin-top: $propertyValue) {
   		margin-top: calc(0.5rem + -0.4999999375 * (100vw - 20rem) / 55);
   	} */
+}
+
+.user-template2__actions + ._content {
+  color: #82879e;
 }
 
 .user-template2__button .btn i {
