@@ -1993,7 +1993,10 @@
       display: grid;
       align-content: flex-start;
       @include adaptiveValue("row-gap", 64, 24);
-      @include adaptiveValue("padding", 30, 24);
+      @include adaptiveValue("padding-top", 30, 24);
+      @include adaptiveValue("padding-bottom", 30, 24);
+      @include adaptiveValue("padding-left", 30, 16);
+      @include adaptiveValue("padding-right", 30, 16);
       position: relative;
       z-index: 1;
 
@@ -2026,11 +2029,12 @@
 
    // .template13__table
    &__table {
-      figure {
-         @media (max-width: $mobile) {
-            &:not(:last-child) {
-               margin-bottom: rem(20);
-            }
+      .template13__table-wrapper {
+         @media (min-width: $mobile) {
+            width: 100%;
+            overflow-y: hidden;
+            overflow-x: auto;
+            scrollbar-width: thin;
          }
       }
 
@@ -2040,10 +2044,23 @@
       }
 
       tr {
+         @media (max-width: $mobile) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: rem(-4);
+
+            &:not(:last-child) {
+               padding-bottom: rem(24);
+               border-bottom: rem(1) solid $Line;
+            }
+            &:not(:first-child) {
+               padding-top: rem(24);
+            }
+         }
+
          &:first-child {
             td {
-               padding-top: rem(12);
-
                @media (min-width: $mobile) {
                   padding-top: rem(24);
                }
@@ -2051,8 +2068,6 @@
          }
          &:last-child {
             td {
-               padding-bottom: rem(12);
-
                @media (min-width: $mobile) {
                   padding-bottom: rem(24);
                }
@@ -2060,40 +2075,70 @@
          }
       }
 
-      th {
-         padding: rem(9) rem(16);
-         background-color: $LGBlue;
-         font-weight: 600;
-         color: $DGBlue;
-         text-align: right;
+      thead {
+         @media (max-width: $mobile) {
+            display: none;
+         }
+      }
 
+      th {
          @media (min-width: $mobile) {
+            background-color: $LGBlue;
+            font-weight: 600;
+            color: $DGBlue;
+            text-align: right;
             padding: rem(14) rem(16);
             // min-width: rem(150);
-         }
 
-         &:first-child {
-            text-align: left;
-            border-radius: rem(10) 0 0 rem(10);
-         }
-         &:last-child {
-            border-radius: 0 rem(10) rem(10) 0;
+            &:first-child {
+               text-align: left;
+               border-radius: rem(10) 0 0 rem(10);
+            }
+            &:last-child {
+               border-radius: 0 rem(10) rem(10) 0;
+            }
          }
       }
 
       td {
-         padding: rem(16) rem(16);
-         vertical-align: text-top;
-         border-bottom: rem(1) solid $Line;
-
          @media (min-width: $mobile) {
+            padding: rem(16) rem(16);
+            vertical-align: text-top;
+            border-bottom: rem(1) solid $Line;
             text-align: right;
             // min-width: rem(150);
          }
          @media (max-width: $mobile) {
+            padding: rem(4);
+            flex: 0 0 100%;
+
             &:last-child {
                text-align: right;
             }
+         }
+
+         &[data-title] {
+            @media (max-width: $mobile) {
+               display: flex;
+               align-items: center;
+
+               &::before {
+                  content: attr(data-title);
+                  font-weight: 600;
+                  color: $Grey;
+                  flex: 0 0 33.333%;
+               }
+            }
+         }
+
+         &.td-col-3 {
+            flex: 0 0 25%;
+         }
+         &.td-col-4 {
+            flex: 0 0 33.333%;
+         }
+         &.td-col-5 {
+            flex: 0 0 41.666%;
          }
 
          p {
@@ -2140,6 +2185,10 @@
       ._icon-download {
          font-size: rem(18);
          color: $BBLue;
+
+         @media (max-width: $mobile) {
+            display: inline-flex;
+         }
       }
 
       i {
