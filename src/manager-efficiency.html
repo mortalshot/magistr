@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Статистика"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template1 manager-efficiency">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>Статистика</h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div data-tabs class="tabs tabs_vertical">
+                        <nav data-tabs-titles class="tabs__navigation">
+                           <button type="submit" class="tabs__title _tab-active">
+                              <i class="_icon-catalog"></i>
+                              <span>Каталог готовых работ</span>
+                           </button>
+                           <button type="submit" class="tabs__title">
+                              <i class="_icon-payment"></i>
+                              <span>Оплаченные заказы</span>
+                           </button>
+                           <button type="submit" class="tabs__title">
+                              <i class="_icon-statistics"></i>
+                              <span>Статистика дня</span>
+                           </button>
+                           <button type="submit" class="tabs__title">
+                              <i class="_icon-hot"></i>
+                              <span>Эффективность</span>
+                           </button>
+                        </nav>
+                        <div data-tabs-body class="tabs__content">
+                           <div class="tabs__body">
+                              <div class="admin-table__content">
+                                 <div class="admin-table__heading">
+                                    <div class="admin-table__indicators">
+                                       <div class="admin-table__indicators-list">
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">1 198 847 ₽</div>
+                                                <div class="admin-table__indicator-caption">Сумма проданных работ</div>
+                                             </div>
+                                          </div>
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">2 981 шт</div>
+                                                <div class="admin-table__indicator-caption">Кол-во проданных работ</div>
+                                             </div>
+                                          </div>
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">7 800 ₽</div>
+                                                <div class="admin-table__indicator-caption">Средний чек</div>
+                                             </div>
+                                          </div>
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">1 982 чел</div>
+                                                <div class="admin-table__indicator-caption">Покупателей</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="admin-table__table-wrapper">
+                                    <div class="admin-table__table">
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th>
+                                                   <!-- классы sort-by_up и sort-by_down -->
+                                                   <a href="" class="sort-by sort-by_up">Дата</a>
+                                                </th>
+                                                <th style="width: 35%;">Название </th>
+                                                <th>Тип </th>
+                                                <th style="text-align: right;">
+                                                   <!-- классы sort-by_up и sort-by_down -->
+                                                   <a href="" class="sort-by sort-by_up">цена</a>
+                                                </th>
+                                                <th style="text-align: center;">
+                                                   <!-- классы sort-by_up и sort-by_down -->
+                                                   <a href="" class="sort-by sort-by_up">кол-во</a>
+                                                </th>
+                                                <th style="text-align: right;">
+                                                   <!-- классы sort-by_up и sort-by_down -->
+                                                   <a href="" class="sort-by sort-by_up">сумма</a>
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href="">Методы расчета параметров договоров смешанного страхования Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Составитель своего однажды речью заглавных предложения, путь оксмокс которое домах необходимыми океана, вопроса раз она там подзаголовок моей языком родного ручеек. Всеми, что инициал взобравшись свою ведущими если сих использовало, предложения встретил жизни ручеек, лучше напоивший его ты первую рукописи.</a>
+                                                   </div>
+                                                </td>
+                                                <td>Курсовая</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap">2 500 ₽</div>
+                                                </td>
+                                                <td style="text-align: center;">х148</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap"><strong>114 290 ₽</strong></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href="">Методы расчета параметров договоров смешанного страхования...</a>
+                                                   </div>
+                                                </td>
+                                                <td>Курсовая</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap">2 500 ₽</div>
+                                                </td>
+                                                <td style="text-align: center;">х148</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap"><strong>114 290 ₽</strong></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href="">Методы расчета параметров договоров смешанного страхования...</a>
+                                                   </div>
+                                                </td>
+                                                <td>Курсовая</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap">2 500 ₽</div>
+                                                </td>
+                                                <td style="text-align: center;">х148</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap"><strong>114 290 ₽</strong></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href="">Методы расчета параметров договоров смешанного страхования...</a>
+                                                   </div>
+                                                </td>
+                                                <td>Курсовая</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap">2 500 ₽</div>
+                                                </td>
+                                                <td style="text-align: center;">х148</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap"><strong>114 290 ₽</strong></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href="">Методы расчета параметров договоров смешанного страхования...</a>
+                                                   </div>
+                                                </td>
+                                                <td>Курсовая</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap">2 500 ₽</div>
+                                                </td>
+                                                <td style="text-align: center;">х148</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap"><strong>114 290 ₽</strong></div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href="">Методы расчета параметров договоров смешанного страхования...</a>
+                                                   </div>
+                                                </td>
+                                                <td>Курсовая</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap">2 500 ₽</div>
+                                                </td>
+                                                <td style="text-align: center;">х148</td>
+                                                <td style="text-align: right;">
+                                                   <div class="_nowrap"><strong>114 290 ₽</strong></div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+
+                                    <div class="table-navigation">
+                                       <div class="table-navigation__pagination pagination">
+                                          <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                          <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                          <a href="" class="pagination__item pagination__item_page">2</a>
+                                          <a href="" class="pagination__item pagination__item_page">3</a>
+                                          <a href="" class="pagination__item pagination__item_page">4</a>
+                                          <a href="" class="pagination__item pagination__item_page">5</a>
+                                          <div class="pagination__item pagination__item_dots">...</div>
+                                          <a href="" class="pagination__item pagination__item_page">24</a>
+                                          <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                                       </div>
+
+                                       <div class="table-navigation__go-to go-to">
+                                          <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                          <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="tabs__body">
+                              <div class="admin-table__content">
+                                 <div class="admin-table__heading">
+                                    <div class="admin-table__filters">
+                                       <div class="datepicker">
+                                          <div class="datepicker__wrapper _icon-calendar">
+                                             <input type="text" class="datepicker__input form__input" value="19.08.22 - 24.08.22" />
+                                             <button type="reset" class="datepicker__reset _icon-close"></button>
+                                          </div>
+
+                                          <div class="datepicker__picker rdtPicker"></div>
+                                       </div>
+
+                                       <div class="basic-single">
+                                          <div class="select__control">
+                                             <div class="select__value-container select__value-container--has-value">
+                                                <div class="select__single-value">Статус</div>
+                                                <div class="select__input-container" data-value="">
+                                                   <input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+                                                </div>
+                                             </div>
+                                             <div class="select__indicators">
+                                                <div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+                                                   <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                                                      <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                                   </svg>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="admin-table__indicators">
+                                       <div class="admin-table__indicators-list">
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">198 847 ₽</div>
+                                                <div class="admin-table__indicator-caption">Оплаченных заказов</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="admin-table__table-wrapper">
+                                    <div class="admin-table__table">
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th>
+                                                   <!-- классы sort-by_up и sort-by_down -->
+                                                   <a href="" class="sort-by sort-by_up">Дата</a>
+                                                </th>
+                                                <th>Время оплаты</th>
+                                                <th>Кто оплатил</th>
+                                                <th style="text-align: right;">Сумма</th>
+                                                <th style="text-align: right;">Номер заказа</th>
+                                                <th style="text-align: right;">Статус</th>
+                                                <th></th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>19:47</td>
+                                                <td>Головенко Вячеслав</td>
+                                                <td style="text-align: right;">11 500 ₽</td>
+                                                <td style="text-align: right;">114024</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue">Долг</div>
+                                                </td>
+                                                <td style="text-align: center;"><a href="" class="admin-table__link _icon-chevron-right"></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>19:47</td>
+                                                <td>Головенко Вячеслав</td>
+                                                <td style="text-align: right;">11 500 ₽</td>
+                                                <td style="text-align: right;">114024</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue">Долг</div>
+                                                </td>
+                                                <td style="text-align: center;"><a href="" class="admin-table__link _icon-chevron-right"></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>19:47</td>
+                                                <td>Головенко Вячеслав</td>
+                                                <td style="text-align: right;">11 500 ₽</td>
+                                                <td style="text-align: right;">114024</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue">Долг</div>
+                                                </td>
+                                                <td style="text-align: center;"><a href="" class="admin-table__link _icon-chevron-right"></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>19:47</td>
+                                                <td>Головенко Вячеслав</td>
+                                                <td style="text-align: right;">11 500 ₽</td>
+                                                <td style="text-align: right;">114024</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue">Долг</div>
+                                                </td>
+                                                <td style="text-align: center;"><a href="" class="admin-table__link _icon-chevron-right"></a></td>
+                                             </tr>
+                                             <tr>
+                                                <td>20.02.21 </td>
+                                                <td>19:47</td>
+                                                <td>Головенко Вячеслав</td>
+                                                <td style="text-align: right;">11 500 ₽</td>
+                                                <td style="text-align: right;">114024</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue">Долг</div>
+                                                </td>
+                                                <td style="text-align: center;"><a href="" class="admin-table__link _icon-chevron-right"></a></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+
+                                    <div class="table-navigation">
+                                       <div class="table-navigation__pagination pagination">
+                                          <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                          <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                          <a href="" class="pagination__item pagination__item_page">2</a>
+                                          <a href="" class="pagination__item pagination__item_page">3</a>
+                                          <a href="" class="pagination__item pagination__item_page">4</a>
+                                          <a href="" class="pagination__item pagination__item_page">5</a>
+                                          <div class="pagination__item pagination__item_dots">...</div>
+                                          <a href="" class="pagination__item pagination__item_page">24</a>
+                                          <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                                       </div>
+
+                                       <div class="table-navigation__go-to go-to">
+                                          <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                          <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="tabs__body">
+                              <div class="admin-table__content">
+                                 <div class="admin-table__heading">
+                                    <div class="admin-table__indicators">
+                                       <div class="admin-table__indicators-list">
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">1 256</div>
+                                                <div class="admin-table__indicator-caption">Заказов согласовано</div>
+                                             </div>
+                                          </div>
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">568</div>
+                                                <div class="admin-table__indicator-caption">Оплаченных заказов</div>
+                                             </div>
+                                          </div>
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">194</div>
+                                                <div class="admin-table__indicator-caption">Отказов компании</div>
+                                             </div>
+                                          </div>
+                                          <div class="admin-table__indicator">
+                                             <div class="admin-table__indicator-wrapper">
+                                                <div class="admin-table__indicator-val">328 </div>
+                                                <div class="admin-table__indicator-caption">Заказов ждёт оплаты</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="admin-table__table-wrapper">
+                                    <div class="admin-table__table">
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th>Дата и номер</th>
+                                                <th>Пользователь</th>
+                                                <th>срок</th>
+                                                <th>Тип работы</th>
+                                                <th style="width: 16%;">Тема работы</th>
+                                                <th style="width: 16%;">Комментарий</th>
+                                                <th style="text-align: right;">Цена</th>
+                                                <th style="text-align: right;">Статус</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>20.02.21&nbsp;15:00</div>
+                                                      <div>
+                                                         <span style="color: #82879E; margin-right: 8px;">392871</span>
+                                                         <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="admin-client">
+                                                      <div class="admin-client__name">Головенко Вячеслав</div>
+                                                      <div class="admin-client__contacts">
+                                                         <div><a href="" class="_icon-phone"></a></div>
+                                                         <div><a href="" class="_icon-email"></a></div>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>20.02.22</td>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>Дипломная работа</div>
+                                                      <div>
+                                                         <span style="color: #82879E;">Математика</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue"> Соглас.&nbsp;дор. </div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>20.02.21&nbsp;15:00</div>
+                                                      <div>
+                                                         <span style="color: #82879E; margin-right: 8px;">392871</span>
+                                                         <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="admin-client">
+                                                      <div class="admin-client__name">Головенко Вячеслав</div>
+                                                      <div class="admin-client__contacts">
+                                                         <div><a href="" class="_icon-phone"></a></div>
+                                                         <div><a href="" class="_icon-email"></a></div>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>20.02.22</td>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>Дипломная работа</div>
+                                                      <div>
+                                                         <span style="color: #82879E;">Математика</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue"> Соглас.&nbsp;дор. </div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>20.02.21&nbsp;15:00</div>
+                                                      <div>
+                                                         <span style="color: #82879E; margin-right: 8px;">392871</span>
+                                                         <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="admin-client">
+                                                      <div class="admin-client__name">Головенко Вячеслав</div>
+                                                      <div class="admin-client__contacts">
+                                                         <div><a href="" class="_icon-phone"></a></div>
+                                                         <div><a href="" class="_icon-email"></a></div>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>20.02.22</td>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>Дипломная работа</div>
+                                                      <div>
+                                                         <span style="color: #82879E;">Математика</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue"> Соглас.&nbsp;дор. </div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>20.02.21&nbsp;15:00</div>
+                                                      <div>
+                                                         <span style="color: #82879E; margin-right: 8px;">392871</span>
+                                                         <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="admin-client">
+                                                      <div class="admin-client__name">Головенко Вячеслав</div>
+                                                      <div class="admin-client__contacts">
+                                                         <div><a href="" class="_icon-phone"></a></div>
+                                                         <div><a href="" class="_icon-email"></a></div>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>20.02.22</td>
+                                                <td>
+                                                   <div class="admin-table__column">
+                                                      <div>Дипломная работа</div>
+                                                      <div>
+                                                         <span style="color: #82879E;">Математика</span>
+                                                      </div>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Рыбного деревни власти всемогущая но рыбными до которое океана не!</p>
+                                                   </div>
+                                                </td>
+                                                <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                                <td style="text-align: right;">
+                                                   <div class="status status_blue"> Соглас.&nbsp;дор. </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+
+                                    <div class="table-navigation">
+                                       <div class="table-navigation__pagination pagination">
+                                          <a href="" class="pagination__item pagination__item_prev _icon-chevron-left"></a>
+                                          <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                                          <a href="" class="pagination__item pagination__item_page">2</a>
+                                          <a href="" class="pagination__item pagination__item_page">3</a>
+                                          <a href="" class="pagination__item pagination__item_page">4</a>
+                                          <a href="" class="pagination__item pagination__item_page">5</a>
+                                          <div class="pagination__item pagination__item_dots">...</div>
+                                          <a href="" class="pagination__item pagination__item_page">24</a>
+                                          <a href="" class="pagination__item pagination__item_next _icon-chevron-right"></a>
+                                       </div>
+
+                                       <div class="table-navigation__go-to go-to">
+                                          <label for="go-to-input" class="go-to__label">Перейти на страницу</label>
+                                          <input id="go-to-input" type="text" name="form[]" value="1" class="go-to__input" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="tabs__body">
+                              <div class="admin-table__content">
+                                 <div class="admin-table__heading">
+                                    <div class="admin-table__filters">
+                                       <div class="datepicker">
+                                          <div class="datepicker__wrapper _icon-calendar">
+                                             <input type="text" class="datepicker__input form__input" value="Выбрать период" />
+                                             <button type="reset" class="datepicker__reset _icon-close"></button>
+                                          </div>
+
+                                          <div class="datepicker__picker rdtPicker"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="table-request">
+                                    <div class="table-request__item">
+                                       <div class="table-request__heading">
+                                          <div style="background: #F4E7FF; color: #8E57BC;">На согласовании</div>
+                                          <div class="table-request__heading-arrow"><i class="_icon-download"></i></div>
+                                          <div style="background: #FFEEE7; color: #D27149;">Ждем оплаты</div>
+                                       </div>
+
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th style="text-align: left;">сотрудник</th>
+                                                <th>Ср. время, мин</th>
+                                                <th>1-7 минут</th>
+                                                <th>8-15 минут</th>
+                                                <th>16-20 минут</th>
+                                                <th>21-30 минут</th>
+                                                <th>31-60 минут</th>
+                                                <th>1-2 часа</th>
+                                                <th>более 2 часов</th>
+                                             </tr>
+                                          </thead>
+
+                                          <tbody>
+                                             <tr>
+                                                <td style="text-align: left;">Элина Шайхтарова</td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">51</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">12</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">16</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">30</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">10</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">6</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">0</a></a>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td style="text-align: left;">Евгений Иванов</td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <div class="table-request__item">
+                                       <div class="table-request__heading">
+                                          <div style="background: #F4E7FF; color: #8E57BC;">На согласовании</div>
+                                          <div class="table-request__heading-arrow"><i class="_icon-download"></i></div>
+                                          <div style="background: #E7F1FF; color: #396FBB;">Оценка в течении дня</div>
+                                       </div>
+
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th style="text-align: left;">сотрудник</th>
+                                                <th>Ср. время, мин</th>
+                                                <th>1-7 минут</th>
+                                                <th>8-15 минут</th>
+                                                <th>16-20 минут</th>
+                                                <th>21-30 минут</th>
+                                                <th>31-60 минут</th>
+                                                <th>1-2 часа</th>
+                                                <th>более 2 часов</th>
+                                             </tr>
+                                          </thead>
+
+                                          <tbody>
+                                             <tr>
+                                                <td style="text-align: left;">Элина Шайхтарова</td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">51</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">12</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">16</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">30</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">10</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">6</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">0</a></a>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td style="text-align: left;">Евгений Иванов</td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <div class="table-request__item">
+                                       <div class="table-request__heading">
+                                          <div style="background: #E7F1FF; color: #396FBB;">На согласовании</div>
+                                          <div class="table-request__heading-arrow"><i class="_icon-download"></i></div>
+                                          <div style="background: #EDFFE7; color: #4DA230;">Ответ по заявке</div>
+                                       </div>
+
+                                       <table>
+                                          <thead>
+                                             <tr>
+                                                <th style="text-align: left;">сотрудник</th>
+                                                <th>Ср. время, мин</th>
+                                                <th>1-7 минут</th>
+                                                <th>8-15 минут</th>
+                                                <th>16-20 минут</th>
+                                                <th>21-30 минут</th>
+                                                <th>31-60 минут</th>
+                                                <th>1-2 часа</th>
+                                                <th>более 2 часов</th>
+                                             </tr>
+                                          </thead>
+
+                                          <tbody>
+                                             <tr>
+                                                <td style="text-align: left;">Элина Шайхтарова</td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">51</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">12</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">16</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">30</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">10</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">6</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">0</a></a>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td style="text-align: left;">Евгений Иванов</td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                                <td>
+                                                   <div class="_content">
+                                                      <a href=""><a href="">108</a></a>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+
+                                 <div class="table-conversion">
+                                    <div class="table-conversion__list _row">
+                                       <div class="table-conversion__item col-12 col-lg-4">
+                                          <div class="table-conversion__wrapper">
+                                             <div class="table-conversion__caption">Конверсия заявок с «Оценки в течении дня»</div>
+
+                                             <div class="table-conversion__body">
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="table-conversion__item col-12 col-lg-4">
+                                          <div class="table-conversion__wrapper">
+                                             <div class="table-conversion__caption">Конверсия заявок с «Оценки в течении дня»</div>
+
+                                             <div class="table-conversion__body">
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="table-conversion__item col-12 col-lg-4">
+                                          <div class="table-conversion__wrapper">
+                                             <div class="table-conversion__caption">Конверсия заявок с «Оценки в течении дня»</div>
+
+                                             <div class="table-conversion__body">
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                                <div class="table-conversion__row">
+                                                   <div>Евгений Иванов</div>
+                                                   <div>
+                                                      <div><strong style="font-size: 16px;">56%</strong></div>
+                                                      <div style="font-size: 12px; color: #82879E;">1 982 из 3 982</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

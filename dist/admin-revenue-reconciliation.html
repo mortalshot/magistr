@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230615164651">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622173042">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,83 @@
 
 				<div class="admin-header__right">
 					<div class="admin-header__actions admin-actions">
-						<div class="admin-actions__item admin-actions__item_active"><a href="" class="_icon-notification"></a></div>
+						<div class="admin-actions__item">
+							<div class="admin-notifications admin-notifications_has-notif">
+								<!-- Необходиом добавить класс _active, чтобы показать окно с уведомлениями -->
+								<a href="" class="admin-notifications__button _icon-notification"></a>
+
+								<div class="admin-notifications__window">
+									<div class="admin-notifications__wrapper">
+										<div class="admin-notifications__caption">УВЕДОМЛЕНИЯ</div>
+
+										<div class="admin-notifications__list">
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-agreement"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Новый заказ на согласовании</div>
+														<div class="admin-notifications__time">Только что</div>
+													</div>
+													<div class="admin-notifications__text">Заказ <a href="">№324982</a> ожидает согласования</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-refresh"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Новый заказ на повторном согласовании</div>
+														<div class="admin-notifications__time">2 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">Заказ <a href="">№324982</a> ожидает повтороно соглсования</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-payment"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Поступил новый платеж</div>
+														<div class="admin-notifications__time">4 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">По заказу <a href="">№324982</a> поступил новый платёж</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-chat"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Поступил второй платеж</div>
+														<div class="admin-notifications__time">4 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">По заказу <a href="">№324982</a> поступил второй платёж</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-second-payment"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Новый заказ на согласовании</div>
+														<div class="admin-notifications__time">6 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">Заказ <a href="">№324982</a> ожидает согласования</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="admin-notifications__clear">
+											<button type="button" class="btn">
+												<i class="_icon-check"></i>
+												<span>Прочитать всё</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="admin-actions__item"><a href="" class="_icon-exit"></a></div>
 					</div>
 
@@ -2208,7 +2284,42 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230615164651"></script>
+
+	<div id="post-review-popup" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="post-review">
+						<div class="_content">
+							<h5>Вы точно уверены, что хотите опубликовать&nbsp;отзыв?</h5>
+							<p>Тогда отзыв будет виден всем и дальше пошёл текст по своей сути рыбатекст является альтернативой</p>
+						</div>
+
+						<div class="post-review__wrapper">
+							<div class="post-review__image"><img src="img/main/authorization-email-blue.svg" alt="" loading="lazy"></div>
+							<div class="post-review__text">Отправить уведомление клиенту, что его отзыв был опубликован</div>
+							<div class="post-review__toggle">
+								<label class="toggle">
+									<div class="toggle__wrapper">
+										<input type="checkbox" class="toggle__checkbox" checked="">
+										<span class="toggle__slider"></span>
+									</div>
+								</label>
+							</div>
+						</div>
+
+						<div class="post-review__buttons">
+							<div class="post-review__button"><button type="submit" class="btn btn_bg-orange">Да, опубликовать</button></div>
+							<div class="post-review__button"><button type="button" data-close class="btn btn_bg-gray">Нет</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230622173042"></script>
 </body>
 
 </html>

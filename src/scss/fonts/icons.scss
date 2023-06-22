@@ -15,6 +15,36 @@
 	}
 }
 
+._icon-check:before {
+	content: "\e946";
+}
+._icon-star2:before {
+	content: "\e945";
+}
+._icon-to-be-agreed:before {
+	content: "\e93f";
+}
+._icon-catalog:before {
+	content: "\e940";
+}
+._icon-debt:before {
+	content: "\e941";
+}
+._icon-client-refusal:before {
+	content: "\e942";
+}
+._icon-percents:before {
+	content: "\e943";
+}
+._icon-plan-approval:before {
+	content: "\e944";
+}
+._icon-refinement-approval2:before {
+	content: "\e93e";
+}
+._icon-list:before {
+	content: "\e905";
+}
 ._icon-filter:before {
 	content: "\e93d";
 }
@@ -23,6 +53,9 @@
 }
 ._icon-rating:before {
 	content: "\e93b";
+}
+._icon-email2:before {
+	content: "\e93a";
 }
 ._icon-close3:before {
 	content: "\e939";
@@ -101,9 +134,6 @@
 }
 ._icon-hot:before {
 	content: "\e904";
-}
-._icon-list:before {
-	content: "\e905";
 }
 ._icon-location:before {
 	content: "\e906";

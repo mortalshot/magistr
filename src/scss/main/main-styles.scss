@@ -2078,8 +2078,9 @@
       }
 
       td {
-         padding: rem(4) rem(16);
+         padding: rem(16) rem(16);
          vertical-align: text-top;
+         border-bottom: rem(1) solid $Line;
 
          @media (min-width: $mobile) {
             text-align: right;
@@ -2141,6 +2142,12 @@
          display: inline-block;
          position: relative;
          top: rem(2);
+      }
+
+      &.template13__table_no-border {
+         td {
+            border-bottom: 0;
+         }
       }
    }
 

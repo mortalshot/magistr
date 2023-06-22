@@ -1,0 +1,2646 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Страница согласование плана</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230622173042">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+	<div class="admin-wrapper wrapper">
+		<!-- data-lp - атрибут, которому добавляется левый паддинг, когда открывается модальное окно, чтобы не было скачка элемента с position: fixed; -->
+		<header class="admin-header" data-lp>
+			<div class="admin-header__row">
+				<div class="admin-header__logo logo">
+					<a href="" class="logo__link"><picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt=""></picture></a>
+				</div>
+
+				<div class="admin-header__left">
+					<form action="" method="get" class="admin-header__search search-form">
+						<!-- <button type="reset" class="search-form__reset _icon-close2"></button> -->
+						<input type="text" class="search-form__input form__input" name="s" placeholder="Поиск по номеру заказа, фамилии клиента, почте или номеру телефона" value="" />
+						<button type="submit" class="search-form__submit _icon-search" value=""></button>
+					</form>
+				</div>
+
+				<div class="admin-header__right">
+					<div class="admin-header__actions admin-actions">
+						<div class="admin-actions__item">
+							<div class="admin-notifications admin-notifications_has-notif">
+								<!-- Необходиом добавить класс _active, чтобы показать окно с уведомлениями -->
+								<a href="" class="admin-notifications__button _icon-notification"></a>
+
+								<div class="admin-notifications__window">
+									<div class="admin-notifications__wrapper">
+										<div class="admin-notifications__caption">УВЕДОМЛЕНИЯ</div>
+
+										<div class="admin-notifications__list">
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-agreement"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Новый заказ на согласовании</div>
+														<div class="admin-notifications__time">Только что</div>
+													</div>
+													<div class="admin-notifications__text">Заказ <a href="">№324982</a> ожидает согласования</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-refresh"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Новый заказ на повторном согласовании</div>
+														<div class="admin-notifications__time">2 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">Заказ <a href="">№324982</a> ожидает повтороно соглсования</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-payment"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Поступил новый платеж</div>
+														<div class="admin-notifications__time">4 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">По заказу <a href="">№324982</a> поступил новый платёж</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-chat"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Поступил второй платеж</div>
+														<div class="admin-notifications__time">4 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">По заказу <a href="">№324982</a> поступил второй платёж</div>
+												</div>
+											</div>
+											<div class="admin-notifications__item">
+												<div class="admin-notifications__icon"><i class="_icon-second-payment"></i></div>
+												<div class="admin-notifications__body">
+													<a href="" class="admin-notifications__link"></a>
+													<div class="admin-notifications__top">
+														<div class="admin-notifications__name">Новый заказ на согласовании</div>
+														<div class="admin-notifications__time">6 ч. н.</div>
+													</div>
+													<div class="admin-notifications__text">Заказ <a href="">№324982</a> ожидает согласования</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="admin-notifications__clear">
+											<button type="button" class="btn">
+												<i class="_icon-check"></i>
+												<span>Прочитать всё</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="admin-actions__item"><a href="" class="_icon-exit"></a></div>
+					</div>
+
+					<div class="admin-header__user user">
+						<a href="" class="user__wrapper">
+							<div class="user__body">
+								<div class="user__name">Евгений Иванов</div>
+								<div class="user__position">Менеджер</div>
+							</div>
+							<div class="user__avatar avatar">
+								<picture><source srcset="img/user.webp"type="image/webp"><img src="img/user.jpg" alt="" loading="lazy"></picture>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside class="admin-sidebar">
+			<nav class="admin-sidebar__menu">
+				<ul>
+					<li class="_active">
+						<a href="admin-reviews.html" title="Отзывы">
+							<i class="_icon-chat"></i>
+							<span>Отзывы</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-complaints.html" title="Жалобы">
+							<i class="_icon-chat-warning"></i>
+							<span>Жалобы</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-efficiency.html" title="Статистика эффективности">
+							<i class="_icon-statistics"></i>
+							<span>Статистика эффективности</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-work-statistics.html" title="Статистика готовых работ">
+							<i class="_icon-agreement"></i>
+							<span>Статистика готовых работ</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-bounce-statistics.html" title="Статистика отказов">
+							<i class="_icon-user-rejection"></i>
+							<span>Статистика отказов</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-nonpayment.html" title="Обзвон неоплат">
+							<i class="_icon-calling"></i>
+							<span>Обзвон неоплат</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-second-payments.html" title="Вторые платежи">
+							<i class="_icon-second-payment"></i>
+							<span>Вторые платежи</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-revenue-reconciliation.html" title="Сверка выручки">
+							<i class="_icon-calculator"></i>
+							<span>Сверка выручки</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-made-manually.html" title="Внесено вручную">
+							<i class="_icon-rework"></i>
+							<span>Внесено вручную</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-branches.html" title="Филиалы">
+							<i class="_icon-location"></i>
+							<span>Филиалы</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-off-topic.html" title="Заполнение офф. топика">
+							<i class="_icon-ads"></i>
+							<span>Заполнение офф. топика</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-price.html" title="Прайс">
+							<i class="_icon-list"></i>
+							<span>Прайс</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-adding-subdomain.html" title="Добавление поддомена на сайт">
+							<i class="_icon-business"></i>
+							<span>Добавление поддомена на сайт</span>
+						</a>
+					</li>
+					<li>
+						<a href="admin-promocodes.html" title="Промо коды">
+							<i class="_icon-shopping"></i>
+							<span>Промо коды</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+
+		<main class="admin-page page">
+			<section class="admin-template2">
+				<div class="admin-template2__container">
+					<div class="admin-template2__top">
+						<a href="" class="back-button">
+							<i class="_icon-chevron-left"></i>
+							<span>Назад</span>
+						</a>
+
+						<div class="admin-template2__heading">
+							<div class="admin-template2__request">
+								<div class="admin-template2__title title-h3">Заказ №392871</div>
+								<div class="status status_blue">
+									<i class="_icon-plan-approval"></i>
+									<span>Согласование плана</span>
+								</div>
+							</div>
+
+							<div class="admin-template2__info">
+								<span>Создан 20.02.2021 в 15:00</span>
+								<span>|</span>
+								<span>Прошло 20 ч 5 мин</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="admin-template2__row _row">
+						<div class="col-12 col-md-7 col-lg-8">
+							<div class="admin-template2__wrapper _wrapper">
+								<div class="admin-template2__body">
+									<div class="admin-template2__caption">Информация о клиенте</div>
+
+									<ul class="admin-template2__list">
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Фамилия Имя</div>
+											<div class="admin-template2__list-content _content">
+												<p>Иванов Иван</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Телефон</div>
+											<div class="admin-template2__list-content _content">
+												<a href="tel:+79995559955">+7 999 555 99 55</a>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Электронная почта</div>
+											<div class="admin-template2__list-content _content">
+												<p>ivanovivan@mail.ru</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Город</div>
+											<div class="admin-template2__list-content _content">
+												<p>Москва</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">ВУЗ</div>
+											<div class="admin-template2__list-content _content">
+												<p>МГИМО</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Специальность</div>
+											<div class="admin-template2__list-content _content">
+												<p>Менеджмент организации</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Форма обучения</div>
+											<div class="admin-template2__list-content _content">
+												<p>Очная</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Год завершения</div>
+											<div class="admin-template2__list-content _content">
+												<p>2020</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Курс</div>
+											<div class="admin-template2__list-content _content">
+												<p>Не указано</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Скидка</div>
+											<div class="admin-template2__list-content _content">
+												<p>5 %</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Откуда узнали</div>
+											<div class="admin-template2__list-content _content">
+												<p>Интернет</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Заказы пользователя</div>
+											<div class="admin-template2__list-content _content">
+												<div class="admin-template2__orders">
+													<div class="admin-template2__orders-item"><a href="">Заказ №1143251</a></div>
+													<div class="admin-template2__orders-item"><a href="">Заказ №1143251</a></div>
+													<div class="admin-template2__orders-item"><a href="">Заказ №1143251</a></div>
+												</div>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Характеристика</div>
+											<div class="admin-template2__list-content _content">
+												<p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых....</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption"></div>
+											<div class="admin-template2__list-content _content">
+												<button type="button" class="text-link text-link_blue"><span>Изменить</span></button>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-5 col-lg-4">
+							<div class="admin-template2__wrapper _wrapper">
+								<div class="admin-template2__body">
+									<div class="admin-template2__caption">Информация о статусах</div>
+
+									<ul class="admin-template2__statuses">
+										<li class="admin-template2__statuses-item">
+											<div class="admin-template2__statuses-date">20.02.2020 20:15</div>
+											<div class="admin-template2__statuses-body">
+												<span>На оценке</span>
+												<span>-</span>
+												<span>Иванов Иван</span>
+											</div>
+										</li>
+										<li class="admin-template2__statuses-item">
+											<div class="admin-template2__statuses-date">20.02.2020 20:15</div>
+											<div class="admin-template2__statuses-body">
+												<span>Ждём оплату</span>
+												<span>-</span>
+												<span>Иванов Иван</span>
+											</div>
+										</li>
+										<li class="admin-template2__statuses-item">
+											<div class="admin-template2__statuses-date">17.04.2020 13:01</div>
+											<div class="admin-template2__statuses-body">
+												<span>Оплачено 30%</span>
+												<span>-</span>
+												<span>онлайн оплат</span>
+												<span>-</span>
+												<span>Иванов Иван</span>
+											</div>
+										</li>
+										<li class="admin-template2__statuses-item">
+											<div class="admin-template2__statuses-date">22.04.2020 08:47</div>
+											<div class="admin-template2__statuses-body">
+												<span>Оплачено 100%</span>
+												<span>-</span>
+												<span>онлайн оплат</span>
+												<span>-</span>
+												<span>Иванов Иван</span>
+											</div>
+										</li>
+										<li class="admin-template2__statuses-item">
+											<div class="admin-template2__statuses-date">17.04.2020 13:01</div>
+											<div class="admin-template2__statuses-body">
+												<span>Оплачено 30%</span>
+												<span>-</span>
+												<span>онлайн оплат</span>
+												<span>-</span>
+												<span>Иванов Иван</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="admin-template2__footer">
+									<div class="admin-template2__payments">
+										<div class="admin-template2__caption">Платежи</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="admin-template2__wrapper admin-template2__wrapper_revision2 _wrapper">
+								<div class="admin-template2__body">
+									<div class="admin-template2__caption">Заказ-план</div>
+									<div class="admin-template2__list-line"></div>
+									<ul class="admin-template2__list">
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Номер заказа </div>
+											<div class="admin-template2__list-content _content">
+												<p>198728</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Тип работы </div>
+											<div class="admin-template2__list-content _content">
+												<p>Составление плана</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Срок выполнения </div>
+											<div class="admin-template2__list-content _content">
+												<p>До 22.08.2022</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Срок отправки плана</div>
+											<div class="admin-template2__list-content _content">
+												<p>До 22.08.2022</p>
+											</div>
+										</li>
+										<div class="admin-template2__list-line"></div>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Комментарий менеджера</div>
+											<div class="admin-template2__list-content _content">
+												<div class="form__row">
+													<div class="form__item col-12">
+														<textarea name="" placeholder="Комментарий менеджера" class="form__input" rows="3">Менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</textarea>
+													</div>
+												</div>
+
+												<div class="form__submit"><button type="submit" class="btn btn_bg-gray">Сохранить</button></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="admin-template2__wrapper admin-template2__wrapper_revision2 _wrapper">
+								<div class="admin-template2__body">
+									<div class="admin-template2__caption">Информация об основном заказе</div>
+									<div class="admin-template2__list-line"></div>
+									<ul class="admin-template2__list">
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Номер заказа </div>
+											<div class="admin-template2__list-content _content">
+												<p>98268743</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Статус </div>
+											<div class="admin-template2__list-content _content">
+												<div class="status status_blue">
+													<span>Приостановлен</span>
+												</div>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Тип работы </div>
+											<div class="admin-template2__list-content _content">
+												<p>Курсовая</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Объём страниц </div>
+											<div class="admin-template2__list-content _content">
+												<p>250 стр</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Система антиплагиат </div>
+											<div class="admin-template2__list-content _content">
+												<p>АП.ВУЗ</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Процент оригинальности </div>
+											<div class="admin-template2__list-content _content">
+												<p>85%</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Соотношение цены и качества </div>
+											<div class="admin-template2__list-content _content">
+												<p>Низкая оценка по низкой цене</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Срок </div>
+											<div class="admin-template2__list-content _content">
+												<p>19.08.2022</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Предмет </div>
+											<div class="admin-template2__list-content _content">
+												<p>Математика</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Тема </div>
+											<div class="admin-template2__list-content _content">
+												<p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Скидка </div>
+											<div class="admin-template2__list-content _content">
+												<p>5%</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Промокод </div>
+											<div class="admin-template2__list-content _content">
+												<p>Нет</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Требования </div>
+											<div class="admin-template2__list-content _content">
+												<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Комментарий менеджера </div>
+											<div class="admin-template2__list-content _content">
+												<p>При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+											</div>
+										</li>
+										<div class="admin-template2__list-line"></div>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Файлы </div>
+											<div class="admin-template2__list-content _content">
+												<div class="files">
+													<div class="files__list">
+														<div class="files__item">
+															<a href="" class="files__item-wrapper">
+																<div class="files__item-icon _icon-doc"></div>
+																<div class="files__item-body">
+																	<div class="files__item-name">Диплом доработки Михайленко 2022</div>
+																	<div class="files__item-info">
+																		<div class="files__item-extension">DOCX</div>
+																		<span class="files__info-separator"></span>
+																		<div class="files__item-size">48.18 Мб</div>
+																	</div>
+																</div>
+															</a>
+														</div>
+														<div class="files__item">
+															<a href="" class="files__item-wrapper">
+																<div class="files__item-icon _icon-doc"></div>
+																<div class="files__item-body">
+																	<div class="files__item-name">Михайленко 2022</div>
+																	<div class="files__item-info">
+																		<div class="files__item-extension">DOCX</div>
+																		<span class="files__info-separator"></span>
+																		<div class="files__item-size">48.18 Мб</div>
+																	</div>
+																</div>
+															</a>
+														</div>
+														<div class="files__item">
+															<a href="" class="files__item-wrapper">
+																<div class="files__item-icon _icon-doc"></div>
+																<div class="files__item-body">
+																	<div class="files__item-name">Схемы и чертежи диплом</div>
+																	<div class="files__item-info">
+																		<div class="files__item-extension">DOCX</div>
+																		<span class="files__info-separator"></span>
+																		<div class="files__item-size">48.18 Мб</div>
+																	</div>
+																</div>
+															</a>
+														</div>
+														<div class="files__item">
+															<a href="" class="files__item-wrapper">
+																<div class="files__item-icon _icon-doc"></div>
+																<div class="files__item-body">
+																	<div class="files__item-name">Комментарие преподавателя диплом</div>
+																	<div class="files__item-info">
+																		<div class="files__item-extension">DOCX</div>
+																		<span class="files__info-separator"></span>
+																		<div class="files__item-size">48.18 Мб</div>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+
+													<div class="files__actions">
+														<div class="files__button"><a href="" class="_icon-download"><span>Скачать все</span></a></div>
+														<div class="files__button"><a href="" class="_icon-permalink"><span>Прикрепить файл</span></a></div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<div class="admin-template2__list-line"></div>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Внутреняя заметка</div>
+											<div class="admin-template2__list-content _content">
+												<p>Менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+											</div>
+										</li>
+										<div class="admin-template2__list-line"></div>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Предварительная цена:</div>
+											<div class="admin-template2__list-content _content">
+												<h5>8 000 ₽</h5>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Коэффициент сложности</div>
+											<div class="admin-template2__list-content _content">
+												<p>1</p>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Итоговая цена:</div>
+											<div class="admin-template2__list-content _content">
+												<h5>8 900 ₽</h5>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="admin-template2__wrapper _wrapper">
+								<div class="admin-template2__body">
+									<div data-tabs class="tabs tabs_vertical">
+										<nav data-tabs-titles class="tabs__navigation">
+											<button type="submit" class="tabs__title _tab-active">заказ №1839138</button>
+											<button type="submit" class="tabs__title">Доработка №1</button>
+											<button type="submit" class="tabs__title">Доработка №2</button>
+										</nav>
+										<div data-tabs-body class="tabs__content">
+											<div class="tabs__body">
+												<ul class="admin-template2__list">
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Тип работы:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>Курсовая</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Дата оформления:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>21.06.2021</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Тема:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>Методы расчета параметров договоров смешанного страхования жизни при их переформатировании</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Предмет:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>Математика</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Требования:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Объем:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>100 страниц</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Система антиплагиат:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>Antiplagiat.ru</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Процент оригинальности:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>90%</p>
+														</div>
+													</li>
+													<li class="admin-template2__list-item">
+														<div class="admin-template2__list-caption"><strong>Срок:</strong></div>
+														<div class="admin-template2__list-content _content">
+															<p>20.02.2020</p>
+														</div>
+													</li>
+												</ul>
+
+												<div class="admin-template2__button"> <a href="" class="btn btn_bg-gray">Скачать</a> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<div id="city-selection" aria-hidden="true" class="popup popup_city">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__heading">
+						<div class="popup__heading-left">
+							<button data-close type="button" class="popup__close">
+								<i class="_icon-arrow-left"></i>
+								<span>Назад</span>
+							</button>
+
+							<div class="popup__title title-h1">Выберите город</div>
+						</div>
+
+						<div class="popup__heading-right">
+							<div class="popup__logo"><img src="img/main-logo.svg" alt=""></div>
+						</div>
+					</div>
+
+					<div class="popup__body city-celection">
+						<div class="city-celection__search">
+							<div class="main-search">
+								<div class="main-search__input-wrapper">
+									<i class="_icon-search"></i>
+									<input type="text" class="main-search__input" name="s" placeholder="Ваш город" value="" />
+									<button type="reset" class="main-search__reset"></button>
+								</div>
+							</div>
+
+							<div class="city-celection__most-used">
+								<div><a href="">Москва</a></div>
+								<div><a href="">Санкт-Петербург</a></div>
+							</div>
+						</div>
+
+						<div class="city-celection__items template25__row">
+							<div class="template25__column">
+								<div class="template25__part">
+									<div class="template25__part-letter">А</div>
+									<div class="template25__item"><a href="">Архангельск</a></div>
+									<div class="template25__item"><a href="">Астрахань</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Б</div>
+									<div class="template25__item"><a href="">Барнаул</a></div>
+									<div class="template25__item"><a href="">Белгород</a></div>
+									<div class="template25__item"><a href="">Брянск</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">В</div>
+									<div class="template25__item"><a href="">Владивосток</a></div>
+									<div class="template25__item"><a href="">Владикавказ</a></div>
+									<div class="template25__item"><a href="">Владимир</a></div>
+									<div class="template25__item"><a href="">Волгоград</a></div>
+									<div class="template25__item"><a href="">Волжский</a></div>
+									<div class="template25__item"><a href="">Вологда</a></div>
+									<div class="template25__item"><a href="">Воронеж <img src="img/icons/build.svg" alt="" loading="lazy"></a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Г</div>
+									<div class="template25__item"><a href="">Грозный</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">E</div>
+									<div class="template25__item"><a href="">Екатеринбург</a></div>
+								</div>
+							</div>
+							<div class="template25__column">
+								<div class="template25__part">
+									<div class="template25__part-letter">И</div>
+									<div class="template25__item"><a href="">Иваново</a></div>
+									<div class="template25__item"><a href="">Ижевск</a></div>
+									<div class="template25__item"><a href="">Иркутск</a></div>
+									<div class="template25__item"><a href="">Йошкар-Ола</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">К</div>
+									<div class="template25__item"><a href="">Казань</a></div>
+									<div class="template25__item"><a href="">Калининград</a></div>
+									<div class="template25__item"><a href="">Калуга</a></div>
+									<div class="template25__item"><a href="">Кемерово</a></div>
+									<div class="template25__item"><a href="">Киров</a></div>
+									<div class="template25__item"><a href="">Кострома</a></div>
+									<div class="template25__item"><a href="">Краснодар</a></div>
+									<div class="template25__item"><a href="">Красноярск</a></div>
+									<div class="template25__item"><a href="">Курган</a></div>
+									<div class="template25__item"><a href="">Курск</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Л</div>
+									<div class="template25__item"><a href="">Липецк</a></div>
+								</div>
+							</div>
+							<div class="template25__column">
+								<div class="template25__part">
+									<div class="template25__part-letter">М</div>
+									<div class="template25__item"><a href="">Магнитогорск</a></div>
+									<div class="template25__item"><a href="">Махачкала</a></div>
+									<div class="template25__item"><a href="">Мурманск</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Н</div>
+									<div class="template25__item"><a href="">Набережные Челны</a></div>
+									<div class="template25__item"><a href="">Нижневартовск</a></div>
+									<div class="template25__item"><a href="">Нижний Новгород</a></div>
+									<div class="template25__item"><a href="">Нижний Тагил</a></div>
+									<div class="template25__item"><a href="">Новокузнецк</a></div>
+									<div class="template25__item"><a href="">Новороссийск</a></div>
+									<div class="template25__item"><a href="">Новосибирск</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">О</div>
+									<div class="template25__item"><a href="">Омск</a></div>
+									<div class="template25__item"><a href="">Орёл</a></div>
+									<div class="template25__item"><a href="">Оренбург</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">П</div>
+									<div class="template25__item"><a href="">Пенза</a></div>
+									<div class="template25__item"><a href="">Перьм</a></div>
+									<div class="template25__item"><a href="">Петрозаводск</a></div>
+								</div>
+							</div>
+							<div class="template25__column">
+								<div class="template25__part">
+									<div class="template25__part-letter">Р</div>
+									<div class="template25__item"><a href="">Ростов-на-Дону</a></div>
+									<div class="template25__item"><a href="">Рязань</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">C</div>
+									<div class="template25__item"><a href="">Самара</a></div>
+									<div class="template25__item"><a href="">Саранск</a></div>
+									<div class="template25__item"><a href="">Севастополь</a></div>
+									<div class="template25__item"><a href="">Симферополь</a></div>
+									<div class="template25__item"><a href="">Смоленск</a></div>
+									<div class="template25__item"><a href="">Сочи</a></div>
+									<div class="template25__item"><a href="">Ставрополь</a></div>
+									<div class="template25__item"><a href="">Стерлитамак</a></div>
+									<div class="template25__item"><a href="">Сургут</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Т</div>
+									<div class="template25__item"><a href="">Тамбов</a></div>
+									<div class="template25__item"><a href="">Тверь</a></div>
+									<div class="template25__item"><a href="">Тольятти</a></div>
+									<div class="template25__item"><a href="">Томск</a></div>
+									<div class="template25__item"><a href="">Тула</a></div>
+									<div class="template25__item"><a href="">Тюмень</a></div>
+								</div>
+							</div>
+							<div class="template25__column">
+								<div class="template25__part">
+									<div class="template25__part-letter">У</div>
+									<div class="template25__item"><a href="">Улан-Удэ</a></div>
+									<div class="template25__item"><a href="">Ульяновск</a></div>
+									<div class="template25__item"><a href="">Уфа</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Х</div>
+									<div class="template25__item"><a href="">Хабаровск</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Ч</div>
+									<div class="template25__item"><a href="">Чебоксары</a></div>
+									<div class="template25__item"><a href="">Челябинск</a></div>
+									<div class="template25__item"><a href="">Череповец</a></div>
+									<div class="template25__item"><a href="">Чита</a></div>
+								</div>
+								<div class="template25__part">
+									<div class="template25__part-letter">Я</div>
+									<div class="template25__item"><a href="">Якутск</a></div>
+									<div class="template25__item"><a href="">Ярославль</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-ordering" aria-hidden="true" class="popup popup_ordering">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<div class="popup__heading">
+						<div class="popup__heading-left">
+							<button data-close type="button" class="popup__close">
+								<i class="_icon-arrow-left"></i>
+								<span>Назад</span>
+							</button>
+
+							<div class="popup__title title-h1">Оформление заказа</div>
+						</div>
+
+						<div class="popup__heading-right">
+							<div class="popup__logo"><img src="img/main-logo.svg" alt=""></div>
+						</div>
+					</div>
+
+					<div class="popup__body ordering">
+						<nav class="ordering__navigation">
+							<ul>
+								<li class="ordering__navigation-step ordering__navigation-step_complete">
+									<a href="">
+										<span class="ordering__navigation-level">1 шаг.</span>
+										<span class="ordering__navigation-info">Информация о заказе</span>
+									</a>
+								</li>
+								<li class="ordering__navigation-step ordering__navigation-step_current">
+									<a href="">
+										<span class="ordering__navigation-level">2 шаг.</span>
+										<span class="ordering__navigation-info">Доп. требования</span>
+									</a>
+								</li>
+								<li class="ordering__navigation-step">
+									<a href="">
+										<span class="ordering__navigation-level">3 шаг.</span>
+										<span class="ordering__navigation-info">Авторизация</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="error-message error-message_red _active">
+							<div class="error-message__wrapper">
+								<img src="img/icons/alert.svg" alt="" loading="lazy">
+								<span>Не все обязательные поля заполнены</span>
+							</div>
+						</div>
+
+						<div id="ordering-step-1" class="ordering__step">
+							<div class="ordering__body">
+								<div class="ordering__caption">1 шаг. Информация о заказе</div>
+
+								<div class="form__row">
+									<div class="form__item col-12 col-md-6">
+										<div class="form__label">
+											<span>Выберите тип работы <i class="color-red">*</i></span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="form__select">
+											<div class="basic-single">
+												<div class="select__control">
+													<div class="select__value-container select__value-container--has-value">
+														<div class="select__single-value">Тип работы</div>
+														<div class="select__input-container" data-value="">
+															<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+														</div>
+													</div>
+													<div class="select__indicators">
+														<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+															<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item col-12 col-sm-6 col-md-3">
+										<div class="form__label">
+											<span>Объём страниц <i class="color-red">*</i></span>
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="form__input-number input-number">
+											<input type="number" name="form[]" placeholder="0" class="form__input form__input_invalid input-number__input" />
+											<span class="input-number__descr">стр.</span>
+										</div>
+									</div>
+
+									<div class="form__item col-12 col-sm-6 col-md-3">
+										<div class="form__label">
+											<span>Срок <i class="color-red">*</i></span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="form__datepicker datepicker">
+											<div class="datepicker__wrapper _icon-calendar">
+												<input type="text" class="datepicker__input form__input" value="19.08.2022" />
+											</div>
+
+											<div class="datepicker__picker rdtPicker"></div>
+										</div>
+									</div>
+
+									<div class="form__item col-12">
+										<div class="form__label">
+											<span>Система проверки на антиплагиат</span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="lg-none">
+											<div class="form__options options">
+												<div class="options__item">
+													<input hidden id="ordering_1-1" class="options__input" type="radio" value="Без проверки" name="antiplagiat" />
+													<label for="ordering_1-1" class="options__label"><span class="options__text">Без проверки</span></label>
+												</div>
+												<div class="options__item">
+													<input hidden id="ordering_1-2" class="options__input" checked type="radio" value="АП.ВУЗ" name="antiplagiat" />
+													<label for="ordering_1-2" class="options__label"><span class="options__text">АП.ВУЗ</span></label>
+												</div>
+												<div class="options__item">
+													<input hidden id="ordering_1-3" class="options__input" type="radio" value="АП.РУ" name="antiplagiat" />
+													<label for="ordering_1-3" class="options__label"><span class="options__text">АП.РУ</span></label>
+												</div>
+												<div class="options__item">
+													<input hidden id="ordering_1-4" class="options__input" type="radio" value="ETXT" name="antiplagiat" />
+													<label for="ordering_1-4" class="options__label"><span class="options__text">ETXT</span></label>
+												</div>
+											</div>
+										</div>
+										<div class="d-none lg-block">
+											<div class="form__select">
+												<div class="basic-single">
+													<div class="select__control">
+														<div class="select__value-container select__value-container--has-value">
+															<div class="select__single-value">Без проверки</div>
+															<div class="select__input-container" data-value="">
+																<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+															</div>
+														</div>
+														<div class="select__indicators">
+															<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+																<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																	<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item col-12 col-md-9">
+										<div class="form__label">
+											<span>Процент оригинальности</span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="form__range range">
+											<input type="range" value="100" min="0" max="100" id="range" class="range__input" />
+
+											<div class="range__grid">
+												<div class="range__value range__value_start">0%</div>
+												<div class="range__value range__value_end">100 %</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item col-12 col-md-9">
+										<div class="form__label">
+											<span>Желаемая оценка</span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="lg-none">
+											<div class="form__options options options_full options_marks">
+												<div class="options__item">
+													<input hidden id="o_2-1" class="options__input" type="radio" value="Удовлетворительно" name="mark" />
+													<label for="o_2-1" class="options__label"><span class="options__text _icon-mark-satisfactory">Удовлетворительно</span></label>
+												</div>
+												<div class="options__item">
+													<input hidden id="o_2-2" class="options__input" type="radio" value="Хорошо" name="mark" />
+													<label for="o_2-2" class="options__label"><span class="options__text _icon-mark-good">Хорошо <span style="color: #3E5BF1;">х1.3</span></span></label>
+												</div>
+												<div class="options__item">
+													<input hidden id="o_2-3" class="options__input" checked type="radio" value="Отлично" name="mark" />
+													<label for="o_2-3" class="options__label"><span class="options__text _icon-mark-excellent">Отлично <span style="color: #3E5BF1;">х1.5</span></span></label>
+												</div>
+											</div>
+										</div>
+
+										<div class="d-none lg-block">
+											<div class="form__select">
+												<div class="basic-single">
+													<div class="select__control">
+														<div class="select__value-container select__value-container--has-value">
+															<div class="select__single-value">
+																<i class="_icon-mark-satisfactory"></i>
+																<span>Удовлетворительно</span>
+															</div>
+															<div class="select__input-container" data-value="">
+																<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+															</div>
+														</div>
+														<div class="select__indicators">
+															<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+																<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																	<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+																</svg>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item col-12">
+										<form action="" class="promocode promocode_active">
+											<label for="promocode-input" class="promocode__label">Промокод </label>
+											<div class="promocode__row">
+												<div class="promocode__wrapper">
+													<input id="promocode-input" type="text" name="form[]" placeholder="Введите промокод" class="promocode__input form__input" />
+													<button type="submit" class="promocode__icon"></button>
+												</div>
+
+												<div class="promocode__discount">-500 ₽</div>
+											</div>
+											<button type="button" class="promocode__reset">Удалить промокод</button>
+										</form>
+									</div>
+								</div>
+
+								<div class="ordering__total">
+									<div class="ordering__price">
+										<div class="ordering__price-old">1 900 ₽</div>
+										<div class="ordering__price-new">1 400 ₽</div>
+									</div>
+									<div class="ordering__text">Предварительная стоимость</div>
+								</div>
+							</div>
+
+							<div class="ordering__footer">
+								<div class="ordering__left">
+									<div class="ordering__note"><i class="color-red">*</i> Поля, обязательные к заполнению</div>
+								</div>
+								<div class="ordering__right">
+									<a href="" class="ordering__next-btn btn btn_bg-orange">Следующий шаг</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="ordering-step-2" class="ordering__step">
+							<div class="ordering__body">
+								<div class="ordering__caption">2 шаг. Доп. требования</div>
+
+								<div class="form__row">
+									<div class="form__item col-12 col-md-6">
+										<div class="form__label">
+											<span>Предмет <i class="color-red">*</i></span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<input id="ordering-subject" type="text" name="ordering-subject" placeholder="Предмет" class="form__input" required="" />
+									</div>
+									<div class="form__item col-12 col-md-6">
+										<div class="form__label">
+											<span>План работы <i class="color-red">*</i></span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="form__select">
+											<div class="basic-single">
+												<div class="select__control">
+													<div class="select__value-container select__value-container--has-value">
+														<div class="select__single-value">План работы</div>
+														<div class="select__input-container" data-value="">
+															<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+														</div>
+													</div>
+													<div class="select__indicators">
+														<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+															<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form__item col-12">
+										<div class="form__label">
+											<span>Тема <i class="color-red">*</i></span>
+
+											<div class="info">
+												<button type="button" class="info__button _icon-info"></button>
+
+												<div class="info__wrapper _content" style="display: none;">
+													<p>Задача организации, в особенности же реализация намеченных плановых заданий представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+												</div>
+											</div>
+										</div>
+
+										<input id="ordering-theme" type="text" name="ordering-theme" placeholder="Напишите тему" class="form__input" required="" />
+									</div>
+									<div class="form__item col-12">
+										<div class="form__label">
+											<span>Требования</span>
+										</div>
+
+										<textarea name="ordering-requirements" placeholder="Опишите особые требования к вашей работе" class="form__input" rows="5"></textarea>
+									</div>
+									<div class="form__item col-12">
+										<div class="file">
+											<div class="file__label form__label">
+												<i class="_icon-permalink"></i>
+												<span> Прикрепить файлы</span>
+											</div>
+
+											<div class="file__list">
+												<div class="file__item file-item file-item_uploaded">
+													<div class="file-item__wrapper">
+														<div class="file-item__extension">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>.docx</span>
+														</div>
+
+														<div class="file-item__body">
+															<div class="file-item__name">Нормативы для диплома</div>
+															<div class="file-item__size">8 Mb</div>
+														</div>
+
+														<button type="button" class="file-item__delete"></button>
+													</div>
+												</div>
+
+												<div class="file__item file-item file-item_error">
+													<div class="file-item__wrapper">
+														<div class="file-item__error-title">Ошибка</div>
+														<div class="file-item__error-text">Размер файла привышает 50 Мб</div>
+														<button type="button" class="file-item__delete"></button>
+													</div>
+												</div>
+
+												<div class="file__item file-item file-item_progress">
+													<div class="file-item__wrapper">
+														<div class="file-item__name">Нормативы для диплома</div>
+
+														<div class="file-item__progress">
+															<div class="file-item__progress-count">34%</div>
+															<div class="file-item__progress-line">
+																<span style="width: 34%;"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="file__item file-item file-item_upload">
+													<div class="file-item__wrapper">
+														<img src="img/icons/upload.svg" alt="" loading="lazy">
+														<input type="file" class="file-item__upload" />
+													</div>
+												</div>
+											</div>
+
+											<div class="file__note">
+												<p>Не более <strong>50 Мб</strong></p>
+												<p>Не более <strong>15 файлов</strong></p>
+												<p>Допустимые форматы: jpg, jpeg, bmp, gif, png, zip, rar, 7zip, doc, docx, xls, xlsx, txt, rtf, ppt, pptx, pdf. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="ordering__total">
+									<div class="ordering__price">
+										<div class="ordering__price-new">1 900 ₽</div>
+									</div>
+									<div class="ordering__text">Предварительная стоимость</div>
+								</div>
+							</div>
+
+							<div class="ordering__footer">
+								<div class="ordering__left">
+									<a href="" class="ordering__prev-btn btn btn_bg-gray">На предыдущий шаг</a>
+								</div>
+								<div class="ordering__right">
+									<a href="" class="ordering__next-btn btn btn_bg-orange">Следующий шаг</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="ordering-step-3" class="ordering__step authorization">
+							<div class="ordering__body">
+								<div class="ordering__caption">3 шаг. Авторизация</div>
+
+								<div class="form__row">
+									<div class="form__item col-12">
+										<div class="form__label"> <span>Почта</span> <i class="color-red">*</i> </div>
+
+										<input id="ordering-email" type="email" name="ordering-email" placeholder="Введите почту" class="form__input" required="" />
+									</div>
+
+									<div class="form__item col-12">
+										<div class="form__label"> <span>Пароль</span> <i class="color-red">*</i> </div>
+
+										<div class="password password_text">
+											<div class="password__wrapper">
+												<input id="ordering-password" type="password" name="ordering-password" placeholder="Введите пароль" class="password__input form__input" required="" />
+												<button type="button" class="password__toggler"></button>
+											</div>
+
+											<a href="" class="password__recover">Я забыл пароль</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="authorization__submit">
+									<div class="authorization__actions">
+										<a href="" class="btn btn_bg-orange">Авторизоваться</a>
+										<a href="" class="btn btn_bg-transparent">Зарегистрироваться</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="ordering__footer">
+								<div class="ordering__left">
+									<div class="authorization__socials">
+										<div class="authorization__socials-caption">Войти с помощью соцсетей</div>
+
+										<div class="authorization__socials-items">
+											<a href=""><img src="img/icons/vk.svg" alt=""></a>
+											<a href=""><img src="img/icons/google.svg" alt=""></a>
+										</div>
+									</div>
+
+									<a href="" class="ordering__prev-btn btn btn_bg-gray">Вернуться назад</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="ordering-step-4" class="ordering__step ordering-final ordering__step_show">
+							<div class="ordering__body">
+								<div class="ordering__caption">Оформление заказа</div>
+
+								<div class="ordering-total">
+									<div class="ordering-total__item">
+										<div class="ordering-total__information">
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Номер заказа:</div>
+												<div class="ordering-total__info-text">148923</div>
+											</div>
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Тип работы:</div>
+												<div class="ordering-total__info-text">Курсовая</div>
+											</div>
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Страниц:</div>
+												<div class="ordering-total__info-text">60 страниц</div>
+											</div>
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Предмет:</div>
+												<div class="ordering-total__info-text">Математика</div>
+											</div>
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">План работы:</div>
+												<div class="ordering-total__info-text">По моему плану</div>
+											</div>
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Система АП:</div>
+												<div class="ordering-total__info-text">АП.ВУЗ</div>
+											</div>
+											<div class="ordering-total__row ordering-total__row_theme">
+												<div class="ordering-total__info-caption">Тема:</div>
+												<div class="ordering-total__info-text">Методы расчета параметров договоров смешанного страхования жизни при их переформатировании</div>
+											</div>
+											<div class="ordering-total__row ordering-total__row_originality">
+												<div class="ordering-total__info-caption">Оригинальность:</div>
+												<div class="ordering-total__info-text">75%</div>
+											</div>
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Заказчик:</div>
+												<div class="ordering-total__info-text">Зеличенок Вадим Юрьевичь</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="ordering-total__item ordering-total__item_files">
+										<div class="ordering-total__information">
+											<div class="ordering-total__row">
+												<div class="ordering-total__info-caption">Прикреплённые файлы:</div>
+												<div class="ordering-total__files">
+													<div class="ordering-total__file">
+														<a href="">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>Название файла.docx</span>
+														</a>
+													</div>
+													<div class="ordering-total__file">
+														<a href="">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>Название файла.docx</span>
+														</a>
+													</div>
+													<div class="ordering-total__file">
+														<a href="">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>Название файла.docx</span>
+														</a>
+													</div>
+													<div class="ordering-total__file">
+														<a href="">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>Файл 1.docx</span>
+														</a>
+													</div>
+													<div class="ordering-total__file">
+														<a href="">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>Название файла.docx</span>
+														</a>
+													</div>
+													<div class="ordering-total__file">
+														<a href="">
+															<img src="img/icons/doc.svg" alt="" loading="lazy">
+															<span>Название файла.docx</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="ordering-summary">
+										<div class="ordering-summary__items">
+											<div class="ordering-summary__item">
+												<div class="ordering-summary__caption">Стоимость</div>
+												<div class="ordering-summary__space"></div>
+												<div class="ordering-summary__value">2 400 ₽</div>
+											</div>
+
+											<div class="ordering-summary__item">
+												<div class="ordering-summary__caption">Промокод:</div>
+												<div class="ordering-summary__space"></div>
+												<div class="ordering-summary__value color-green">- 500 ₽</div>
+											</div>
+										</div>
+
+										<div class="ordering-summary__final">
+											<div class="ordering-summary__caption">Предварительная стоимость:</div>
+											<div class="ordering-summary__value">1 900 ₽</div>
+										</div>
+									</div>
+
+									<div class="checkbox">
+										<input id="authorization-privacy-2" class="checkbox__input" type="checkbox" value="Я принимаю условия предоставления услуг" name="form[]" />
+										<label for="authorization-privacy-2" class="checkbox__label">
+											<span class="checkbox__text">Я принимаю <a href="" data-popup="#privacy">условия</a> предоставления услуг</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="ordering__footer">
+								<div class="ordering__left">
+									<a href="" class="ordering__reset btn btn_bg-transparent">Отменить заказ</a>
+								</div>
+								<div class="ordering__right">
+									<a href="" class="btn btn_bg-gray">Редактировать заказ</a>
+									<a href="" class="btn btn_bg-orange">Оформить заказ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="privacy" aria-hidden="true" class="popup popup_privacy">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="_content">
+						<h3>Пользовательское соглашение</h3>
+						<p></p>
+
+						<h5>Пользовательское соглашение</h5>
+						<p>Работы, выполняются сотрудниками необходимой квалификации, проходят проверку в отделе контроля качества и в системе Антиплагиат (www.antiplagiat.ru).</p>
+						<p>Стандартный уровень оригинального текста составляет 50% для контрольных и рефератов, 60% для курсовых работ, 70% для дипломных работ. В случае, если по требованиям Вашего ВУЗа работа должна содержать больший процент оригинального текста, информация об этом должна быть отражена Вами при оформлении заказа для того, чтобы Ваш менеджер мог учесть эти требования при оценке стоимости работы.</p>
+						<p>Обращаем Ваше внимание, что в процессе сдачи дипломной или курсовой работы может потребоваться выполнить несколько доработок, что является нормой. </p>
+						<p>Если для Вас важна оценка, то работу необходимо заказывать заблаговременно (за 3-4 месяца до сдачи)</p>
+						<p>Оформив заказ, Вы получаете исследование «под ключ», т.е. полную работу, начиная с оглавления и заканчивая списком использованной литературы и приложениями, соответствующую стандартам Вашего ВУЗа (при оформлении необходимо предоставить методические указания).</p>
+						<p>При этом необходимо помнить, что успешная защита предполагает внимательное ознакомление студента с выполненной работой и литературой по теме исследования.</p>
+
+						<p></p>
+
+						<h5>Рекомендации к оформлению заказа</h5>
+						<p>Для достижения наилучшего результата и экономии денег мы рекомендуем предоставить все имеющиеся требования к работе (методические указания, план, рекомендации преподавателя, список необходимой литературы и источников) уже при оформлении заказа;</p>
+						<p>Изменение или расширение требований после оформления заказа ведет к удорожанию работы.</p>
+
+						<p></p>
+
+						<h5>Стоимость работы</h5>
+						<p>Стоимость заказа определяется согласно прайс-листу, однако может отличаться от него в тех случаях, когда представленные требования свидетельствуют о повышенной сложности работы;</p>
+						<p>При расчете стоимости работ по спец. предметам (спец. психология, психодиагностика, спец. педагогика, логопедия, методика преподавания иностранного языка и др.) применяется коэффициент сложности 1,5;</p>
+						<p>В исключительных случаях по согласованию с Вами стоимость работы может быть изменена после оформления заказа.</p>
+
+						<p></p>
+						<h5>Внесение правок</h5>
+						<p>При возникновении замечаний они подлежат бесплатной доработке (в рамках требований указанных при оформлении заказа)</p>
+						<p>Замечания, которые противоречат начальным требованиям выполняются на платной основе</p>
+						<p>Срок принятия работ на доработку (с даты выполнения заказа) составляет 6 мес. для дипломных, 2 мес. для курсовых и 1 мес. для контрольных работ;</p>
+						<p>Срок выполнения доработок составляет 3-5 рабочих дней.</p>
+
+						<p></p>
+
+						<h5>Отказ от работы</h5>
+						<p>Вы можете отказаться от работы в течение 1 суток с момента оформления заказа, в этом случае предоплата возвращается полностью (исключение составляют срочные работы, от которых Вы можете отказаться в течение 1 часа с момента оформления);</p>
+						<p>Во всех остальных случаях услуги компании подлежат оплате пропорционально выполненному объему работ.</p>
+
+						<p></p>
+
+						<h5>Порядок рассмотрения претензий</h5>
+						<p>Претензии по результату работы принимаются только при предоставлении рецензии, заверенной подписью научного руководителя и печатью Вашего ВУЗа, в которой подробно и обоснованно (в рамках требований, представленных при оформлении заказа) описано, по какой причине невозможно принять результат работы.</p>
+
+						<p></p>
+
+						<h5>Дополнительные условия</h5>
+						<p>Компания «Магистр» оставляет за собой авторские права на выполненные работы; тиражирование и распространение работ, передача их третьим лицам не допускаются.</p>
+					</div>
+
+					<div class="privacy-actions">
+						<a href="" class="btn btn_bg-orange">Согласен</a>
+						<a href="" class="btn btn_bg-transparent">Не согласен</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="adding-payment" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Добавление оплаты</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-12 col-md-6">
+								<label for="adding-payment-date" class="form__label">Дата оплаты</label>
+								<input id="adding-payment-date" type="text" name="adding-payment-date" placeholder="26.11.2022" class="form__input" />
+							</div>
+							<div class="form__item col-12 col-md-6">
+								<label for="adding-payment-time" class="form__label">Время оплаты</label>
+								<input id="adding-payment-time" type="text" name="adding-payment-time" placeholder="14:30" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-payment-type" class="form__label">Способ оплаты</label>
+
+								<div class="form__select">
+									<div class="basic-single">
+										<div class="select__control">
+											<div class="select__value-container select__value-container--has-value">
+												<div class="select__single-value">Тинькофф Экваринг</div>
+												<div class="select__input-container" data-value="">
+													<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+												</div>
+											</div>
+											<div class="select__indicators">
+												<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+													<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+														<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-payment-hash" class="form__label">Хэш транзакции</label>
+								<input id="adding-payment-hash" type="text" name="adding-payment-hash" placeholder="a1075db55d416d3ca199f55b6084e2115b9345e16c5cf3" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-payment-total" class="form__label">Хэш транзакции</label>
+
+								<div class="form__input-number input-number">
+									<input id="adding-payment-total" type="number" name="adding-payment-total" placeholder="8 000" class="form__input input-number__input" />
+									<span class="input-number__descr">₽</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__submit"><button class="btn btn_bg-orange">Добавить оплату</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="add-employee" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Добавление сотрудника</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-12">
+								<div class="photo-upload">
+									<div class="photo-upload photo-upload_upload">
+										<div class="photo-upload__wrapper">
+											<input type="file" class="photo-upload__input">
+
+											<div class="photo-upload__avatar">
+												<picture><source srcset="img/icons/avatar.webp"type="image/webp"><img src="img/icons/avatar.jpg" alt="" loading="lazy"></picture>
+												<a href="" class="photo-upload__reset _icon-close"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-employee-name" class="form__label">Имя</label>
+								<input id="adding-employee-name" type="text" name="adding-employee-name" placeholder="Имя" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-employee-surname" class="form__label">Фамилия</label>
+								<input id="adding-employee-surname" type="text" name="adding-employee-surname" placeholder="Фамилия" class="form__input" />
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-employee-phone" class="form__label">Телефон</label>
+								<input id="adding-employee-phone" type="text" name="adding-employee-phone" placeholder="+7 900 900 99 99" class="form__input form__input_phone" />
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-employee-position" class="form__label">Должность</label>
+								<input id="adding-employee-position" type="text" name="adding-employee-position" placeholder="Должность" class="form__input" />
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-employee-status" class="form__label">Статус</label>
+
+								<div class="form__select">
+									<div class="basic-single">
+										<div class="select__control">
+											<div class="select__value-container select__value-container--has-value">
+												<div class="select__single-value">Работает</div>
+												<div class="select__input-container" data-value="">
+													<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+												</div>
+											</div>
+											<div class="select__indicators">
+												<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+													<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+														<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-employee-password1" class="form__label">Пароль</label>
+								<div class="password">
+									<div class="password__wrapper">
+										<input id="adding-employee-password1" type="password" name="adding-employee-password1" placeholder="Введите пароль" class="password__input form__input" required="" />
+										<button type="button" class="password__toggler"></button>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-employee-password2" class="form__label">Повторите пароль</label>
+								<div class="password">
+									<div class="password__wrapper">
+										<input id="adding-employee-password2" type="password" name="adding-employee-password2" placeholder="Повторите пароль" class="password__input form__input" required="" />
+										<button type="button" class="password__toggler"></button>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<div class="add-schedule">
+									<div class="add-schedule__caption">График работы</div>
+
+									<div class="add-schedule__days">
+										<div class="checkbox">
+											<input id="e_1" class="checkbox__input" type="checkbox" value="Пн" name="employee-schedule">
+											<label for="e_1" class="checkbox__label"><span class="checkbox__text">Пн</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="e_2" class="checkbox__input" type="checkbox" value="Вт" name="employee-schedule">
+											<label for="e_2" class="checkbox__label"><span class="checkbox__text">Вт</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="e_3" class="checkbox__input" type="checkbox" value="Ср" name="employee-schedule">
+											<label for="e_3" class="checkbox__label"><span class="checkbox__text">Ср</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="e_4" class="checkbox__input" type="checkbox" value="Чт" name="employee-schedule">
+											<label for="e_4" class="checkbox__label"><span class="checkbox__text">Чт</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="e_5" class="checkbox__input" type="checkbox" value="Пт" name="employee-schedule">
+											<label for="e_5" class="checkbox__label"><span class="checkbox__text">Пт</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="e_6" class="checkbox__input" type="checkbox" value="Сб" name="employee-schedule">
+											<label for="e_6" class="checkbox__label"><span class="checkbox__text">Сб</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="e_7" class="checkbox__input" type="checkbox" value="Вс" name="employee-schedule">
+											<label for="e_7" class="checkbox__label"><span class="checkbox__text">Вс</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-6">
+								<div class="form__input-number input-number input-number_reverse">
+									<input type="number" name="" placeholder="09:00" value="09:00" class="form__input input-number__input" />
+									<span class="input-number__descr">с</span>
+								</div>
+							</div>
+							<div class="form__item col-6">
+								<div class="form__input-number input-number input-number_reverse">
+									<input type="number" name="" placeholder="20:00" class="form__input input-number__input" />
+									<span class="input-number__descr">до</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__submit"><button class="btn btn_bg-orange">Добавить сотрудника</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="add-branch" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Добавление филиала</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-12">
+								<label for="adding-branch-name" class="form__label">Название филиала</label>
+								<input id="adding-branch-name" type="text" name="adding-branch-name" placeholder="Название филиала" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-branch-subdomain" class="form__label">Поддомен</label>
+								<input id="adding-branch-subdomain" type="text" name="adding-branch-subdomain" placeholder="Поддомен" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-branch-address" class="form__label">Адрес</label>
+								<input id="adding-branch-address" type="text" name="adding-branch-address" placeholder="ул. Чехова" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-branch-phone" class="form__label">Телефон</label>
+								<input id="adding-branch-phone" type="text" name="adding-branch-phone" placeholder="+7 900 900 99 99" class="form__input form__input_phone" />
+							</div>
+						</div>
+
+						<div class="form__submit"><button class="btn btn_bg-orange">Добавить филиал</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="add-promocode" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Добавить промокод</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-12">
+								<label for="adding-promocode-name" class="form__label">Название промокода</label>
+								<input id="adding-promocode-name" type="text" name="adding-promocode-name" placeholder="Название промокода" class="form__input" />
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-promocode-start" class="form__label">Дата начала</label>
+								<input id="adding-promocode-start" type="text" name="adding-promocode-start" placeholder="Дата начала" class="form__input" />
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-promocode-end" class="form__label">Дата окончания</label>
+								<input id="adding-promocode-end" type="text" name="adding-promocode-end" placeholder="Дата окончания" class="form__input" />
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-promocode-numbers" class="form__label">Количество промокодов</label>
+								<div class="form__input-number input-number">
+									<input id="adding-promocode-numbers" type="number" name="adding-promocode-numbers" placeholder="200" class="form__input input-number__input">
+									<span class="input-number__descr">шт</span>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<div class="form__label">Тип работы</div>
+
+								<div class="form__select">
+									<div class="basic-single">
+										<div class="select__control">
+											<div class="select__value-container select__value-container--has-value">
+												<div class="select__single-value">Дипломаная работа</div>
+												<div class="select__input-container" data-value="">
+													<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+												</div>
+											</div>
+											<div class="select__indicators">
+												<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+													<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+														<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-promocode-discount" class="form__label">Скидка</label>
+								<div class="form__input-number input-number">
+									<input id="adding-promocode-discount" type="number" name="adding-promocode-discount" value="5" placeholder="Скидка" class="form__input input-number__input">
+									<span class="input-number__descr">%</span>
+								</div>
+							</div>
+							<div class="form__item col-6">
+								<label for="adding-promocode-from" class="form__label">С какой суммы действует</label>
+								<div class="form__input-number input-number">
+									<input id="adding-promocode-from" type="number" name="adding-promocode-from" value="10 000" placeholder="Скидка" class="form__input input-number__input">
+									<span class="input-number__descr">₽</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__submit"><button class="btn btn_bg-orange">Добавить промокод</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="addding-work-type" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Добавить тип работы</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-12">
+								<label for="addding-work-type-name" class="form__label">Название работы</label>
+								<input id="addding-work-type-name" type="text" name="addding-work-type-name" placeholder="Название работы" class="form__input" />
+							</div>
+							<div class="form__item col-6">
+								<div class="form__label">Единица объема работы</div>
+
+								<div class="basic-single">
+									<div class="select__control">
+										<div class="select__value-container select__value-container--has-value">
+											<div class="select__single-value">Страница</div>
+											<div class="select__input-container" data-value="">
+												<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+											</div>
+										</div>
+										<div class="select__indicators">
+											<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+												<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+													<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<div class="form__label">Раздел / Категория</div>
+
+								<div class="basic-single">
+									<div class="select__control">
+										<div class="select__value-container select__value-container--has-value">
+											<div class="select__single-value">Дипломные работы</div>
+											<div class="select__input-container" data-value="">
+												<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+											</div>
+										</div>
+										<div class="select__indicators">
+											<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+												<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+													<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<label for="addding-work-type-descr" class="form__label">Подробное описание</label>
+
+								<textarea name="addding-work-type-descr" placeholder="1 глава – теория, 2 глава – практика или анализ, 3 глава – предложения по оптимизации, до 3 методик, анализ до 3-х лет, до 5 приложений" class="form__input" rows="5"></textarea>
+							</div>
+							<div class="form__item col-12">
+								<label class="toggle">
+									<div class="toggle__wrapper">
+										<input type="checkbox" class="toggle__checkbox" checked>
+										<span class="toggle__slider"></span>
+									</div>
+
+									<div class="toggle__text">Показать на формах заказа</div>
+								</label>
+							</div>
+						</div>
+
+						<div class="form__buttons">
+							<button class="btn btn_bg-orange">Добавить </button>
+							<button class="btn btn_bg-gray">Удалить </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="work-price-edit" aria-hidden="true" class="popup popup_price-edit">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Цена диплом, ВКР</div>
+
+					<form action="" class="form">
+						<div class="price-list-table">
+							<table>
+								<thead>
+									<tr>
+										<th style="width: 45%">Тип</th>
+										<th>объём (мин)</th>
+										<th>объём (макс)</th>
+										<th>Цена</th>
+										<th style="width: 38px;"></th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>
+											<div class="basic-single">
+												<div class="select__control">
+													<div class="select__value-container select__value-container--has-value">
+														<div class="select__single-value">По объёму страниц (До)</div>
+														<div class="select__input-container" data-value="">
+															<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+														</div>
+													</div>
+													<div class="select__indicators">
+														<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+															<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="1" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="70" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number">
+												<input id="" type="number" name="" value="6900" class="form__input input-number__input">
+												<span class="input-number__descr">₽</span>
+											</div>
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="basic-single">
+												<div class="select__control">
+													<div class="select__value-container select__value-container--has-value">
+														<div class="select__single-value">По объёму страниц (До)</div>
+														<div class="select__input-container" data-value="">
+															<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+														</div>
+													</div>
+													<div class="select__indicators">
+														<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+															<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="71" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="80" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number">
+												<input id="" type="number" name="" value="8250" class="form__input input-number__input">
+												<span class="input-number__descr">₽</span>
+											</div>
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="basic-single">
+												<div class="select__control">
+													<div class="select__value-container select__value-container--has-value">
+														<div class="select__single-value">По объёму страниц (До)</div>
+														<div class="select__input-container" data-value="">
+															<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+														</div>
+													</div>
+													<div class="select__indicators">
+														<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+															<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="81" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="90" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number">
+												<input id="" type="number" name="" value="9650" class="form__input input-number__input">
+												<span class="input-number__descr">₽</span>
+											</div>
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="basic-single">
+												<div class="select__control">
+													<div class="select__value-container select__value-container--has-value">
+														<div class="select__single-value">По объёму страниц (Больше)</div>
+														<div class="select__input-container" data-value="">
+															<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+														</div>
+													</div>
+													<div class="select__indicators">
+														<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+															<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+																<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+															</svg>
+														</div>
+													</div>
+												</div>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="91" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="91" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number">
+												<input id="" type="number" name="" value="100" class="form__input input-number__input">
+												<span class="input-number__descr">₽</span>
+											</div>
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="price-list-table__button"><button type="button" class="btn btn_bg-gray">Добавить строку</button></div>
+						</div>
+
+						<div class="form__submit"><button class="btn btn_bg-orange _w100">Сохранить изменения </button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="work-сoefficient-edit" aria-hidden="true" class="popup popup_price-edit">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title">
+						<div class="title-h4">Коэффициент срочности</div>
+						<p>Зависит только от типа работы, от города не зависит</p>
+					</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-6">
+								<div class="basic-single">
+									<div class="select__control">
+										<div class="select__value-container select__value-container--has-value">
+											<div class="select__single-value">Дипломные работы</div>
+											<div class="select__input-container" data-value="">
+												<input class="select__input" autocapitalize="none" autocomplete="off" autocorrect="off" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="false" aria-haspopup="true" role="combobox" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2 / auto / auto; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" />
+											</div>
+										</div>
+										<div class="select__indicators">
+											<div class="select__indicator select__dropdown-indicator" aria-hidden="true">
+												<svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+													<path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="price-list-table">
+							<table>
+								<thead>
+									<tr>
+										<th>срок (мин)</th>
+										<th>срок (макс)</th>
+										<th>коэффициент</th>
+										<th style="width: 38px;"></th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="1" placeholder="Скидка" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="2" placeholder="Скидка" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+										</td>
+
+										<td>
+											<input type="text" name="" placeholder="" class="form__input" value="2" />
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="3" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="5" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+										</td>
+
+										<td>
+											<input type="text" name="" placeholder="" class="form__input" value="1.5" />
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="6" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" value="9" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+										</td>
+
+										<td>
+											<input type="text" name="" placeholder="" class="form__input" value="1.3" />
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" class="form__input input-number__input">
+												<span class="input-number__descr">от</span>
+											</div>
+										</td>
+
+										<td>
+											<div class="form__input-number input-number input-number_reverse">
+												<input id="" type="number" name="" class="form__input input-number__input">
+												<span class="input-number__descr">до</span>
+											</div>
+										</td>
+										</td>
+
+										<td>
+											<input type="text" name="" placeholder="" class="form__input" />
+										</td>
+
+										<td>
+											<a href="" class="_icon-remove"></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="price-list-table__button"><button type="button" class="btn btn_bg-gray">Добавить строку</button></div>
+						</div>
+
+						<div class="form__submit"><button class="btn btn_bg-orange _w100">Сохранить изменения </button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="adding-subdomain" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="popup__title title-h4">Добавление поддомена</div>
+
+					<form action="" class="form">
+						<div class="form__row">
+							<div class="form__item col-12">
+								<label for="adding-subdomain-name" class="form__label">Название города</label>
+								<input id="adding-subdomain-name" type="text" name="adding-subdomain-name" placeholder="Название города" value="Нижний Новгород" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-subdomain-domain" class="form__label">Поддомен</label>
+								<input id="adding-subdomain-domain" type="text" name="adding-subdomain-domain" placeholder="Поддомен" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<div class="checkbox">
+									<input id="isBranch" class="checkbox__input" type="checkbox" value="Отображать как филиал" name="" />
+									<label for="isBranch" class="checkbox__label"><span class="checkbox__text">Отображать как филиал</span></label>
+								</div>
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-subdomain-address" class="form__label">Адрес</label>
+								<input id="adding-subdomain-address" type="text" name="adding-subdomain-address" placeholder="ул. Чехова 18/3" class="form__input" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-subdomain-phone" class="form__label">Телефон</label>
+								<input id="adding-subdomain-phone" type="text" name="adding-subdomain-phone" placeholder="+7 900 900 99 99" class="form__input form__input_phone" />
+							</div>
+							<div class="form__item col-12">
+								<label for="adding-subdomain-phone" class="form__label">Код Яндекс карты</label>
+								<textarea id="adding-subdomain-phone" type="text" name="adding-subdomain-phone" placeholder="Код Яндекс карты" class="form__input" rows="3">kjdhfo832ur82hjfiowfh92ir90kjfoiehg09eug0wjg3w0jfw0gjf0gj30gj30jg30ijgj0i3jg4gjf30jfg0of2[0djp2m09dkq0[mf03jj3fifj3</textarea>
+							</div>
+							<div class="form__item col-12">
+								<div class="add-schedule">
+									<div class="add-schedule__caption">Добавьте график работы</div>
+
+									<div class="add-schedule__days">
+										<div class="checkbox">
+											<input id="d_1" class="checkbox__input" type="checkbox" value="Пн" name="schedule">
+											<label for="d_1" class="checkbox__label"><span class="checkbox__text">Пн</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="d_2" class="checkbox__input" type="checkbox" value="Вт" name="schedule">
+											<label for="d_2" class="checkbox__label"><span class="checkbox__text">Вт</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="d_3" class="checkbox__input" type="checkbox" value="Ср" name="schedule">
+											<label for="d_3" class="checkbox__label"><span class="checkbox__text">Ср</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="d_4" class="checkbox__input" type="checkbox" value="Чт" name="schedule">
+											<label for="d_4" class="checkbox__label"><span class="checkbox__text">Чт</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="d_5" class="checkbox__input" type="checkbox" value="Пт" name="schedule">
+											<label for="d_5" class="checkbox__label"><span class="checkbox__text">Пт</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="d_6" class="checkbox__input" type="checkbox" value="Сб" name="schedule">
+											<label for="d_6" class="checkbox__label"><span class="checkbox__text">Сб</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="d_7" class="checkbox__input" type="checkbox" value="Вс" name="schedule">
+											<label for="d_7" class="checkbox__label"><span class="checkbox__text">Вс</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__item col-6">
+								<div class="form__input-number input-number input-number_reverse">
+									<input type="number" name="" placeholder="09:00" value="09:00" class="form__input input-number__input" />
+									<span class="input-number__descr">с</span>
+								</div>
+							</div>
+							<div class="form__item col-6">
+								<div class="form__input-number input-number input-number_reverse">
+									<input type="number" name="" placeholder="20:00" class="form__input input-number__input" />
+									<span class="input-number__descr">до</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__buttons">
+							<button class="btn btn_bg-orange">Добавить город </button>
+							<button class="btn btn_bg-gray">Удалить город </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="order-information" aria-hidden="true" class="popup popup_order-information">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="ordering-total">
+						<div class="ordering-total__item">
+							<div class="ordering-total__heading">
+								<div class="ordering-total__title title-h5">Информация о заказе</div>
+
+								<div class="user-template1-card__status">
+									<img src="img/icons/paused.svg" alt="" loading="lazy">
+									<span>Приостановлен</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="ordering-total__item">
+							<div class="ordering-total__information">
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Тип работы:</div>
+									<div class="ordering-total__info-text">Курсовая</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Дата оформления:</div>
+									<div class="ordering-total__info-text">21.06.2021</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Тема:</div>
+									<div class="ordering-total__info-text">Методы расчета параметров договоров смешанного страхования жизни при их переформатировании</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Предмет:</div>
+									<div class="ordering-total__info-text">Математика</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Требования:</div>
+									<div class="ordering-total__info-text">C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Объем:</div>
+									<div class="ordering-total__info-text">100 страниц</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Система антиплагиат:</div>
+									<div class="ordering-total__info-text">Antiplagiat.ru</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Процент оригинальности:</div>
+									<div class="ordering-total__info-text">90%</div>
+								</div>
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Срок:</div>
+									<div class="ordering-total__info-text">20.02.2020</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ordering-total__item ordering-total__item_files">
+							<div class="ordering-total__information">
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Прикреплённые файлы:</div>
+									<div class="ordering-total__files">
+										<div class="ordering-total__file">
+											<a href="">
+												<img src="img/icons/doc.svg" alt="" loading="lazy">
+												<span>Название файла.docx</span>
+											</a>
+										</div>
+										<div class="ordering-total__file">
+											<a href="">
+												<img src="img/icons/doc.svg" alt="" loading="lazy">
+												<span>Название файла.docx</span>
+											</a>
+										</div>
+										<div class="ordering-total__file">
+											<a href="">
+												<img src="img/icons/doc.svg" alt="" loading="lazy">
+												<span>Название файла.docx</span>
+											</a>
+										</div>
+										<div class="ordering-total__file">
+											<a href="">
+												<img src="img/icons/doc.svg" alt="" loading="lazy">
+												<span>Файл 1.docx</span>
+											</a>
+										</div>
+										<div class="ordering-total__file">
+											<a href="">
+												<img src="img/icons/doc.svg" alt="" loading="lazy">
+												<span>Название файла.docx</span>
+											</a>
+										</div>
+										<div class="ordering-total__file">
+											<a href="">
+												<img src="img/icons/doc.svg" alt="" loading="lazy">
+												<span>Название файла.docx</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ordering-total__item">
+							<div class="user-template2-comment">
+								<div class="user-template2-comment__wrapper">
+									<div class="user-template2-comment__caption">Комментарий менеджера:</div>
+									<div class="user-template2-comment__text _content">
+										<p>C помощью этого онлайн-генератора рыботекста можно пачками плодить как отдельные предложения и заголовки, так и целые абзацы отменнейшего рыбы-текста. А для любителей автоматизации даже реализован API фиштекста.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ordering-total__item ordering-total__item_final">
+							<div class="ordering-total__information">
+								<div class="ordering-total__row">
+									<div class="ordering-total__info-caption">Стоимость:</div>
+									<div class="ordering-total__info-text">
+										<div class="title-h3 _nowrap"> 1 900 ₽</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="user-template2__actions">
+								<div class="user-template2__button"><a href="" class="btn btn_bg-gray">Перейти в заказ</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="post-review-popup" aria-hidden="true" class="popup popup_adding-payment">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"> <i class="_icon-close"></i> </button>
+
+				<div class="popup__text">
+					<div class="post-review">
+						<div class="_content">
+							<h5>Вы точно уверены, что хотите опубликовать&nbsp;отзыв?</h5>
+							<p>Тогда отзыв будет виден всем и дальше пошёл текст по своей сути рыбатекст является альтернативой</p>
+						</div>
+
+						<div class="post-review__wrapper">
+							<div class="post-review__image"><img src="img/main/authorization-email-blue.svg" alt="" loading="lazy"></div>
+							<div class="post-review__text">Отправить уведомление клиенту, что его отзыв был опубликован</div>
+							<div class="post-review__toggle">
+								<label class="toggle">
+									<div class="toggle__wrapper">
+										<input type="checkbox" class="toggle__checkbox" checked="">
+										<span class="toggle__slider"></span>
+									</div>
+								</label>
+							</div>
+						</div>
+
+						<div class="post-review__buttons">
+							<div class="post-review__button"><button type="submit" class="btn btn_bg-orange">Да, опубликовать</button></div>
+							<div class="post-review__button"><button type="button" data-close class="btn btn_bg-gray">Нет</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230622173042"></script>
+</body>
+
+</html>

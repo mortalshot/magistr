@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"ЛК Менеджер"
+})
+
+<body>
+   <!-- Чтобы раскрыть меню admin-wrapper нужно добавить класс _open-menu -->
+   <div class="admin-wrapper wrapper">
+      @@include('html/_admin-header.htm',{})
+      @@include('html/_admin-sidebar.htm',{})
+
+      <main class="admin-page page">
+         <section class="admin-template11">
+            <div class="admin-template11__container">
+               <div class="admin-template11__heading _heading _content">
+                  <h1>Добрый день, Евгений!</h1>
+               </div>
+
+               <div class="admin-template11__wrapper _wrapper">
+                  <div class="admin-template11__heading">
+                     <div class="admin-template11__caption">статистика</div>
+
+                     <div class="admin-template11__more">
+                        <a href="" class="btn btn_text-blue">
+                           <span>Подробная статистика</span>
+                           <i class="_icon-chevron-right"></i>
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="admin-template11__cards">
+                     <div class="admin-template11__card">
+                        <a href="manager-agreement.html" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">3</div>
+                           <div class="admin-template11__card-caption">Согласование</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">6</div>
+                           <div class="admin-template11__card-caption">Согласование доработки</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">9</div>
+                           <div class="admin-template11__card-caption">Отказ от доработки</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">39</div>
+                           <div class="admin-template11__card-caption">Новый отзыв</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">12</div>
+                           <div class="admin-template11__card-caption">Согласование плана</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">10</div>
+                           <div class="admin-template11__card-caption">На оценке</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">7</div>
+                           <div class="admin-template11__card-caption">Долги</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">4</div>
+                           <div class="admin-template11__card-caption">Второй платёж</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">2</div>
+                           <div class="admin-template11__card-caption">Оплачено 50%</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">1</div>
+                           <div class="admin-template11__card-caption">Обзвон неоплат</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">0</div>
+                           <div class="admin-template11__card-caption">Отказ клиента</div>
+                        </a>
+                     </div>
+                     <div class="admin-template11__card">
+                        <a href="" class="admin-template11__card-wrapper">
+                           <div class="admin-template11__card-value">100 000 +</div>
+                           <div class="admin-template11__card-caption">Оплачено на сумму</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="admin-template1">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>На согласовании <span>3</span></h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>Дата и номер</th>
+                                       <th>Пользователь</th>
+                                       <th>срок</th>
+                                       <th>Тип работы</th>
+                                       <th style="width: 13%">Тема работы</th>
+                                       <th style="width: 10%">комментарий</th>
+                                       <th style="text-align: right;">Цена</th>
+                                       <th style="text-align: right;">Статус</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>Соглас. дор.</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>Соглас. дор.</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>Соглас. дор.</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+
+                        <div class="admin-table__more"><a href="" class="btn btn_bg-gray">Подробнее</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="admin-template1">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>Согласовние доработки <span>6</span></h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>Дата и номер</th>
+                                       <th>Пользователь</th>
+                                       <th>срок</th>
+                                       <th>Тип работы</th>
+                                       <th style="width: 13%">Тема работы</th>
+                                       <th style="width: 10%">комментарий</th>
+                                       <th style="text-align: right;">Цена</th>
+                                       <th style="text-align: right;">Статус</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На согласовании</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+
+                        <div class="admin-table__more"><a href="" class="btn btn_bg-gray">Подробнее</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="admin-template1">
+            <div class="admin-template1__container">
+               <div class="admin-template1__heading _heading _content">
+                  <h1>На оценке <span>1</span></h1>
+               </div>
+
+               <div class="admin-table">
+                  <div class="admin-table__wrapper">
+                     <div class="admin-table__content">
+                        <div class="admin-table__table-wrapper">
+                           <div class="admin-table__table">
+                              <table>
+                                 <thead>
+                                    <tr>
+                                       <th>Дата и номер</th>
+                                       <th>Пользователь</th>
+                                       <th>срок</th>
+                                       <th>Тип работы</th>
+                                       <th style="width: 13%">Тема работы</th>
+                                       <th style="width: 10%">комментарий</th>
+                                       <th style="text-align: right;">Цена</th>
+                                       <th style="text-align: right;">Статус</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>20.02.21&nbsp;15:00</div>
+                                             <div>
+                                                <a href="manager-agreement-single.html"><span style="color: #82879E; margin-right: 8px;">392871</span></a>
+                                                <span style="color: #82879E;">1д&nbsp;12&nbsp;ч&nbsp;55&nbsp;м</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="admin-client">
+                                             <div class="admin-client__name">Головенко Вячеслав</div>
+                                             <div class="admin-client__contacts">
+                                                <div><a href="" class="_icon-phone"></a></div>
+                                                <div><a href="" class="_icon-email"></a></div>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>20.02.22</td>
+                                       <td>
+                                          <div class="admin-table__column">
+                                             <div>Дипломная работа</div>
+                                             <div>
+                                                <span style="color: #82879E;">Математика</span>
+                                             </div>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Конституционно-правовые отношения, их субъекты Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вершину своих ему все страну?</p>
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="_content">
+                                             <p>Комментарий в пару строк, совсем Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Заголовок взобравшись предложения наш приставка!</p>
+                                          </div>
+                                       </td>
+                                       <td style="text-align: right;">11&nbsp;800&nbsp;₽</td>
+                                       <td style="text-align: right;">
+                                          <div class="status status_blue">
+                                             <span>На оценке</span>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+
+                        <div class="admin-table__more"><a href="" class="btn btn_bg-gray">Подробнее</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

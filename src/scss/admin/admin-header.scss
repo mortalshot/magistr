@@ -151,24 +151,6 @@
 				}
 			}
 		}
-
-		// .admin-actions__item_active
-		&_active {
-			position: relative;
-
-			&::before {
-				content: "";
-				display: block;
-				width: rem(10);
-				height: rem(10);
-				background-color: $Red;
-				border-radius: 50%;
-				border: rem(2) solid $White;
-				position: absolute;
-				top: rem(7);
-				right: rem(8);
-			}
-		}
 	}
 }
 
@@ -246,5 +228,225 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+
+.admin-notifications {
+	position: relative;
+
+	&._active {
+		.admin-notifications__button {
+			background-color: #f4f6fa;
+		}
+
+		.admin-notifications__window {
+			opacity: 1;
+			pointer-events: all;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+
+	&.admin-notifications_has-notif {
+		.admin-notifications__button {
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+
+	// .admin-notifications__button
+	&__button {
+		display: block;
+		background-color: transparent;
+		border-radius: rem(10);
+		position: relative;
+
+		&::after {
+			content: "";
+			display: block;
+			width: rem(10);
+			height: rem(10);
+			background-color: $Red;
+			border-radius: 50%;
+			border: rem(2) solid $White;
+			position: absolute;
+			top: rem(7);
+			right: rem(8);
+			opacity: 0;
+			transition: $transition ease opacity 0s;
+		}
+	}
+
+	// .admin-notifications__window
+	&__window {
+		@include adaptiveValue("width", 400, 300, 768, 320, 1);
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translateY(100%);
+		overflow: hidden;
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+		transform: translateY(rem(10));
+		transition: $transition ease all 0s;
+	}
+
+	// .admin-notifications__wrapper
+	&__wrapper {
+		border-radius: rem(10);
+		background: $White;
+		box-shadow: 0px 14px 64px 0px rgba(0, 0, 0, 0.2);
+
+	}
+
+	// .admin-notifications__caption
+	&__caption {
+		padding: rem(8);
+		font-weight: 600;
+		@include adaptiveValue("font-size", 12, 10, 768, 320, 1);
+		line-height: 120%;
+		text-transform: uppercase;
+		letter-spacing: em(0.72, 12);
+		color: $Grey;
+	}
+
+	// .admin-notifications__list
+	&__list {
+		&:not(:first-child) {
+			.admin-notifications__item:first-child {
+				border-top: rem(1) solid $Line;
+			}
+		}
+	}
+
+	// .admin-notifications__item
+	&__item {
+		padding: rem(8);
+		border-bottom: rem(1) solid $Line;
+		display: grid;
+		align-content: center;
+		align-items: center;
+		grid-template-columns: rem(34) 1fr;
+		gap: rem(8);
+		position: relative;
+		background-color: $White;
+
+		@media (any-hover: hover) {
+			transition: $transition ease background-color 0s;
+
+			&:hover {
+				background-color: #f4f6fa;
+
+				.admin-notifications__icon {
+					color: $DGBlue;
+					background-color: $Line;
+				}
+			}
+		}
+	}
+
+	// .admin-notifications__icon
+	&__icon {
+		font-size: rem(18);
+		padding: rem(8);
+		border-radius: rem(8);
+		background-color: #f4f6fa;
+		transition: $transition ease all 0s;
+	}
+
+	// .admin-notifications__body
+	&__body {
+	}
+
+	// .admin-notifications__link
+	&__link {
+		&::before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	// .admin-notifications__top
+	&__top {
+		display: flex;
+		align-items: center;
+		gap: rem(8);
+
+		&:not(:first-child) {
+			margin-bottom: rem(2);
+		}
+	}
+
+	// .admin-notifications__name
+	&__name {
+		font-weight: 600;
+		font-size: rem(13);
+		line-height: 120%;
+		color: $mainColor;
+	}
+
+	// .admin-notifications__time
+	&__time {
+		font-weight: 600;
+		font-size: rem(12);
+		line-height: 120%;
+		color: $Grey;
+	}
+
+	// .admin-notifications__text
+	&__text {
+		font-size: rem(13);
+		line-height: 120%;
+		color: $Grey;
+
+		a {
+			position: relative;
+			z-index: 1;
+			font-weight: 600;
+			color: $BBLue;
+			text-decoration: underline transparent from-font;
+			text-underline-offset: 2px;
+			transition: $transition ease all 0s;
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: $BBLue;
+					text-decoration: underline from-font;
+				}
+			}
+		}
+	}
+
+	// .admin-notifications__clear
+	&__clear {
+		display: flex;
+
+		.btn {
+			padding: rem(10) rem(16);
+			width: 100%;
+			border: 0;
+			border-radius: 0;
+			font-size: rem(14);
+			line-height: 120%;
+			color: $BBLue;
+
+			@media (any-hover: hover) {
+				transition: $transition ease opacity 0s;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+
+			i {
+				font-size: rem(20);
+			}
+		}
 	}
 }
