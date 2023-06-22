@@ -1996,6 +1996,10 @@
       @include adaptiveValue("padding", 30, 24);
       position: relative;
       z-index: 1;
+
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding", 30, 24);
+      }
    }
 
    // .template13__top

@@ -22479,6 +22479,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     white-space: nowrap;
   }
 
+  .template13__wrapper {
+    padding: clamp( 1.5rem , 1.3636363636rem  +  0.6818181818vw , 1.875rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (padding: $propertyValue) {
+    		padding: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (padding: $propertyValue) {
+    		padding: calc(1.5rem + 0.375 * (100vw - 20rem) / 55);
+    	} */
+  }
+
   .template13__table tr:first-child td {
     padding-top: 1.5rem;
   }
