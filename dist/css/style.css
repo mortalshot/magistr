@@ -8479,6 +8479,8 @@ section:last-child {
 }
 
 .template13__table ._icon-download {
+  position: relative;
+  top: 0.125rem;
   font-size: 1.125rem;
   color: #3e5bf1;
 }
@@ -16379,9 +16381,9 @@ section:last-child {
   opacity: 1;
   pointer-events: all;
   visibility: visible;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .admin-notifications.admin-notifications_has-notif .admin-notifications__button::after {
@@ -16424,17 +16426,14 @@ section:last-child {
   	} */
   position: absolute;
   right: 0;
-  bottom: 0;
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
-  overflow: hidden;
+  bottom: -1.125rem;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
   -webkit-transform: translateY(0.625rem);
       -ms-transform: translateY(0.625rem);
           transform: translateY(0.625rem);
+  border-radius: 0.625rem;
   -webkit-transition: 0.3s ease all 0s;
   -o-transition: 0.3s ease all 0s;
   transition: 0.3s ease all 0s;
@@ -16445,6 +16444,7 @@ section:last-child {
   background: #fff;
   -webkit-box-shadow: 0px 14px 64px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 14px 64px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .admin-notifications__caption {

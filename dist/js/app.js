@@ -6084,6 +6084,11 @@ PERFORMANCE OF THIS SOFTWARE.
             targetElement.closest(".filter-collapse").classList.remove("_active");
             document.documentElement.classList.remove("popup-show");
         }
+        if (targetElement.classList.contains("admin-notifications__button") || targetElement.closest(".admin-notifications__button")) {
+            e.preventDefault();
+            targetElement.closest(".admin-notifications").classList.add("_active");
+        }
+        if (!targetElement.closest(".admin-notifications__button") && document.querySelectorAll(".admin-notifications._active").length > 0) document.querySelector(".admin-notifications._active").classList.remove("_active");
     }));
     window.addEventListener("DOMContentLoaded", (function() {
         const template1 = document.querySelector(".template1");

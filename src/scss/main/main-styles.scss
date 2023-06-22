@@ -2184,6 +2184,8 @@
       }
 
       ._icon-download {
+         position: relative;
+         top: rem(2);
          font-size: rem(18);
          color: $BBLue;
 

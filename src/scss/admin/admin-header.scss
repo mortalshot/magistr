@@ -243,7 +243,7 @@
 			opacity: 1;
 			pointer-events: all;
 			visibility: visible;
-			transform: translateY(0);
+			transform: translateY(100%);
 		}
 	}
 
@@ -283,13 +283,12 @@
 		@include adaptiveValue("width", 400, 300, 768, 320, 1);
 		position: absolute;
 		right: 0;
-		bottom: 0;
-		transform: translateY(100%);
-		overflow: hidden;
+		bottom: rem(-18);
 		opacity: 0;
 		pointer-events: none;
 		visibility: hidden;
 		transform: translateY(rem(10));
+		border-radius: rem(10);
 		transition: $transition ease all 0s;
 	}
 
@@ -298,7 +297,7 @@
 		border-radius: rem(10);
 		background: $White;
 		box-shadow: 0px 14px 64px 0px rgba(0, 0, 0, 0.2);
-
+		overflow: hidden;
 	}
 
 	// .admin-notifications__caption

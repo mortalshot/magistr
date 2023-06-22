@@ -38,7 +38,15 @@ document.addEventListener('click', function (e) {
    if (targetElement.classList.contains('filter-collapse__close') || targetElement.closest('.filter-collapse__close')) {
       targetElement.closest('.filter-collapse').classList.remove('_active');
       document.documentElement.classList.remove('popup-show');
+   }
 
+   // Открываем уведомления в админке
+   if (targetElement.classList.contains('admin-notifications__button') || targetElement.closest('.admin-notifications__button')) {
+      e.preventDefault();
+      targetElement.closest('.admin-notifications').classList.add('_active');
+   }
+   if (!targetElement.closest('.admin-notifications__button') && document.querySelectorAll('.admin-notifications._active').length > 0) {
+      document.querySelector('.admin-notifications._active').classList.remove('_active');
    }
 })
 
