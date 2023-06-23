@@ -162,6 +162,10 @@
       position: relative;
       overflow: hidden;
 
+      @media (min-width: $mobile) {
+         padding: rem(16) rem(40) rem(16) rem(16);
+      }
+
       @media (any-hover: hover) {
          transition: $transition ease border-color 0s;
 
@@ -333,6 +337,10 @@
 .user-main {
    @include adaptiveValue("padding", 30, 16);
    @include adaptiveValue("border-radius", 20, 13);
+
+   @media (min-width: $mobile) {
+      @include adaptiveValue("padding", 30, 16);
+   }
 
    .user-wrapper_home & {
       @media (max-width: $mobile) {
@@ -618,6 +626,10 @@
 
    // .user-template1-card__item-value
    &__item-value {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: rem(8) rem(16);
       line-height: 130%;
    }
 
@@ -755,7 +767,7 @@
    }
 
    .user-template1-card__paid {
-      font-weight: 600;
+      font-weight: 700;
       @include adaptiveValue("font-size", 16, 12);
       line-height: 127%;
       text-transform: none;

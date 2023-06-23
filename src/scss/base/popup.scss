@@ -408,9 +408,9 @@ body::after {
 			color: $mainColor;
 		}
 
-		.ordering-total__files  {
-			@media (max-width:$mobileSmall){
-				 display: flex; 
+		.ordering-total__files {
+			@media (max-width: $mobileSmall) {
+				display: flex;
 			}
 		}
 
@@ -422,7 +422,7 @@ body::after {
 
 		.user-template2__actions {
 			&:not(:first-child) {
-				 @include adaptiveValue("margin-top", 48, 24);
+				@include adaptiveValue("margin-top", 48, 24);
 			}
 		}
 	}
@@ -796,7 +796,13 @@ body::after {
 	// .ordering-total__info-text
 	&__info-text {
 		max-width: rem(450);
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
 
+		@media (min-width: $mobile) {
+			align-items: center;
+		}
 		@media (max-width: $mobileM) {
 			color: $Grey;
 		}

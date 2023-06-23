@@ -419,6 +419,11 @@ section {
       @include adaptiveValue("padding-bottom", 16, 10);
       @include adaptiveValue("padding-left", 24, 12);
       @include adaptiveValue("padding-right", 24, 12);
+
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding-left", 24, 12);
+         @include adaptiveValue("padding-right", 24, 12);
+      }
    }
 }
 

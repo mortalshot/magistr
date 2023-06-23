@@ -111,6 +111,10 @@
       align-items: center;
       gap: rem(16);
       background-color: $White;
+
+      @media (min-width: $mobile) {
+         padding: rem(8) rem(16);
+      }
    }
 
    // .rating-reviews__marks
@@ -1451,6 +1455,10 @@
       @include adaptiveValue("padding-right", 24, 16);
       border-radius: rem(14);
       height: 100%;
+
+      @media (min-width: $mobile) {
+         padding: rem(16) rem(24);
+      }
    }
 
    ._content {
@@ -1761,6 +1769,10 @@
    &__wrapper {
       position: relative;
       padding: 0;
+
+      @media (min-width: $mobile) {
+         padding: 0;
+      }
    }
 
    // .template12__bg
@@ -2141,6 +2153,9 @@
          &.td-col-5 {
             flex: 0 0 41.666%;
          }
+         &.td-col-6 {
+            flex: 0 0 50%;
+         }
 
          p {
             margin: rem(4) 0;
@@ -2518,6 +2533,8 @@
 
       @media (min-width: $mobile) {
          min-height: rem(140);
+         @include adaptiveValue("padding-left", 25, 10);
+         @include adaptiveValue("padding-right", 25, 10);
       }
    }
 
@@ -3076,6 +3093,10 @@
    // .template16-filter__wrapper
    &__wrapper {
       @include adaptiveValue("padding", 30, 16);
+
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding", 30, 16);
+      }
    }
 
    // .template16-filter__form
@@ -3632,6 +3653,10 @@
             background: #e3e7ed;
          }
       }
+
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding", 30, 24);
+      }
    }
 
    // .template17-item__body
@@ -3715,6 +3740,9 @@
       }
       @media (min-width: $mobileM) and (max-width: $mobile) {
          grid-template-columns: 1fr rem(220);
+      }
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding", 50, 24, 1440, 992, 1);
       }
       @media (min-width: $pc) {
          grid-template-columns: 1fr rem(328);
@@ -4379,6 +4407,9 @@
       column-gap: rem(32);
       row-gap: rem(32);
 
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding", 32, 24);
+      }
       @media (min-width: $mobileM) {
          grid-template-columns: rem(80) 1fr;
       }
@@ -5070,6 +5101,10 @@
    // .template30-item__wrapper
    &__wrapper {
       @include adaptiveValue("padding", 30, 24);
+
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding", 30, 24);
+      }
    }
 
    // .template30-item__heading
@@ -6046,6 +6081,11 @@
       align-items: center;
       justify-content: space-between;
       gap: rem(16);
+
+      @media (min-width: $mobile) {
+         @include adaptiveValue("padding-left", 32, 20);
+         @include adaptiveValue("padding-right", 32, 20);
+      }
    }
 
    // .blog-feedback__caption
@@ -6143,6 +6183,10 @@
    &__items {
       .template29__wrapper {
          @include adaptiveValue("padding", 30, 20);
+
+         @media (min-width: $mobile) {
+            @include adaptiveValue("padding", 30, 20);
+         }
       }
       .template29__main {
          @include adaptiveValue("row-gap", 80, 18);
@@ -6192,6 +6236,7 @@
       @media (min-width: $mobile) {
          display: grid;
          grid-template-columns: percent(480, 1180) 1fr;
+      padding: 0;
       }
    }
 
