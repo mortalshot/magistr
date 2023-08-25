@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230623184308">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230825190531">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -414,6 +414,16 @@
 
 									<ul class="admin-template2__list">
 										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Комментарий менеджера</div>
+											<div class="admin-template2__list-content _content">
+												<div class="form__row">
+													<div class="form__item col-12 col-sm-12">
+														<textarea name="form[]" class="form__input" rows="1">При создании генератора мы использовали небезизвестный универсальный код речей.</textarea>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
 											<div class="admin-template2__list-caption">Тип работы </div>
 											<div class="admin-template2__list-content _content">
 												<div class="form__row">
@@ -442,13 +452,46 @@
 											</div>
 										</li>
 										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Объём страниц </div>
+											<div class="admin-template2__list-caption">Предмет </div>
+											<div class="admin-template2__list-content _content">
+												<div class="form__row">
+													<div class="form__item col-12 col-sm-6">
+														<input type="text" name="form[]" data-error="Ошибка" placeholder="Математика" value="Математика" class="form__input" />
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Тема</div>
+											<div class="admin-template2__list-content _content">
+												<div class="form__row">
+													<div class="form__item col-12 col-sm-12">
+														<textarea name="form[]" class="form__input">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст</textarea>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Требования</div>
+											<div class="admin-template2__list-content _content">
+												<div class="form__row">
+													<div class="form__item col-12 col-sm-12">
+														<textarea name="form[]" class="form__input" rows="3">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</textarea>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Срок </div>
 											<div class="admin-template2__list-content _content">
 												<div class="form__row">
 													<div class="form__item col-12 col-sm-3">
-														<div class="form__input-number input-number">
-															<input type="number" name="" value="250" class="form__input input-number__input" />
-															<span class="input-number__descr">стр.</span>
+														<div class="datepicker">
+															<div class="datepicker__wrapper _icon-calendar">
+																<input type="text" class="datepicker__input form__input" value="19.08.2022" />
+															</div>
+
+															<div class="datepicker__picker rdtPicker"></div>
 														</div>
 													</div>
 												</div>
@@ -510,6 +553,20 @@
 											</div>
 										</li>
 										<li class="admin-template2__list-item">
+											<div class="admin-template2__list-caption">Объём страниц </div>
+											<div class="admin-template2__list-content _content">
+												<div class="form__row">
+													<div class="form__item col-12 col-sm-3">
+														<div class="form__input-number input-number">
+															<input type="number" name="" value="250" class="form__input input-number__input" />
+															<span class="input-number__descr">стр.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="admin-template2__list-item">
 											<div class="admin-template2__list-caption">Соотношение цены и качества </div>
 											<div class="admin-template2__list-content _content">
 												<div class="form__row">
@@ -537,42 +594,9 @@
 												</div>
 											</div>
 										</li>
-										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Срок </div>
-											<div class="admin-template2__list-content _content">
-												<div class="form__row">
-													<div class="form__item col-12 col-sm-3">
-														<div class="datepicker">
-															<div class="datepicker__wrapper _icon-calendar">
-																<input type="text" class="datepicker__input form__input" value="19.08.2022" />
-															</div>
 
-															<div class="datepicker__picker rdtPicker"></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Срок </div>
-											<div class="admin-template2__list-content _content">
-												<div class="form__row">
-													<div class="form__item col-12 col-sm-6">
-														<input type="text" name="form[]" data-error="Ошибка" placeholder="Математика" value="Математика" class="form__input" />
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Тема</div>
-											<div class="admin-template2__list-content _content">
-												<div class="form__row">
-													<div class="form__item col-12 col-sm-12">
-														<textarea name="form[]" class="form__input">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст</textarea>
-													</div>
-												</div>
-											</div>
-										</li>
+
+
 										<li class="admin-template2__list-item">
 											<div class="admin-template2__list-caption">Скидка</div>
 											<div class="admin-template2__list-content _content">
@@ -618,26 +642,17 @@
 												</div>
 											</div>
 										</li>
-										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Требования</div>
-											<div class="admin-template2__list-content _content">
-												<div class="form__row">
-													<div class="form__item col-12 col-sm-12">
-														<textarea name="form[]" class="form__input" rows="3">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</textarea>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Комментарий менеджера</div>
-											<div class="admin-template2__list-content _content">
-												<div class="form__row">
-													<div class="form__item col-12 col-sm-12">
-														<textarea name="form[]" class="form__input" rows="1">При создании генератора мы использовали небезизвестный универсальный код речей.</textarea>
-													</div>
-												</div>
-											</div>
-										</li>
+
+										<!-- <li class="admin-template2__list-item">
+                                 <div class="admin-template2__list-caption">Комментарий менеджера</div>
+                                 <div class="admin-template2__list-content _content">
+                                    <div class="form__row">
+                                       <div class="form__item col-12 col-sm-12">
+                                          <textarea name="form[]" class="form__input" rows="1">При создании генератора мы использовали небезизвестный универсальный код речей.</textarea>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li> -->
 										<div class="admin-template2__list-line"></div>
 										<li class="admin-template2__list-item">
 											<div class="admin-template2__list-caption">Файлы </div>
@@ -720,9 +735,16 @@
 										</li>
 										<div class="admin-template2__list-line"></div>
 										<li class="admin-template2__list-item">
-											<div class="admin-template2__list-caption">Комментарий менеджера</div>
+											<div class="admin-template2__list-caption">Стоимость </div>
 											<div class="admin-template2__list-content _content">
-												<h5>8 000 ₽</h5>
+												<div class="form__row">
+													<div class="form__item col-12 col-sm-3">
+														<div class="form__input-number input-number">
+															<input type="number" name="" value="1000" class="form__input input-number__input" />
+															<span class="input-number__descr">₽</span>
+														</div>
+													</div>
+												</div>
 											</div>
 										</li>
 										<li class="admin-template2__list-item">
@@ -2696,7 +2718,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230623184308"></script>
+	<script src="js/app.min.js?_v=20230825190531"></script>
 </body>
 
 </html>
